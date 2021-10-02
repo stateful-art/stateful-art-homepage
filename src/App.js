@@ -74,12 +74,12 @@ const FooterSection = () => (
 
     //flex={true}
     background='black'>
-    <Anchor href="https://twitter.com/_streamerd"
+    <Anchor href="#"
             target="_blank"
             color="white"
             size="small">short paper</Anchor> | 
 
-    <Anchor href="https://instagram.com/streamerd_"
+    <Anchor href="#"
             target="_blank"
             color="white"
             size="small">long paper</Anchor>
