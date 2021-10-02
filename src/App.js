@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
-import { grommet, Button, Box, Grommet, Image, Anchor, Paragraph, ResponsiveContext, Text } from 'grommet';
-import { Login, Add, CaretDown, Directions } from 'grommet-icons';
+import { Button, Box, Grommet, Image, Anchor, Paragraph, ResponsiveContext, Text } from 'grommet';
+import { CaretDown, Directions } from 'grommet-icons';
 import React from 'react';
 
 const theme = {
