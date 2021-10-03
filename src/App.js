@@ -158,33 +158,6 @@ function App() {
              <CaretDown color="green"/>
           </Box>
 
-          <Box justify="center" alignContent="center" align> 
-          <Paragraph>
-              stateful.art aims to create a context, <br></br>
-              where cities have "multi-lateral autonomy" <br></br>
-              and empowerment
-              
-              for a decentralized,  <br></br>
-              unstoppable planetary solidarity.
-          </Paragraph>
-          <Box justify="center" alignContent="center"> 
-
-          <Paragraph>
-              NFT royalties of an artwork, <br></br> 
-              partially dedicated to empower <br></br>
-              cities, activist and artistic movements.
-          </Paragraph>
-          </Box>
-          </Box>
-
-          <Box justify="center" alignContent="center"> 
-          
-          <Paragraph>
-          mutual funds are accumulated <br></br>
-          in three types of DAOs:
-          </Paragraph>
-          </Box>
-
           <Box direction="row" justify="between" >
           <Paragraph>
           ------<br></br>
@@ -204,6 +177,69 @@ function App() {
           </Paragraph>
 
           </Box>
+          <Box justify="center" alignContent="center"> 
+        <CaretUp color="red"/>
+      </Box>
+          <Box justify="center" alignContent="center" align> 
+          <Paragraph>
+              stateful.art aims to create a context, <br></br>
+              where cities have "multi-lateral autonomy" <br></br>
+              and empowerment
+              
+              for a decentralized,  <br></br>
+              unstoppable planetary solidarity.
+          </Paragraph>
+          <Box justify="center" alignContent="center"> 
+
+          <Paragraph>
+              NFT royalties of an artwork, <br></br> 
+              partially dedicated to empower <br></br>
+              cities, activist and artistic movements.
+          </Paragraph>
+
+
+          </Box>
+          </Box>
+
+          <Box justify="center" alignContent="center"> 
+          
+          <ResponsiveContext.Consumer>
+          {/* {size =>
+            size === 'small' ? (
+              <Image src="./impact_oriented_minting_small.png" 
+              width="262px" 
+              height="150px"
+              margin="20px">
+            </Image>
+            ) : (
+              <Image src="./impact_oriented_minting_large.png" 
+              width="525px" 
+              height="300px"
+              margin="60px">
+               </Image>
+            )
+          } */}
+
+          {size =>
+            size === 'small' ? (
+              <Image src="./impact_oriented_minting_small.png" 
+              width="390px" 
+              height="320px"
+              margin="20px">
+            </Image>
+            ) : (
+              <Image src="./impact_oriented_minting_large.png" 
+              width="615px" 
+              height="480px"
+              margin="40px">
+               </Image>
+            )
+          }
+        </ResponsiveContext.Consumer>
+
+          </Box>
+
+          
 
 
           
