@@ -1,8 +1,15 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Button, Box, Grommet, Image, Anchor, Paragraph, ResponsiveContext, Text } from 'grommet';
-import { CaretDown, Directions } from 'grommet-icons';
+import { CaretDown, CaretUp, Directions } from 'grommet-icons';
 import React from 'react';
+// import { Router } from "react-router";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 const theme = {
   global: {
@@ -14,18 +21,37 @@ const theme = {
 };
 
 
-const ButtonWithChildren = props => (
-  <Button hoverIndicator="orange" onClick={() => {}} {...props}>
+const MetamaskConnectButton = props => (
+  <Button hoverIndicator="red" onClick={() => {}} {...props}>
     {({ disabled, hover, focus }) => (
       <Box pad="small" direction="row" align="center" gap="small">
    
         {focus ? (
-          <Text>opening metamask..</Text>
+          <Text>connecting metamask..</Text>
         ) : (
           <>
-          <Image src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T916A2PA3092PT17X268Y8D1017578759FS4082CxFFFFFF/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/metamask-fox-outline-white-mens-premium-tank.jpg"
-                margin="6px" width="48x" height="48px"/>
-         <Text margin="4px" color={disabled}>connect your wallet</Text>
+          <Image src="https://i.imgur.com/zcBpfGM.png"
+                margin="4px" width="32x" height="32px"/>
+         <Text margin="8px" color={disabled}>connect</Text>
+        </>
+        )}
+      </Box>
+    )}
+  </Button>
+);
+
+const DiscordButton = props => (
+  <Button hoverIndicator="#2C2F33" onClick={() => {}} {...props}>
+    {({ disabled, hover, focus }) => (
+      <Box pad="small" direction="row" align="center" gap="small">
+   
+        {focus ? (
+          <Text>opening discord..</Text>
+        ) : (
+          <>
+          <Image src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
+                 width="42x" height="42px"/>
+         <Text margin="6px" color={disabled}>join discord</Text>
         </>
         )}
       </Box>
@@ -47,22 +73,14 @@ const FooterSection = () => (
     //flex={true}
     background='black'>
 
-<   Anchor 
-            href="https://github.com/stateful-art"
-            target="_blank"
-            color="white"
-            size="small">code</Anchor> | 
-    <Anchor 
-            href="#"
-            target="_blank"
-            color="white"
-            size="small">manifesto</Anchor> | 
-            
+{/* 
     <Anchor href="#"
-            target="_blank"
-            color="white"
-            size="small"
-            >blog</Anchor>
+                target="_blank"
+                color="white">paper</Anchor>|
+  */}
+    <Anchor href="#"
+                target="_blank"
+                color="white">manifest0</Anchor>
   </Box>
 
   <Box
@@ -74,15 +92,13 @@ const FooterSection = () => (
 
     //flex={true}
     background='black'>
-    <Anchor href="#"
+    <Anchor href="https://github.com/stateful-art"
             target="_blank"
-            color="white"
-            size="small">short paper</Anchor> | 
+            color="white">code </Anchor> | 
 
-    <Anchor href="#"
+    <Anchor href="https://miro.com/app/board/o9J_l3gy0-U=/?invite_link_id=475666759031"
             target="_blank"
-            color="white"
-            size="small">long paper</Anchor>
+            color="white">workspace</Anchor>
  
     
 
@@ -90,7 +106,7 @@ const FooterSection = () => (
   </Box>
 
 
-  <Box align="center" justify="center" margin="20p">
+  <Box align="center" justify="center" margin="30p">
   <Directions color="red"/>
   <Text size="small"> © all rights left </Text>
   </Box>
@@ -114,7 +130,7 @@ function App() {
               <Image src="./stateful-art-top.png" 
               width="262px" 
               height="150px"
-              margin="60px">
+              margin="20px">
             </Image>
             ) : (
               <Image src="./stateful-art-top.png" 
@@ -126,33 +142,106 @@ function App() {
           }
         </ResponsiveContext.Consumer>
 
-      <Box> <CaretDown color="yellow"/></Box>
-        
-      <Paragraph>
-       <Anchor 
-            href="#"
-            // target="_blank"
-            color="white">
-          building a decentralized future: 
-          <br></br> 
-          the revolution will be minted.
+  
+        <Box align="center" alignContent="center" justify="center">
+          <Paragraph>
+              a 
+          </Paragraph> 
+          <Paragraph>
+             metaverse   
+          </Paragraph> 
+          <Paragraph>
+           for the future.
+          </Paragraph> 
+          
+          <Box justify="center" alignContent="center"> 
+             <CaretDown color="green"/>
+          </Box>
 
-          </Anchor>
-      </Paragraph>  
+          <Box justify="center" alignContent="center" align> 
+          <Paragraph>
+              stateful.art aims to create a context, <br></br>
+              where cities have "multi-lateral autonomy" <br></br>
+              and empowerment
+              
+              for a decentralized,  <br></br>
+              unstoppable planetary solidarity.
+          </Paragraph>
+          <Box justify="center" alignContent="center"> 
 
+          <Paragraph>
+              NFT royalties of an artwork, <br></br> 
+              partially dedicated to empower <br></br>
+              cities, activist and artistic movements.
+          </Paragraph>
+          </Box>
+          </Box>
+
+          <Box justify="center" alignContent="center"> 
+          
+          <Paragraph>
+          mutual funds are accumulated <br></br>
+          in three types of DAOs:
+          </Paragraph>
+          </Box>
+
+          <Box direction="row" justify="between" >
+          <Paragraph>
+          ------<br></br>
+          cities<br></br>
+          ------
+          </Paragraph>
+          <Paragraph>
+          ----------<br></br>
+           {"<>"}causes{"<>"}<br></br>
+          ----------
+          </Paragraph>
+
+          <Paragraph>          
+          -------<br></br>
+          genres<br></br>
+          -------
+          </Paragraph>
+
+          </Box>
+
+
+          
+{/*          
+
+          <Paragraph>
+            Roadmap: <br></br>
+            -------
+          </Paragraph> */}
     
-     </Box>
+          <Box justify="center" alignContent="center"> 
+        <CaretUp color="red"/>
+      </Box>
+              <Paragraph>        
+                the revolution will be minted.
+              </Paragraph>
+
+              <Paragraph>        
+                <DiscordButton/>
+              </Paragraph>
+      
+      
+      
+        </Box>
+       </Box>
         <Box>.</Box>
         <Box>.</Box>
       
-        <Paragraph>
-            <ButtonWithChildren/>
+        <Paragraph>        
+            <MetamaskConnectButton/>
         </Paragraph>
         <Box>.</Box>
         <Box>.</Box>
-        <Box>.</Box>
         <Box> <CaretDown color="yellow"/></Box>
+        <Box>.</Box>
 
+        <Box>.</Box>
+        <Box>.</Box>
         <FooterSection/>
      </Box>
 
@@ -161,5 +250,15 @@ function App() {
     </Grommet>
   );
 }
+
+
+// function Manifest() {
+//   return <h2>manifest content here</h2>;
+// }
+
+// function Roadmap() {
+//   return <h2>roadmap content here </h2>;
+// }
+
 
 export default App;
