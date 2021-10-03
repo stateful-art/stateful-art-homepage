@@ -26,29 +26,29 @@ const theme = {
   },
 };
 
-const MetamaskConnectButton = (props) => (
-  <Button hoverIndicator="red" onClick={() => {}} {...props}>
-    {({ disabled, hover, focus }) => (
-      <Box pad="small" direction="row" align="center" gap="small">
-        {focus ? (
-          <Text>connecting metamask..</Text>
-        ) : (
-          <>
-            <Image
-              src="https://i.imgur.com/zcBpfGM.png"
-              margin="4px"
-              width="32x"
-              height="32px"
-            />
-            <Text margin="8px" color={disabled}>
-              connect
-            </Text>
-          </>
-        )}
-      </Box>
-    )}
-  </Button>
-);
+// const MetamaskConnectButton = (props) => (
+//   <Button hoverIndicator="red" onClick={() => {}} {...props}>
+//     {({ disabled, hover, focus }) => (
+//       <Box pad="small" direction="row" align="center" gap="small">
+//         {focus ? (
+//           <Text>connecting metamask..</Text>
+//         ) : (
+//           <>
+//             <Image
+//               src="https://i.imgur.com/zcBpfGM.png"
+//               margin="4px"
+//               width="32x"
+//               height="32px"
+//             />
+//             <Text margin="8px" color={disabled}>
+//               connect
+//             </Text>
+//           </>
+//         )}
+//       </Box>
+//     )}
+//   </Button>
+// );
 
 const DiscordButton = (props) => (
   <Button hoverIndicator="#2C2F33" onClick={() => {}} {...props}>
