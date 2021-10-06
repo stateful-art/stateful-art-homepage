@@ -498,8 +498,8 @@ function App() {
               create a context;<br></br>
               <br></br>
               where artists can include cities to build mutual empowerment and
-              autonomy zones that reflect on their artistic and activist
-              movements. or positive impact and future exchanges.
+              autonomy zones that reflecting on localities' artistic and activist
+              movements. For positive impact and future exchanges.
             </Paragraph>
           </Box>
 
