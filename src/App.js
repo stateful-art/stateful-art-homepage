@@ -79,8 +79,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                With a focus on voting on the cities for art residencies that'd
-                be funded with those resources.
+                With a focus on voting for artists that are proposed within genres of the cities.
               </Text>
             </Paragraph>
 
@@ -211,21 +210,20 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                initial implementation will cover dedicating resources to
-                multiple cities {"&"} genres.
+                initial implementation will cover dedicating a partial resources to
+                multiple artistic movement community per-city.
               </Text>
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                With a focus on voting on the cities for art residencies that'd
+                a focus on voting for art residencies that'd
                 be funded with those resources.
               </Text>
             </Paragraph>
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                Then will introduce the impact-oriented minting form including
-                causes.
+                Later will introduce activist movements, aka. causes of cities once royalty splitting mechanism is in place.
               </Text>
             </Paragraph>
 
