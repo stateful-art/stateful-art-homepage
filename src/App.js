@@ -373,7 +373,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 // );
 
 const DiscordButton = (props) => (
-  <Button hoverIndicator="#2C2F33" onClick={() => {}} {...props}>
+  <Button hoverIndicator="#2C2F33" onClick={() => {}} {...props} margin="20px">
     {({ disabled, hover, focus }) => (
       <Box pad="small" align="center" gap="small">
         <>
@@ -511,6 +511,40 @@ function App() {
             </Paragraph>
           </Box>
 
+ <DiscordButton />
+
+ <Box direction="column">
+      <Box
+        tag="footer"
+        direction="row"
+        justify="center"
+        pad="small"
+        gap="small"
+        //flex={true}
+        background="black"
+      >
+        {/* 
+    <Anchor href="#"
+                target="_blank"
+                color="white">paper</Anchor>|
+  */}
+  <Text size="middle">$START</Text>
+   <br></br>at
+        <Anchor
+          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
+          target="_blank"
+          color="white"
+        >
+          <Image src="habitat_logo.png"
+          width="80px"
+          height="24px"></Image>
+        </Anchor>
+      </Box>
+    </Box>
+
+            <Box justify="center" alignContent="center">
+              <CaretUp color="red" />
+            </Box>
           <Box align="center" alignContent="center" justify="center">
             <Image
               src="./cities_bridged_by_genres.png"
@@ -556,10 +590,7 @@ function App() {
             ></Image>
 
             <ParticipantsAccordion />
-            <DiscordButton />
-
-            <br></br>
-
+           
             {/* <Box justify="center" alignContent="center">
               <ResponsiveContext.Consumer>
             
@@ -583,9 +614,6 @@ function App() {
               </ResponsiveContext.Consumer>
             </Box> */}
 
-            <Box justify="center" alignContent="center">
-              <CaretUp color="red" />
-            </Box>
             {/* <Box justify="center" alignContent="center">
               <CaretDown color="red" />
             </Box>
