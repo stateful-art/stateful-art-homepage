@@ -1,16 +1,19 @@
 // import logo from './logo.svg';
 // import './App.css';
 import {
-  Button,
-  Box,
-  Grommet,
-  Image,
+  Accordion, 
+  AccordionPanel,
   Anchor,
+  Box,
+  Button,
+  Grommet,
+  Heading,
+  Image,
   Paragraph,
   ResponsiveContext,
   Text,
 } from "grommet";
-import { CaretDown, CaretUp, Directions } from "grommet-icons";
+import { AddCircle, CaretDown, CaretUp, Directions, SubtractCircle } from "grommet-icons";
 import React from "react";
 // import { Router } from "react-router";
 // import {
@@ -25,6 +28,157 @@ const theme = {
     font: { family: "Inconsolata", size: "18px", height: "20px" },
   },
 };
+
+const ParticipantsAccordionTheme = {
+  
+  accordion: {
+    heading: {
+      level: 3,
+      margin: { vertical: '20px', horizontal: '24px' },
+    },
+    hover: {
+      heading: {
+        color: 'accent-2',
+      },
+    },
+    icons: {
+      collapse: SubtractCircle,
+      expand: AddCircle,
+      color: 'orange',
+    },
+    border: undefined,
+    panel: {
+      // border: {
+      //   side: 'horizontal',
+      //   size: 'medium',
+      //   color: '#DADADA',
+      //   style: 'dotted',
+      // },
+    },
+  },
+};
+
+
+const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
+  <Grommet theme={ParticipantsAccordionTheme}>
+
+
+<ResponsiveContext.Consumer>
+            {(size) =>
+              size === "small" ? (
+            
+<Box {...rest} pad="large" align="center" justify="center">
+      <Accordion animate={animate} multiple>
+
+      <AccordionPanel
+                    margin="20px"
+                    label={<Text size="medium">artists mint with a meta-level hope</Text>}
+                  >
+                    <Box background="#9a3c3c" height="middle" width="middle" margin="20px">
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text > 
+                                Artists initiate the scope of impact. 
+                          </Text>
+                      </Paragraph>
+                
+                    <Image
+                      src="./a_pseudo_banksy_mint.png"
+                      width="460px"
+                      height="384px"
+                      margin="20px">
+                    </Image>
+
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text > NFT royalties of an artwork, partially dedicated to empower
+                              cities, through combinations of causes and genres. 
+                        </Text>
+                      </Paragraph>
+                    </Box>
+                  </AccordionPanel>
+
+        
+      </Accordion>
+    </Box> 
+    ) : (
+                <Box {...rest} pad="large" align="center" justify="center">
+                
+                <Heading size="small">roadmap:</Heading>
+
+                <Paragraph alignSelf="center" margin="12px">
+                  <Text>initial implementation will cover dedicating resources to multiple cities {"&"} genres.</Text>
+                </Paragraph>
+                <Paragraph alignSelf="center" margin="12px">
+                  <Text>With a focus on voting on the cities for art residencies that'd be funded with those resources.</Text>
+                </Paragraph>
+
+                <Paragraph alignSelf="center" margin="12px">
+                  <Text>Then will introduce the impact-oriented minting form including causes.</Text>
+                </Paragraph>
+
+              
+                <Accordion animate={animate} multiple>
+                  <AccordionPanel
+                    margin="20px"
+                    label={<Text padding="100px" size="medium">artists mint</Text>}
+                  >
+                    <Box background="#9a3c3c" height="middle" width="large" margin="20px">
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text > 
+                                Artists initiate the scope of impact. 
+                          </Text>
+                      </Paragraph>
+                
+                    <Image
+                      src="./a_pseudo_banksy_mint.png"
+                      width="692px"
+                      height="576px"
+                      margin="32px">
+                    </Image>
+
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text> NFT royalties of an artwork, partially dedicated to empower
+                              cities, through combinations of causes and genres. 
+                        </Text>
+                      </Paragraph>
+                    </Box>
+                  </AccordionPanel>
+
+                  <AccordionPanel
+                    margin="20px"
+                    label={<Text size="medium">audiences  </Text>}
+                  >
+                    <Box background="#9a3c3c" height="middle" width="large" margin="20px">
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text > 
+                                Audiences, that are residents of those cities; vote on which projects will get funding, as an art redidency or impact projects.
+                          </Text>
+                      </Paragraph>
+                
+                  
+
+                      <Paragraph alignSelf="center" margin="12px">
+                        <Text> NFT royalties of an artwork, partially dedicated to empower
+                              cities, through combinations of causes and genres. 
+                        </Text>
+                      </Paragraph>
+                    </Box>
+                  </AccordionPanel>
+          
+                  
+                </Accordion>
+              </Box>
+
+
+
+              )
+            }
+          </ResponsiveContext.Consumer>
+
+
+    
+  </Grommet>
+);
+
 
 // const MetamaskConnectButton = (props) => (
 //   <Button hoverIndicator="red" onClick={() => {}} {...props}>
@@ -154,71 +308,92 @@ function App() {
             }
           </ResponsiveContext.Consumer>
 
-          <Box align="center" alignContent="center" justify="center">
-            <Paragraph>a</Paragraph>
-            <Paragraph>metaverse</Paragraph>
-            <Paragraph>for the future.</Paragraph>
+            <Box justify="center" alignContent="center">
+              <Paragraph alignSelf="center">
+                stateful.art is an open-sourced design-thinking 
+                project, aiming to create a context;<br></br>
+                 <br></br>
+                 where artists can include cities to build mutual empowerment and autonomy zones that reflect on their 
+                 artistic and activist movements.
+                or positive impact and future exchanges.
+              </Paragraph>
+              
+            </Box>
 
             <Box justify="center" alignContent="center">
+              <Paragraph>
+               
+                we will start with connecting artistic movements and genres in multiple cities, 
+                <br></br>  art residencies of the future.
+              </Paragraph>
+            </Box>
+            
+
+          <Box align="center" alignContent="center" justify="center">
+
+
+
+          <Image
+                  src="./cities_bridged_by_genres.png"
+                  width="360px"
+                  height="300px"
+                  margin="20px"
+                ></Image>
+
+          <Box justify="center" alignContent="center">
               <CaretDown color="green" />
             </Box>
 
             <Box direction="row" justify="between">
               <Paragraph>
                 ------<br></br>
-                cities<br></br>
+                genres
+                <br></br>
                 ------
               </Paragraph>
               <Paragraph>
                 ----------<br></br>
-                {"<>"}causes{"<>"}
+                {"<>"}cities{"<>"}
                 <br></br>
                 ----------
               </Paragraph>
 
               <Paragraph>
                 -------<br></br>
-                genres<br></br>
+                causes
+                <br></br>
                 -------
               </Paragraph>
             </Box>
             <Box justify="center" alignContent="center">
               <CaretUp color="red" />
             </Box>
-            <Box justify="center" alignContent="center" align>
-              <Paragraph>
-                stateful.art aims to create a context, <br></br>
-                where artists can include cities to build <br></br>
-                "empowerment and autonomy" zones for a decentralized,
-                unstoppable planetary solidarity.
-              </Paragraph>
-            </Box>
 
-            <Box justify="center" alignContent="center">
+<Image
+                  src="./cities_bridged_by_causes.png"
+                  width="360px"
+                  height="300px"
+                  margin="20px"
+                ></Image>
+
+        
+            
+
+            <ParticipantsAccordion/>
+            <DiscordButton />
+
+              <br></br>
+            
+            {/* <Box justify="center" alignContent="center">
               <ResponsiveContext.Consumer>
-                {/* {size =>
-            size === 'small' ? (
-              <Image src="./impact_oriented_minting_small.png" 
-              width="262px" 
-              height="150px"
-              margin="20px">
-            </Image>
-            ) : (
-              <Image src="./impact_oriented_minting_large.png" 
-              width="525px" 
-              height="300px"
-              margin="60px">
-               </Image>
-            )
-          } */}
-
+            
                 {(size) =>
                   size === "small" ? (
                     <Image
                       src="./impact_oriented_minting_small.png"
-                      width="360px"
-                      height="320px"
-                      margin="20px"
+                      width="400x"
+                      height="360px"
+                      margin="10px"
                     ></Image>
                   ) : (
                     <Image
@@ -230,44 +405,51 @@ function App() {
                   )
                 }
               </ResponsiveContext.Consumer>
-            </Box>
+            </Box> */}
 
-            {/*          
-
-          <Paragraph>
-            Roadmap: <br></br>
-            -------
-          </Paragraph> */}
-
-            <Box justify="center" alignContent="center">
-              <Paragraph>
-                NFT royalties of an artwork, partially dedicated to empower
-                cities, through combinations of activist and artistic movements.
-              </Paragraph>
-            </Box>
+        
 
             <Box justify="center" alignContent="center">
               <CaretUp color="red" />
             </Box>
-            <Paragraph>the revolution will be minted.</Paragraph>
-
-            <Paragraph>
-              <DiscordButton />
-            </Paragraph>
+            <Paragraph> the revolution will be minted </Paragraph>
+            {/* <Box justify="center" alignContent="center">
+              <CaretDown color="red" />
+            </Box>
+            <Paragraph>a</Paragraph>
+            <Paragraph>metaverse</Paragraph>
+            <Paragraph>for the future.</Paragraph>
+ */}
+{/* 
+<ResponsiveContext.Consumer>
+            {(size) =>
+              size === "small" ? (
+                <Image
+                  src="./welcome_to_metaverse_vision.png"
+                  width="400px"
+                  height="360px"
+                  margin="20px"
+                ></Image>
+              ) : (
+                <Image
+                  src="./welcome_to_metaverse_vision.png"
+                  width="540px"
+                  height="480px"
+                  margin="60px"
+                ></Image>
+              )
+            }
+          </ResponsiveContext.Consumer>             */}
           </Box>
         </Box>
 
         <Paragraph>{/* <MetamaskConnectButton/> */}</Paragraph>
-        <Box>.</Box>
-        <Box>.</Box>
+      
         <Box>
           {" "}
           <CaretDown color="yellow" />
         </Box>
-        <Box>.</Box>
-
-        <Box>.</Box>
-        <Box>.</Box>
+      
         <FooterSection />
       </Box>
     </Grommet>
