@@ -119,9 +119,9 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 <Accordion animate={animate} multiple>
                   <AccordionPanel
                     margin="20px"
-                    label={<Text padding="100px" size="medium">artists mint</Text>}
+                    label={<Text size="medium">artists mint artworks</Text>}
                   >
-                    <Box background="#9a3c3c" height="middle" width="large" margin="20px">
+                    <Box background="#9a3c3c" height="middle" width="large">
                       <Paragraph alignSelf="center" margin="12px">
                         <Text > 
                                 Artists initiate the scope of impact. 
@@ -145,24 +145,68 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
                   <AccordionPanel
                     margin="20px"
-                    label={<Text size="medium">audiences  </Text>}
+                    label={<Text size="medium"> {"&"} create topics for genres</Text>}
                   >
-                    <Box background="#9a3c3c" height="middle" width="large" margin="20px">
+                    <Box background="#9a3c3c" height="middle" width="large">
                       <Paragraph alignSelf="center" margin="12px">
                         <Text > 
-                                Audiences, that are residents of those cities; vote on which projects will get funding, as an art redidency or impact projects.
+                                stateful.art treasury on 0xhabitat.org enables artists to initiate artistic movements as topics.
                           </Text>
+                          <Image
+                      src="./create_new_community_in_habitat.png"
+                      width="380px"
+                      height="400px"
+                      margin="20px">
+                    </Image>
                       </Paragraph>
                 
-                  
+                   
 
                       <Paragraph alignSelf="center" margin="12px">
-                        <Text> NFT royalties of an artwork, partially dedicated to empower
-                              cities, through combinations of causes and genres. 
+                        <Text> They can also include communication channels for those communities. 
                         </Text>
                       </Paragraph>
                     </Box>
                   </AccordionPanel>
+
+                  <AccordionPanel
+                    margin="20px"
+                    label={<Text size="medium">audiences vote for funding art residencies</Text>}
+                  >
+                    <Box background="#9a3c3c" alignSelf="center" height="middle" width="large" margin="20px">
+                      <Paragraph justify="center" margin="12px">
+                        <Text > 
+                                Audiences, that are as well residents of those cities; vote on which artistic projects will get funding and be able to propose artists and new projects.
+                          </Text>
+                          <Text > 
+                          When there is an enough fund collected for those cities, proposed and voted artists will be entitled for a financial and community support for a future artist residency.
+                          </Text>
+                      </Paragraph>
+                
+                      <Image
+                      src="./jazz_elise_reggae_hamburg.png"
+                      width="692px"
+                      height="576px"
+                      margin="32px">
+                    </Image>
+                  
+                    </Box>
+                  </AccordionPanel>
+
+                  {/* <AccordionPanel
+                    margin="20px"
+                    label={<Text size="medium">collectors help making positive impact</Text>}
+                  >
+                    <Box background="#9a3c3c" alignSelf="center" height="middle" width="medium" margin="20px">
+                      <Paragraph justify="center" margin="12px">
+                        <Text > 
+                                Collectors will be included on artistic movements of those cities and they'll be able to vote on artist residencies too.
+                          </Text>
+                      </Paragraph>
+                
+                  
+                    </Box>
+                  </AccordionPanel> */}
           
                   
                 </Accordion>
@@ -207,17 +251,21 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 const DiscordButton = (props) => (
   <Button hoverIndicator="#2C2F33" onClick={() => {}} {...props}>
     {({ disabled, hover, focus }) => (
-      <Box pad="small" direction="row" align="center" gap="small">
+      <Box pad="small" align="center" gap="small">
         <>
-          <Image
+         
+          <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
+         
+         <Box direction="row">  
+             <Image
             src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
             width="42x"
             height="42px"
-          />
-          <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
-            <Text margin="6px" color={disabled}>
+          /><Text  margin="6px" color={disabled}>
+             
               join discord
             </Text>
+            </Box>
           </Anchor>
         </>
       </Box>
@@ -329,7 +377,7 @@ function App() {
               <Paragraph>
                
                 we will start with connecting artistic movements and genres in multiple cities, 
-                <br></br>  art residencies of the future.
+                enabling community-supported, transparent and cooperative art residencies of the future.
               </Paragraph>
             </Box>
             
