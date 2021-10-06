@@ -450,10 +450,18 @@ const FooterSection = () => (
           {" "}
           workspace
         </Anchor>
+
+        {"<>"}
+        <Anchor
+          href="https://twitter.com/StatefulArt"
+          target="_blank"
+          color="white"
+        > {" "}twitter
+        </Anchor>
       </Box>
 
       <Box align="center" justify="center" margin="30p">
-        <Text size="medium"> ~ contact@stateful.art ~</Text>
+        <Text size="medium" margin="8px"> ~ contact@stateful.art ~</Text>
       </Box>
       <Box align="center" justify="center" margin="30p">
         <Anchor href="https://www.youtube.com/watch?v=QnJFhuOWgXg" target="_blank">
@@ -498,8 +506,8 @@ function App() {
               create a context;<br></br>
               <br></br>
               where artists can include cities to build mutual empowerment and
-              autonomy zones that reflecting on localities' artistic and activist
-              movements. For positive impact and future exchanges.
+              autonomy zones that are reflecting to localities' artistic and activist
+              scenes. For positive impact and future exchanges.
             </Paragraph>
           </Box>
 
@@ -558,25 +566,7 @@ function App() {
             </Box>
 
             <Box direction="row" justify="between">
-              <Paragraph>
-                ------<br></br>
-                genres
-                <br></br>
-                ------
-              </Paragraph>
-              <Paragraph>
-                ----------<br></br>
-                {"<>"}cities{"<>"}
-                <br></br>
-                ----------
-              </Paragraph>
-
-              <Paragraph>
-                -------<br></br>
-                causes
-                <br></br>
-                -------
-              </Paragraph>
+             
             </Box>
             <Box justify="center" alignContent="center">
               <CaretUp color="red" />
@@ -588,6 +578,10 @@ function App() {
               height="300px"
               margin="20px"
             ></Image>
+
+            <Box justify="center" alignContent="center">
+              <CaretDown color="green" />
+            </Box>
 
             <ParticipantsAccordion />
            
