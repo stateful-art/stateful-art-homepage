@@ -414,12 +414,15 @@ const FooterSection = () => (
                 target="_blank"
                 color="white">paper</Anchor>|
   */}
-        <Anchor
+  $START <br></br>
+        at <Anchor
           href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
           target="_blank"
           color="white"
         >
-          @ habitat
+          <Image src="habitat_logo.png"
+          width="80px"
+          height="24px"></Image>
         </Anchor>
       </Box>
 
