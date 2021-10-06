@@ -458,7 +458,9 @@ const FooterSection = () => (
         <Text size="medium"> ~ contact@stateful.art ~</Text>
       </Box>
       <Box align="center" justify="center" margin="30p">
-        <Paragraph> the revolution will be minted </Paragraph>
+        <Anchor href="https://www.youtube.com/watch?v=QnJFhuOWgXg" target="_blank">
+          <Paragraph> the revolution will be minted</Paragraph>
+        </Anchor>
         <Directions color="red" />
 
         <Text size="small"> © all rights left </Text>
