@@ -242,8 +242,8 @@ const FooterSection = () => (
                 target="_blank"
                 color="white">paper</Anchor>|
   */}
-        <Anchor href="#" target="_blank" color="white">
-          manifest0
+        <Anchor href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58" target="_blank" color="white">
+          @ habitat
         </Anchor>
       </Box>
 
@@ -275,8 +275,13 @@ const FooterSection = () => (
         </Anchor>
       </Box>
 
+   <Box align="center" justify="center" margin="30p">
+        <Text size="medium"> ~ contact@stateful.art ~</Text>
+      </Box>
       <Box align="center" justify="center" margin="30p">
+        <Paragraph> the revolution will be minted </Paragraph>
         <Directions color="red" />
+
         <Text size="small"> © all rights left </Text>
       </Box>
     </Box>
@@ -412,7 +417,6 @@ function App() {
             <Box justify="center" alignContent="center">
               <CaretUp color="red" />
             </Box>
-            <Paragraph> the revolution will be minted </Paragraph>
             {/* <Box justify="center" alignContent="center">
               <CaretDown color="red" />
             </Box>
@@ -444,11 +448,6 @@ function App() {
         </Box>
 
         <Paragraph>{/* <MetamaskConnectButton/> */}</Paragraph>
-      
-        <Box>
-          {" "}
-          <CaretDown color="yellow" />
-        </Box>
       
         <FooterSection />
       </Box>
