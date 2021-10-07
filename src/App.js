@@ -210,8 +210,8 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                initial implementation will cover dedicating a partial resources to
-                multiple artistic movement community per-city.
+                initial implementation will cover dedicating partial resources to
+                multiple artistic movement community, per-city.
               </Text>
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
