@@ -263,7 +263,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 <Box background="#9a3c3c" height="middle" width="large">
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>
-                      stateful.art treasury on 0xhabitat.org enables artists to
+                      stateful.art community on 0xhabitat.org, extended via city treasures; enables artists to
                       initiate artistic movements as topics.
                     </Text>
                     <Image
