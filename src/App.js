@@ -223,7 +223,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                Later will introduce activist movements, aka. causes of cities once royalty splitting mechanism is in place.
+                later will introduce local treasuries for activist movements, aka. causes of cities once royalty splitting mechanism is in place.
               </Text>
             </Paragraph>
 
