@@ -16,13 +16,14 @@ import {
   Paragraph,
   ResponsiveContext,
   Text,
+  Tip
 } from "grommet";
 import {
   AddCircle,
+  Attraction,
   CaretDown,
   CaretUp,
   Directions,
-  Attraction,
   SubtractCircle,
 } from "grommet-icons";
 import React from "react";
@@ -61,12 +62,34 @@ const ParticipantsAccordionTheme = {
   },
 };
 
+
+
 const GenreCardList = () => {
   return (
     <>
+
       <Box direction="column">
         <Box direction="row">
 
+        <Tip
+        plain
+        content={
+          <Box
+            pad="small"
+            gap="small"
+            width={{ max: 'small' }}
+            round="small"
+            background="background-front"
+            responsive={false}
+          >
+             <Text weight="bold">city treasuries</Text>
+            <Text size="small">
+              berlin, hamburg, istanbul, los angeles
+            </Text>
+          </Box>
+        }
+        dropProps={{ align: { left: 'right' } }}
+      >
         <Card height="small" margin="small" width="small" background="light-1">
             <CardHeader  alignSelf="center" pad="small" background="light-1">$HIPHOP</CardHeader>
             <CardBody pad="small" background="orange">
@@ -94,7 +117,27 @@ const GenreCardList = () => {
 
             </CardFooter>
           </Card>
+      </Tip>
 
+      <Tip
+        plain
+        content={
+          <Box
+            pad="small"
+            gap="small"
+            width={{ max: 'small' }}
+            round="small"
+            background="background-front"
+            responsive={false}
+          >
+            <Text weight="bold">city treasuries</Text>
+            <Text size="small">
+              berlin, hamburg, istanbul, los angeles
+            </Text>
+          </Box>
+        }
+        dropProps={{ align: { left: 'right' } }}
+      >
           <Card height="small" margin="small" width="small" background="light-1">
             <CardHeader alignSelf="center" pad="small" background="light-1" color="white">$ROCK</CardHeader>
             <CardBody pad="small" background="purple">
@@ -121,12 +164,32 @@ const GenreCardList = () => {
                                   <Text>@ 4 cities</Text> */}
               @ 4 cities<Attraction/> 
               </CardFooter>
-          </Card>                          
-         
+          </Card> 
+        </Tip>                         
         </Box>
+
 
         <Box direction="row">
 
+        <Tip
+        plain
+        content={
+          <Box
+            pad="small"
+            gap="small"
+            width={{ max: 'small' }}
+            round="small"
+            background="background-front"
+            responsive={false}
+          >
+            <Text weight="bold">city treasuries</Text>
+            <Text size="small">
+              there exists no city-level community for electronic music on stateful.art yet.
+            </Text>
+          </Box>
+        }
+        dropProps={{ align: { left: 'right' } }}
+      >
         <Card height="small" margin="small" width="small" background="light-1">
             <CardHeader alignSelf="center" pad="small">$ELECTRO</CardHeader>
             <CardBody pad="small" background="black">
@@ -155,7 +218,27 @@ const GenreCardList = () => {
               <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
             </CardFooter>
           </Card>
+        </Tip>
 
+        <Tip
+        plain
+        content={
+          <Box
+            pad="small"
+            gap="small"
+            width={{ max: 'small' }}
+            round="small"
+            background="background-front"
+            responsive={false}
+          >
+            <Text weight="bold">city treasuries</Text>
+            <Text size="small">
+            there exists no city-level community for reggae music on stateful.art yet.
+            </Text>
+          </Box>
+        }
+        dropProps={{ align: { left: 'right' } }}
+      >
           <Card height="small" margin="small" width="small" background="light-1">
             <CardHeader alignSelf="center" pad="small" background="light-1">
               $REGGAE
@@ -183,7 +266,7 @@ const GenreCardList = () => {
               <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
             </CardFooter>
           </Card>
- 
+        </Tip>
         </Box>
       </Box>
     </>
@@ -364,22 +447,21 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 <Box background="#9a3c3c" height="middle" width="large">
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>Artists initiate the scope of impact.</Text>
-                  </Paragraph>
-
-                  <Image
-                    src="./a_pseudo_banksy_mint.png"
-                    width="692px"
-                    height="576px"
-                    margin="32px"
-                  ></Image>
-
-                  <Paragraph alignSelf="center" margin="12px">
                     <Text>
                       {" "}
                       NFT royalties of an artwork, partially dedicated to
                       empower cities, through combinations of causes and genres.
                     </Text>
                   </Paragraph>
+
+                  <Image
+                    src="./a_pseudo_banksy_mint.png"
+                    width="582px"
+                    height="576px"
+                    margin="22px"
+                    alignSelf="center"
+                  ></Image>
+
                 </Box>
               </AccordionPanel>
 
@@ -393,7 +475,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>
                       stateful.art community on 0xhabitat.org, extended via city
-                      treasures; enables artists to initiate artistic movements
+                      treasuries; enables artists to initiate artistic movements
                       as topics.
                     </Text>
                     <Image
