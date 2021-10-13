@@ -184,7 +184,7 @@ const GenreCardList = () => {
           >
             <Text weight="bold">city treasuries</Text>
             <Text size="small">
-              there exists no city-level community for electronic music on stateful.art yet.
+              currently electronic music have no city-level treasury.
             </Text>
           </Box>
         }
@@ -233,7 +233,7 @@ const GenreCardList = () => {
           >
             <Text weight="bold">city treasuries</Text>
             <Text size="small">
-            there exists no city-level community for reggae music on stateful.art yet.
+            currently electronic music have no city-level treasury.
             </Text>
           </Box>
         }
