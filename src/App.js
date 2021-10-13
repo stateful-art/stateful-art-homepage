@@ -6,6 +6,10 @@ import {
   Anchor,
   Box,
   Button,
+  Card,
+  CardBody,
+  CardHeader,
+  CardFooter,
   Grommet,
   Heading,
   Image,
@@ -18,16 +22,10 @@ import {
   CaretDown,
   CaretUp,
   Directions,
+  Attraction,
   SubtractCircle,
 } from "grommet-icons";
 import React from "react";
-// import { Router } from "react-router";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
 
 const theme = {
   global: {
@@ -63,6 +61,136 @@ const ParticipantsAccordionTheme = {
   },
 };
 
+const GenreCardList = () => {
+  return (
+    <>
+      <Box direction="column">
+        <Box direction="row">
+
+        <Card height="small" margin="small" width="small" background="light-1">
+            <CardHeader  alignSelf="center" pad="small" background="light-1">$HIPHOP</CardHeader>
+            <CardBody pad="small" background="orange">
+              <Anchor
+                    href="https://0xhabitat.org/app/#habitat-community,0xa21629c00a7d9c88ea98673a0b81becd156cfe416920ec6d40b408d1506eb1e4"
+                    target="_blank"
+                    color="white"
+                  >
+                    <Box>
+                      <Image src="./hiphop.png" 
+                      width="120px" height="80px" 
+                          style={{
+                                  marginLeft: "20px", 
+                                  marginRight: "36px",
+                                  marginTop: "12px"
+                                  }}
+                                  >
+                      </Image>
+                    </Box>
+                  </Anchor>
+
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+            @ 4 cities <Attraction/>
+
+            </CardFooter>
+          </Card>
+
+          <Card height="small" margin="small" width="small" background="light-1">
+            <CardHeader alignSelf="center" pad="small" background="light-1" color="white">$ROCK</CardHeader>
+            <CardBody pad="small" background="purple">
+              <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
+                  target="_blank"
+                  color="white"
+                >
+                  <Box>
+                    <Image src="./rock_horizontal.png" 
+                    width="100px" height="60px" 
+                        style={{
+                                marginLeft: "22px", 
+                                marginRight: "36px",
+                                marginTop: "12px"
+                                }}
+                                >
+                    </Image>
+                  </Box>
+                 </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+                                  <Text>@ 4 cities</Text> */}
+              @ 4 cities<Attraction/> 
+              </CardFooter>
+          </Card>                          
+         
+        </Box>
+
+        <Box direction="row">
+
+        <Card height="small" margin="small" width="small" background="light-1">
+            <CardHeader alignSelf="center" pad="small">$ELECTRO</CardHeader>
+            <CardBody pad="small" background="black">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
+                target="_blank"
+                color="white"
+              >
+                <Box>
+                  <Image src="./electronic_music.jpeg" 
+                  width="120px" height="104px" 
+                      style={{
+                              marginLeft: "22px", 
+                              marginRight: "36px",
+                              marginTop: "2px"
+                              }}
+                              >
+                  </Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+            @ 0 cities<Attraction/> 
+
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+
+          <Card height="small" margin="small" width="small" background="light-1">
+            <CardHeader alignSelf="center" pad="small" background="light-1">
+              $REGGAE
+            </CardHeader>
+            <CardBody background="black">
+            <Anchor
+          href="https://0xhabitat.org/app/#habitat-community,0x594080e1603af01cba9155a6fa6899b833c5549d555c89a2e7d578be33495ff3"
+          target="_blank"
+          color="white"
+        >
+          <Box>
+            <Image src="./reggae.jpeg" width="90px" height="76px" 
+                style={{
+                        marginLeft: "48px", 
+                        marginRight: "36px",
+                        marginTop: "20px"
+                        }}></Image>
+          </Box>
+        </Anchor>
+              </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+            @ 0 cities<Attraction/> 
+
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+ 
+        </Box>
+      </Box>
+    </>
+  );
+};
+
+
 const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
   <Grommet theme={ParticipantsAccordionTheme}>
     <ResponsiveContext.Consumer>
@@ -79,7 +207,8 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                With a focus on voting for artists that are proposed within genres of the cities.
+                With a focus on voting for artists that are proposed within
+                genres of the cities.
               </Text>
             </Paragraph>
 
@@ -149,11 +278,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
               <AccordionPanel
                 margin="20px"
-                label={
-                  <Text size="medium">
-                    audiences vote for art residencies
-                  </Text>
-                }
+                label={<Text size="medium">audiences vote via signalling</Text>}
               >
                 <Box
                   background="#9a3c3c"
@@ -164,9 +289,11 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 >
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>
-                       Audiences, that are as well residents of those
-                      cities; vote on which artistic projects will get funding
-                      and be able to propose artists and new projects.
+                      members in those cities, that are as well audiences,
+                      artists and residents of those cities; vote on which
+                      artistic projects will get funding and be able to propose
+                      new artists and projects from other cities and genres to
+                      their communities.
                     </Text>
                   </Paragraph>
 
@@ -210,20 +337,22 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                initial implementation will cover dedicating partial resources to
-                multiple artistic movement community, per-city.
+                initial implementation will cover dedicating partial resources
+                to multiple artistic movement community, per-city.
               </Text>
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                a focus on voting for art residencies that'd
-                be funded with those resources.
+                a focus on voting for art residencies that'd be funded with
+                those resources.
               </Text>
             </Paragraph>
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                later will introduce local treasuries for activist movements, aka. causes of cities once royalty splitting mechanism is in place.
+                later will introduce local treasuries for activist movements,
+                aka. causes of cities once royalty splitting mechanism is in
+                place.
               </Text>
             </Paragraph>
 
@@ -263,8 +392,9 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 <Box background="#9a3c3c" height="middle" width="large">
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>
-                      stateful.art community on 0xhabitat.org, extended via city treasures; enables artists to
-                      initiate artistic movements as topics.
+                      stateful.art community on 0xhabitat.org, extended via city
+                      treasures; enables artists to initiate artistic movements
+                      as topics.
                     </Text>
                     <Image
                       src="./create_new_community_in_habitat.png"
@@ -285,12 +415,8 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
               </AccordionPanel>
 
               <AccordionPanel
-                margin="20px"
-                label={
-                  <Text size="medium">
-                    audiences vote for funding art residencies
-                  </Text>
-                }
+                margin="10px"
+                label={<Text size="medium">audiences vote via signalling</Text>}
               >
                 <Box
                   background="#9a3c3c"
@@ -302,9 +428,10 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                   <Paragraph alignSelf="center" margin="12px">
                     <Text>
                       {" "}
-                       Audiences, that are as well residents of those
-                      cities; vote on which artistic projects will get funding
-                      and be able to propose artists and new projects.
+                      audiences, artists/collectives from those cities propose
+                      new artists and projects to their communities. those
+                      artists and projects might be already residing in those
+                      cities or not.
                     </Text>
                   </Paragraph>
 
@@ -320,7 +447,52 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                       When there is enough fund collected for those cities,
                       proposed and voted artists will be entitled for a
                       financial and community support for a future artist
-                      residency.
+                      residency.{" "}
+                    </Text>
+                  </Paragraph>
+                </Box>
+              </AccordionPanel>
+
+              <AccordionPanel
+                margin="10px"
+                label={
+                  <Text size="medium">and .. community-based curation</Text>
+                }
+              >
+                <Box
+                  background="#9a3c3c"
+                  alignSelf="center"
+                  height="middle"
+                  width="large"
+                  margin="20px"
+                >
+                  <Paragraph alignSelf="center" margin="12px">
+                    <Text>
+                      {" "}
+                      audiences, artists/collectives from those cities propose
+                      new artists and projects to their communities. those
+                      artists and projects might be already residing in those
+                      cities or not.
+                    </Text>
+                  </Paragraph>
+
+                  <Image
+                    src="./jazz_elise_reggae_hamburg.png"
+                    width="692px"
+                    height="576px"
+                    margin="32px"
+                  ></Image>
+
+                  <Paragraph alignSelf="center" margin="12px">
+                    <Text>finally</Text>
+                  </Paragraph>
+
+                  <Paragraph alignSelf="center" margin="12px">
+                    <Text>
+                      When there is enough fund collected for those cities,
+                      proposed and voted artists will be entitled for a
+                      financial and community support for a future artist
+                      residency.{" "}
                     </Text>
                   </Paragraph>
                 </Box>
@@ -412,15 +584,14 @@ const FooterSection = () => (
                 target="_blank"
                 color="white">paper</Anchor>|
   */}
-  $START <br></br>
-        at <Anchor
+        $START <br></br>
+        at{" "}
+        <Anchor
           href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
           target="_blank"
           color="white"
         >
-          <Image src="habitat_logo.png"
-          width="80px"
-          height="24px"></Image>
+          <Image src="habitat_logo.png" width="80px" height="24px"></Image>
         </Anchor>
       </Box>
 
@@ -456,15 +627,23 @@ const FooterSection = () => (
           href="https://twitter.com/StatefulArt"
           target="_blank"
           color="white"
-        > {" "}twitter
+        >
+          {" "}
+          twitter
         </Anchor>
       </Box>
 
       <Box align="center" justify="center" margin="30p">
-        <Text size="medium" margin="8px"> ~ contact@stateful.art ~</Text>
+        <Text size="medium" margin="8px">
+          {" "}
+          contact@stateful.art
+        </Text>
       </Box>
       <Box align="center" justify="center" margin="30p">
-        <Anchor href="https://www.youtube.com/watch?v=QnJFhuOWgXg" target="_blank">
+        <Anchor
+          href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
+          target="_blank"
+        >
           <Paragraph> the revolution will be minted</Paragraph>
         </Anchor>
         <Directions color="red" />
@@ -502,59 +681,72 @@ function App() {
 
           <Box justify="center" alignContent="center">
             <Paragraph alignSelf="center">
-              stateful.art is an open-sourced design-thinking project, aiming to
+              stateful.art is a open-sourced design-thinking project, aiming to
               create a context;<br></br>
               <br></br>
               where artists can include cities to build mutual empowerment and
-              autonomy zones that are reflecting to localities' artistic and activist
-              scenes. For positive impact and future exchanges.
+              autonomy zones that are reflecting to localities' artistic and
+              activist scenes. <br></br>
+              <br></br>
+              project is based on blockchain, to establish a resilient and
+              censorship-free, democratic environment in order to secure the
+              sustainability and diversity of future exchanges.
             </Paragraph>
           </Box>
 
           <Box justify="center" alignContent="center">
             <Paragraph>
-              we will start with connecting artistic movements and genres in
-              multiple cities, enabling community-supported, transparent and
-              cooperative art residencies of the future.
+              we will start with connecting artistic movements in music, aka.
+              genres in multiple cities, enabling community-supported,
+              transparent and hence, an open and cooperative art residencies of
+              the future.
             </Paragraph>
           </Box>
 
- <DiscordButton />
+          <DiscordButton />
 
- <Box direction="column">
-      <Box
-        tag="footer"
-        direction="row"
-        justify="center"
-        pad="small"
-        gap="small"
-        //flex={true}
-        background="black"
-      >
-        {/* 
-    <Anchor href="#"
+          <Box direction="column">
+            <Box
+              tag="footer"
+              direction="row"
+              justify="center"
+              pad="small"
+              gap="small"
+              //flex={true}
+              background="black"
+            >
+         
+              <Box direction="column"  alignSelf="center">
+              <Text size="middle" alignSelf="center">Decentralised</Text>
+              <Text size="middle" alignSelf="center">Autonomous {"&"} Artistic</Text>
+              <Text size="middle" alignSelf="center"></Text>
+              <Text size="middle" alignSelf="center">Organisations</Text>
+            <br></br>
+              <Text alignSelf="center"> at </Text>
+              <Anchor
+                href="https://0xhabitat.org/"
                 target="_blank"
-                color="white">paper</Anchor>|
-  */}
-  <Text size="middle">$START</Text>
-   <br></br>at
-        <Anchor
-          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
-          target="_blank"
-          color="white"
-        >
-          <Image src="habitat_logo.png"
-          width="80px"
-          height="24px"></Image>
-        </Anchor>
-      </Box>
-    </Box>
-
-            <Box justify="center" alignContent="center">
-              <CaretUp color="red" />
+                color="white"
+                alignSelf="center"
+              >
+                0xhabitat.org
+              </Anchor>
+              </Box>
             </Box>
+          </Box>
+
+          <Box justify="center" alignContent="center">
+            <CaretUp color="red" />
+          </Box>
+
+          <GenreCardList />
+
+          <Box justify="center" alignContent="center">
+            <CaretDown color="green" />
+          </Box>
+
           <Box align="center" alignContent="center" justify="center">
-            <Image
+            {/* <Image
               src="./cities_bridged_by_genres.png"
               width="360px"
               height="300px"
@@ -565,9 +757,7 @@ function App() {
               <CaretDown color="green" />
             </Box>
 
-            <Box direction="row" justify="between">
-             
-            </Box>
+            <Box direction="row" justify="between"></Box>
             <Box justify="center" alignContent="center">
               <CaretUp color="red" />
             </Box>
@@ -581,10 +771,10 @@ function App() {
 
             <Box justify="center" alignContent="center">
               <CaretDown color="green" />
-            </Box>
+            </Box> */}
 
             <ParticipantsAccordion />
-           
+
             {/* <Box justify="center" alignContent="center">
               <ResponsiveContext.Consumer>
             
