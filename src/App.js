@@ -168,7 +168,56 @@ const GenreCardList = () => {
         </Tip>                         
         </Box>
 
+        <Box direction="row" alignSelf="center">
+        <Tip
+        plain
+        content={
+          <Box
+            pad="small"
+            gap="small"
+            width={{ max: 'small' }}
+            round="small"
+            background="background-front"
+            responsive={false}
+          >
+            <Text weight="bold">city treasuries</Text>
+            <Text size="small">
+              berlin, hamburg
+            </Text>
+          </Box>
+        }
+        dropProps={{ align: { left: 'right' } }}
+      >
+        <Card height="small" margin="small" width="small" background="light-1">
+            <CardHeader alignSelf="center" pad="small">$GRAFFITI</CardHeader>
+            <CardBody pad="small" background="red">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x6220750e4877cca63e0d68e41b88188ee4cde9b1afc9a6ce11edd72b1c3f0c9c"
+                target="_blank"
+                color="white"
+              >
+                <Box alignSelf="center">
+                  <Image src="./graffiti.jpeg" 
+                  width="120px" height="104px" 
+                      style={{
+                              marginLeft: "22px", 
+                              marginRight: "36px",
+                              marginTop: "2px"
+                              }}
+                              >
+                  </Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+            @ 2 cities<Attraction/> 
 
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+        </Tip>
+        </Box>                         
         <Box direction="row">
 
         <Tip
@@ -444,9 +493,9 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                 margin="20px"
                 label={<Text size="medium">artists mint artworks</Text>}
               >
-                <Box background="#9a3c3c" height="middle" width="large">
+                <Box background="#9a3c3c" height="middle" width="600px">
                   <Paragraph alignSelf="center" margin="12px">
-                    <Text>Artists initiate the scope of impact.</Text>
+                    <Text>they initiate the scope of impact.</Text>
                     <Text>
                       {" "}
                       NFT royalties of an artwork, partially dedicated to
