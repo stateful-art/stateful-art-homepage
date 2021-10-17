@@ -231,9 +231,9 @@ const GenreCardList = () => {
             background="background-front"
             responsive={false}
           >
-            <Text weight="bold">city treasuries</Text>
+            <Text weight="bold"></Text>
             <Text size="small">
-              currently electronic music have no city-level treasury.
+              electronic music community currently have no city-level treasury.
             </Text>
           </Box>
         }
@@ -280,9 +280,9 @@ const GenreCardList = () => {
             background="background-front"
             responsive={false}
           >
-            <Text weight="bold">city treasuries</Text>
+            <Text weight="bold"></Text>
             <Text size="small">
-            currently electronic music have no city-level treasury.
+            reggae community currently have no city-level treasury.
             </Text>
           </Box>
         }
