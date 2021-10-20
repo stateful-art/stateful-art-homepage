@@ -812,7 +812,7 @@ function App() {
 
           <Box justify="center" alignContent="center">
             <Paragraph alignSelf="center">
-              stateful.art is a open-sourced design-thinking project, aiming to
+              stateful.art is an open-sourced design-thinking project, aiming to
               create a context;<br></br>
               <br></br>
               where artists can include cities to build mutual empowerment and
