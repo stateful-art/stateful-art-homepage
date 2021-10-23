@@ -198,7 +198,7 @@ const GenreCardList = () => {
               >
                 <Box alignSelf="center">
                   <Image src="./graffiti.jpeg" 
-                  width="120px" height="104px" 
+                  width="130px" height="104px" 
                       style={{
                               marginLeft: "22px", 
                               marginRight: "36px",
@@ -469,8 +469,8 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                initial implementation will cover dedicating partial resources
-                to multiple artistic movement community, per-city.
+                initial implementation will cover dedicating partial NFT royalties/resources
+                to artistic movement communities in cities.
               </Text>
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
@@ -482,7 +482,7 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                later will introduce local treasuries for activist movements,
+                soon after will introduce local treasuries for activist movements,
                 aka. causes of cities once royalty splitting mechanism is in
                 place.
               </Text>
@@ -754,6 +754,7 @@ const FooterSection = () => (
         </Anchor>
 
         {"<>"}
+
         <Anchor
           href="https://twitter.com/StatefulArt"
           target="_blank"
@@ -765,6 +766,15 @@ const FooterSection = () => (
       </Box>
 
       <Box align="center" justify="center" margin="30p">
+      <Anchor
+          href="https://trello.com/b/DzBmDMd9/statefulart"
+          target="_blank"
+          color="white">
+          {" "}
+          project evolution
+        </Anchor>
+      </Box>
+      <Box align="center" justify="center" margin="30p">
         <Text size="medium" margin="8px">
           {" "}
           contact@stateful.art
@@ -775,7 +785,7 @@ const FooterSection = () => (
           href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
           target="_blank"
         >
-          <Paragraph> the revolution will be minted</Paragraph>
+          <Paragraph> the revolution would be minted</Paragraph>
         </Anchor>
         <Directions color="red" />
 
@@ -823,15 +833,18 @@ function App() {
               censorship-free, democratic environment in order to secure the
               sustainability and diversity of future exchanges.
             </Paragraph>
+           
+          
           </Box>
 
           <Box justify="center" alignContent="center">
             <Paragraph>
-              we will start with connecting artistic movements in music, aka.
-              genres in multiple cities, enabling community-supported,
+              we will start with connecting artistic movements in multiple cities, enabling community-supported,
               transparent and hence, an open and cooperative art residencies of
               the future.
             </Paragraph>
+
+            
           </Box>
 
           <DiscordButton />
@@ -850,7 +863,6 @@ function App() {
               <Box direction="column"  alignSelf="center">
               <Text size="middle" alignSelf="center">Decentralised</Text>
               <Text size="middle" alignSelf="center">Autonomous {"&"} Artistic</Text>
-              <Text size="middle" alignSelf="center"></Text>
               <Text size="middle" alignSelf="center">Organisations</Text>
             <br></br>
               <Text alignSelf="center"> at </Text>
