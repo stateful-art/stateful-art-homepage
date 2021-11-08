@@ -26,7 +26,6 @@ import {
   Directions,
   SubtractCircle,
   Aggregate,
-  Add,
 } from "grommet-icons";
 import React from "react";
 
