@@ -16,7 +16,7 @@ import {
   Paragraph,
   ResponsiveContext,
   Text,
-  Tip
+  Tip,
 } from "grommet";
 import {
   AddCircle,
@@ -25,6 +25,8 @@ import {
   CaretUp,
   Directions,
   SubtractCircle,
+  Aggregate,
+  Add,
 } from "grommet-icons";
 import React from "react";
 
@@ -62,266 +64,346 @@ const ParticipantsAccordionTheme = {
   },
 };
 
-
-
 const GenreCardList = () => {
   return (
     <>
-
       <Box direction="column">
         <Box direction="row">
-
-        <Tip
-        plain
-        content={
-          <Box
-            pad="small"
-            gap="small"
-            width={{ max: 'small' }}
-            round="small"
-            background="background-front"
-            responsive={false}
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text weight="bold">city treasuries</Text>
+                <Text size="small">berlin, hamburg, istanbul, los angeles</Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
           >
-             <Text weight="bold">city treasuries</Text>
-            <Text size="small">
-              berlin, hamburg, istanbul, los angeles
-            </Text>
-          </Box>
-        }
-        dropProps={{ align: { left: 'right' } }}
-      >
-        <Card height="small" margin="small" width="small" background="light-1">
-            <CardHeader  alignSelf="center" pad="small" background="light-1">$HIPHOP</CardHeader>
-            <CardBody pad="small" background="orange">
-              <Anchor
-                    href="https://0xhabitat.org/app/#habitat-community,0xa21629c00a7d9c88ea98673a0b81becd156cfe416920ec6d40b408d1506eb1e4"
-                    target="_blank"
-                    color="white"
-                  >
-                    <Box>
-                      <Image src="./hiphop.png" 
-                      width="120px" height="80px" 
-                          style={{
-                                  marginLeft: "20px", 
-                                  marginRight: "36px",
-                                  marginTop: "12px"
-                                  }}
-                                  >
-                      </Image>
-                    </Box>
-                  </Anchor>
-
-            </CardBody>
-            <CardFooter pad={{ horizontal: "small" }} background="light-2">
-            @ 4 cities <Attraction/>
-
-            </CardFooter>
-          </Card>
-      </Tip>
-
-      <Tip
-        plain
-        content={
-          <Box
-            pad="small"
-            gap="small"
-            width={{ max: 'small' }}
-            round="small"
-            background="background-front"
-            responsive={false}
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+            >
+              <CardHeader alignSelf="center" pad="small" background="light-1">
+                $HIPHOP
+              </CardHeader>
+              <CardBody pad="small" background="orange">
+                <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0xa21629c00a7d9c88ea98673a0b81becd156cfe416920ec6d40b408d1506eb1e4"
+                  target="_blank"
+                  color="white"
+                >
+                  <Box>
+                    <Image
+                      src="./hiphop.png"
+                      width="120px"
+                      height="80px"
+                      style={{
+                        marginLeft: "20px",
+                        marginRight: "36px",
+                        marginTop: "12px",
+                      }}
+                    ></Image>
+                  </Box>
+                </Anchor>
+              </CardBody>
+              <CardFooter pad={{ horizontal: "small" }} background="light-2">
+                @ 4 cities <Attraction />
+              </CardFooter>
+            </Card>
+          </Tip>
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text weight="bold"></Text>
+                <Text size="small">
+                  reggae community currently have no city-level treasury.
+                </Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
           >
-            <Text weight="bold">city treasuries</Text>
-            <Text size="small">
-              berlin, hamburg, istanbul, los angeles
-            </Text>
-          </Box>
-        }
-        dropProps={{ align: { left: 'right' } }}
-      >
-          <Card height="small" margin="small" width="small" background="light-1">
-            <CardHeader alignSelf="center" pad="small" background="light-1" color="white">$ROCK</CardHeader>
-            <CardBody pad="small" background="purple">
-              <Anchor
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+            >
+              <CardHeader alignSelf="center" pad="small" background="light-1">
+                $REGGAE
+              </CardHeader>
+              <CardBody background="black">
+                <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0x594080e1603af01cba9155a6fa6899b833c5549d555c89a2e7d578be33495ff3"
+                  target="_blank"
+                  color="white"
+                >
+                  <Box>
+                    <Image
+                      src="./reggae.jpeg"
+                      width="90px"
+                      height="76px"
+                      style={{
+                        marginLeft: "48px",
+                        marginRight: "36px",
+                        marginTop: "20px",
+                      }}
+                    ></Image>
+                  </Box>
+                </Anchor>
+              </CardBody>
+              <CardFooter pad={{ horizontal: "small" }} background="light-2">
+                @ 0 cities
+                <Attraction />
+                {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+              </CardFooter>
+            </Card>
+          </Tip>
+        </Box>
+
+        <Box direction="row" alignSelf="center">
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text weight="bold">city treasuries</Text>
+                <Text size="small">berlin, hamburg</Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
+          >
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+            >
+              <CardHeader alignSelf="center" pad="small">
+                $GRAFFITI
+              </CardHeader>
+              <CardBody pad="small" background="red">
+                <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0x6220750e4877cca63e0d68e41b88188ee4cde9b1afc9a6ce11edd72b1c3f0c9c"
+                  target="_blank"
+                  color="white"
+                >
+                  <Box alignSelf="center">
+                    <Image
+                      src="./graffiti.jpeg"
+                      width="130px"
+                      height="104px"
+                      style={{
+                        marginLeft: "22px",
+                        marginRight: "36px",
+                        marginTop: "2px",
+                      }}
+                    ></Image>
+                  </Box>
+                </Anchor>
+              </CardBody>
+              <CardFooter pad={{ horizontal: "small" }} background="light-2">
+                @ 2 cities
+                <Attraction />
+                {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+              </CardFooter>
+            </Card>
+          </Tip>
+        </Box>
+        <Box direction="row">
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text weight="bold"></Text>
+                <Text size="small">
+                  electronic music community currently have no city-level
+                  treasury.
+                </Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
+          >
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+            >
+              <CardHeader alignSelf="center" pad="small">
+                $ELECTRO
+              </CardHeader>
+              <CardBody pad="small" background="black">
+                <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
+                  target="_blank"
+                  color="white"
+                >
+                  <Box>
+                    <Image
+                      src="./electronic_music.jpeg"
+                      width="120px"
+                      height="104px"
+                      style={{
+                        marginLeft: "22px",
+                        marginRight: "36px",
+                        marginTop: "2px",
+                      }}
+                    ></Image>
+                  </Box>
+                </Anchor>
+              </CardBody>
+              <CardFooter pad={{ horizontal: "small" }} background="light-2">
+                @ 0 cities
+                <Attraction />
+                {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+              </CardFooter>
+            </Card>
+          </Tip>
+
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text weight="bold">city treasuries</Text>
+                <Text size="small">berlin, hamburg, istanbul, los angeles</Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
+          >
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+            >
+              <CardHeader
+                alignSelf="center"
+                pad="small"
+                background="light-1"
+                color="white"
+              >
+                $ROCK
+              </CardHeader>
+              <CardBody pad="small" background="purple">
+                <Anchor
                   href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
                   target="_blank"
                   color="white"
                 >
                   <Box>
-                    <Image src="./rock_horizontal.png" 
-                    width="100px" height="60px" 
-                        style={{
-                                marginLeft: "22px", 
-                                marginRight: "36px",
-                                marginTop: "12px"
-                                }}
-                                >
-                    </Image>
-                  </Box>
-                 </Anchor>
-            </CardBody>
-            <CardFooter pad={{ horizontal: "small" }} background="light-2">
-              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
-                                  <Text>@ 4 cities</Text> */}
-              @ 4 cities<Attraction/> 
-              </CardFooter>
-          </Card> 
-        </Tip>                         
-        </Box>
-
-        <Box direction="row" alignSelf="center">
-        <Tip
-        plain
-        content={
-          <Box
-            pad="small"
-            gap="small"
-            width={{ max: 'small' }}
-            round="small"
-            background="background-front"
-            responsive={false}
-          >
-            <Text weight="bold">city treasuries</Text>
-            <Text size="small">
-              berlin, hamburg
-            </Text>
-          </Box>
-        }
-        dropProps={{ align: { left: 'right' } }}
-      >
-        <Card height="small" margin="small" width="small" background="light-1">
-            <CardHeader alignSelf="center" pad="small">$GRAFFITI</CardHeader>
-            <CardBody pad="small" background="red">
-              <Anchor
-                href="https://0xhabitat.org/app/#habitat-community,0x6220750e4877cca63e0d68e41b88188ee4cde9b1afc9a6ce11edd72b1c3f0c9c"
-                target="_blank"
-                color="white"
-              >
-                <Box alignSelf="center">
-                  <Image src="./graffiti.jpeg" 
-                  width="130px" height="104px" 
+                    <Image
+                      src="./rock_horizontal.png"
+                      width="100px"
+                      height="60px"
                       style={{
-                              marginLeft: "22px", 
-                              marginRight: "36px",
-                              marginTop: "2px"
-                              }}
-                              >
-                  </Image>
-                </Box>
-              </Anchor>
-            </CardBody>
-            <CardFooter pad={{ horizontal: "small" }} background="light-2">
-            @ 2 cities<Attraction/> 
-
-              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
-              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
-            </CardFooter>
-          </Card>
-        </Tip>
-        </Box>                         
-        <Box direction="row">
-
-        <Tip
-        plain
-        content={
-          <Box
-            pad="small"
-            gap="small"
-            width={{ max: 'small' }}
-            round="small"
-            background="background-front"
-            responsive={false}
-          >
-            <Text weight="bold"></Text>
-            <Text size="small">
-              electronic music community currently have no city-level treasury.
-            </Text>
-          </Box>
-        }
-        dropProps={{ align: { left: 'right' } }}
-      >
-        <Card height="small" margin="small" width="small" background="light-1">
-            <CardHeader alignSelf="center" pad="small">$ELECTRO</CardHeader>
-            <CardBody pad="small" background="black">
-              <Anchor
-                href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
-                target="_blank"
-                color="white"
-              >
-                <Box>
-                  <Image src="./electronic_music.jpeg" 
-                  width="120px" height="104px" 
-                      style={{
-                              marginLeft: "22px", 
-                              marginRight: "36px",
-                              marginTop: "2px"
-                              }}
-                              >
-                  </Image>
-                </Box>
-              </Anchor>
-            </CardBody>
-            <CardFooter pad={{ horizontal: "small" }} background="light-2">
-            @ 0 cities<Attraction/> 
-
-              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
-              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
-            </CardFooter>
-          </Card>
-        </Tip>
-
-        <Tip
-        plain
-        content={
-          <Box
-            pad="small"
-            gap="small"
-            width={{ max: 'small' }}
-            round="small"
-            background="background-front"
-            responsive={false}
-          >
-            <Text weight="bold"></Text>
-            <Text size="small">
-            reggae community currently have no city-level treasury.
-            </Text>
-          </Box>
-        }
-        dropProps={{ align: { left: 'right' } }}
-      >
-          <Card height="small" margin="small" width="small" background="light-1">
-            <CardHeader alignSelf="center" pad="small" background="light-1">
-              $REGGAE
-            </CardHeader>
-            <CardBody background="black">
-            <Anchor
-          href="https://0xhabitat.org/app/#habitat-community,0x594080e1603af01cba9155a6fa6899b833c5549d555c89a2e7d578be33495ff3"
-          target="_blank"
-          color="white"
-        >
-          <Box>
-            <Image src="./reggae.jpeg" width="90px" height="76px" 
-                style={{
-                        marginLeft: "48px", 
+                        marginLeft: "22px",
                         marginRight: "36px",
-                        marginTop: "20px"
-                        }}></Image>
-          </Box>
-        </Anchor>
+                        marginTop: "12px",
+                      }}
+                    ></Image>
+                  </Box>
+                </Anchor>
               </CardBody>
-            <CardFooter pad={{ horizontal: "small" }} background="light-2">
-            @ 0 cities<Attraction/> 
-
-              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
-              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
-            </CardFooter>
-          </Card>
-        </Tip>
+              <CardFooter pad={{ horizontal: "small" }} background="light-2">
+                {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+                                  <Text>@ 4 cities</Text> */}
+              </CardFooter>
+            </Card>
+          </Tip>
+        </Box>
+        <Box size direction="row" alignSelf="center">
+          <Tip
+            plain
+            content={
+              <Box
+                pad="small"
+                gap="small"
+                width={{ max: "small" }}
+                round="small"
+                background="background-front"
+                responsive={false}
+              >
+                <Text textAlign="center" weight="bold">join our discord channel and events to learn how.</Text>
+                <Text size="small">build autonomous, resilient, 
+                scalable and environmental-friendly 
+                creative governance/ungovernance mechanisms for your city</Text>
+              </Box>
+            }
+            dropProps={{ align: { left: "right" } }}
+          >
+            <Card
+              height="small"
+              margin="small"
+              width="small"
+              background="light-1"
+              alignContent="center"
+            >
+              <CardHeader
+                alignSelf="center"
+                pad="small"
+                background="light-1"
+                color="white"
+              >
+                <Aggregate size="large"></Aggregate>
+              </CardHeader>
+              <CardBody pad="small" background="white">
+                <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
+                  
+                  <Box>
+                    <Text color="black" size="small" alignSelf="center">
+                      start <br></br> new art communities DAO and propose projects for defined city treasuries.
+                    </Text>
+                  </Box>
+                </Anchor>
+              </CardBody>
+            
+            </Card>
+          </Tip>
         </Box>
       </Box>
     </>
   );
 };
-
 
 const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
   <Grommet theme={ParticipantsAccordionTheme}>
@@ -469,8 +551,8 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                initial implementation will cover dedicating partial NFT royalties/resources
-                to artistic movement communities in cities.
+                initial implementation will cover dedicating partial NFT
+                royalties/resources to artistic movement communities in cities.
               </Text>
             </Paragraph>
             <Paragraph alignSelf="center" margin="12px">
@@ -482,9 +564,9 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
 
             <Paragraph alignSelf="center" margin="12px">
               <Text>
-                soon after will introduce local treasuries for activist movements,
-                aka. causes of cities once royalty splitting mechanism is in
-                place.
+                soon after will introduce local treasuries for activist
+                movements, aka. causes of cities once royalty splitting
+                mechanism is in place.
               </Text>
             </Paragraph>
 
@@ -510,7 +592,6 @@ const ParticipantsAccordion = ({ animate, multiple, ...rest }) => (
                     margin="22px"
                     alignSelf="center"
                   ></Image>
-
                 </Box>
               </AccordionPanel>
 
@@ -711,11 +792,16 @@ const FooterSection = () => (
         background="black"
       >
         {/* 
-    <Anchor href="#"
-                target="_blank"
-                color="white">paper</Anchor>|
+
   */}
-        $START <br></br>
+        <Anchor
+          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
+          target="_blank"
+          color="white"
+        >
+          $START
+        </Anchor>
+        <br></br>
         at{" "}
         <Anchor
           href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
@@ -766,14 +852,34 @@ const FooterSection = () => (
       </Box>
 
       <Box align="center" justify="center" margin="30p">
-      <Anchor
+        <Anchor
           href="https://trello.com/b/DzBmDMd9/statefulart"
           target="_blank"
-          color="white">
+          color="white"
+        >
           {" "}
           project evolution
         </Anchor>
       </Box>
+
+      {/* <Box
+        tag="footer"
+        direction="row"
+        justify="center"
+        pad="small"
+        gap="small"
+        //flex={true}
+        background="black"
+      >
+        <Anchor
+          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
+          target="_blank"
+          color="white"
+        >
+          blog @ substack (soon)
+        </Anchor>
+      </Box> */}
+
       <Box align="center" justify="center" margin="30p">
         <Text size="medium" margin="8px">
           {" "}
@@ -833,18 +939,14 @@ function App() {
               censorship-free, democratic environment in order to secure the
               sustainability and diversity of future exchanges.
             </Paragraph>
-           
-          
           </Box>
 
           <Box justify="center" alignContent="center">
             <Paragraph>
-              we will start with connecting artistic movements in multiple cities, enabling community-supported,
-              transparent and hence, an open and cooperative art residencies of
-              the future.
+              we will start with connecting artistic movements in multiple
+              cities, enabling community-supported, transparent and hence, an
+              open and cooperative art residencies of the future.
             </Paragraph>
-
-            
           </Box>
 
           <DiscordButton />
@@ -859,21 +961,26 @@ function App() {
               //flex={true}
               background="black"
             >
-         
-              <Box direction="column"  alignSelf="center">
-              <Text size="middle" alignSelf="center">Decentralised</Text>
-              <Text size="middle" alignSelf="center">Autonomous {"&"} Artistic</Text>
-              <Text size="middle" alignSelf="center">Organisations</Text>
-            <br></br>
-              <Text alignSelf="center"> at </Text>
-              <Anchor
-                href="https://0xhabitat.org/"
-                target="_blank"
-                color="white"
-                alignSelf="center"
-              >
-                0xhabitat.org
-              </Anchor>
+              <Box direction="column" alignSelf="center">
+                <Text size="middle" alignSelf="center">
+                  Decentralised
+                </Text>
+                <Text size="middle" alignSelf="center">
+                  Autonomous {"&"} Artistic
+                </Text>
+                <Text size="middle" alignSelf="center">
+                  Organisations
+                </Text>
+                <br></br>
+                <Text alignSelf="center"> at </Text>
+                <Anchor
+                  href="https://0xhabitat.org/"
+                  target="_blank"
+                  color="white"
+                  alignSelf="center"
+                >
+                  0xhabitat.org
+                </Anchor>
               </Box>
             </Box>
           </Box>
@@ -885,7 +992,10 @@ function App() {
           <GenreCardList />
 
           <Box justify="center" alignContent="center">
-            <CaretDown color="green" />
+            <CaretDown color="yellow" />
+            <CaretDown color="yellow"/>
+            <CaretDown color="yellow"/>
+
           </Box>
 
           <Box align="center" alignContent="center" justify="center">
