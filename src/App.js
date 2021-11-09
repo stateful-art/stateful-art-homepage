@@ -390,7 +390,7 @@ const GenreCardList = () => {
                   
                   <Box>
                     <Text color="black" size="small" alignSelf="center">
-                      start <br></br> new art communities DAO and propose projects for defined city treasuries.
+                      start <br></br> a new art community as DAO and propose projects for defined city treasuries.
                     </Text>
                   </Box>
                 </Anchor>
