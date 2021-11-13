@@ -830,7 +830,7 @@ const FooterSection = () => (
         {"<>"}
 
         <Anchor
-          href="https://miro.com/app/board/o9J_l3gy0-U=/?invite_link_id=475666759031"
+          href="https://miro.com/app/board/o9J_l3gy0-U=/"
           target="_blank"
           color="white"
         >
