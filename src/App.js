@@ -77,9 +77,15 @@ const GenreCardList = () => {
                 round="small"
                 background="background-front"
                 responsive={false}
-                
+                animation={{
+                  type: "jiggle",
+                  delay: 20,
+                  duration: 4000,
+                }}
               >
-                <Text weight="bold">Berlin, Hamburg, Istanbul, Los Angeles</Text>
+                <Text weight="bold">
+                  Berlin, Hamburg, Istanbul, Los Angeles
+                </Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -92,7 +98,7 @@ const GenreCardList = () => {
             >
               <CardHeader alignSelf="center" pad="small" background="light-1">
                 <Text size="large" weight="bolder">
-                $HIPHOP
+                  $HIPHOP
                 </Text>
               </CardHeader>
               <CardBody pad="small" background="orange">
@@ -134,7 +140,9 @@ const GenreCardList = () => {
                 background="background-front"
                 responsive={false}
               >
-                <Text weight="bold" font="large">Hamburg</Text>
+                <Text weight="bold" font="large">
+                  Hamburg
+                </Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -182,7 +190,12 @@ const GenreCardList = () => {
           </Tip>
         </Box>
 
-        <Box direction="row" alignSelf="center">
+        <Box direction="row" alignSelf="center" 
+        animation={{
+          type: "fadeIn",
+          delay: 20,
+          duration: 1000,
+        }}>
           <Tip
             plain
             content={
@@ -252,6 +265,11 @@ const GenreCardList = () => {
                 round="small"
                 background="background-front"
                 responsive={false}
+                animation={{
+                  type: "slideLeft",
+                  delay: 20,
+                  duration: 1000,
+                }}
               >
                 <Text size="medium">
                   reggae community currently have no city-level treasury.
@@ -313,7 +331,9 @@ const GenreCardList = () => {
                 background="background-front"
                 responsive={false}
               >
-                <Text size="medium" weight="bolder">berlin, hamburg, istanbul, los angeles</Text>
+                <Text size="medium" weight="bolder">
+                  berlin, hamburg, istanbul, los angeles
+                </Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -364,7 +384,13 @@ const GenreCardList = () => {
             </Card>
           </Tip>
         </Box>
-        <Box size direction="row" alignSelf="center">
+        <Box size direction="row" alignSelf="center"
+        animation={{
+          type: "slideDown",
+          delay: 20,
+          duration: 1000,
+        }}
+        >
           <Tip
             size="large"
             plain
@@ -722,7 +748,9 @@ const GenreCardList = () => {
 
 const OnTheWall = () => (
   <Grommet>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#ff5500"
         fill-opacity="0.8"
@@ -737,36 +765,80 @@ const OnTheWall = () => (
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
-          <Box direction="column">
-            <Image
-              src="./a_pseudo_banksy_mint.png"
-              width="640px"
-              height="620px"
-              margin="32px"
-            ></Image>
+          <Heading size="small" textAlign="center">
+          {" "}
+          a metaversal solidarity, on the walls.
+        </Heading>
+        ) : (
+          <Heading size="medium" textAlign="center">
+          {" "}
+          a metaversal solidarity, on the walls.
+        </Heading> 
+        )
+      }
+    </ResponsiveContext.Consumer>
 
-            <Image
-              src="./real_metaverse.png"
-              width="640px"
-              height="620px"
-              margin="32px"
-            ></Image>
+{/* /////////// */}
+
+
+    <ResponsiveContext.Consumer>
+      {(size) =>
+        size === "small" ? (
+          <Box direction="column">
+        <Box animation={{
+                  type: "slideUp",
+                  delay: 20,
+                  duration: 1000,
+                }}>
+              <Image
+                src="./a_pseudo_banksy_mint.png"
+                width="464px"
+                height="448px"
+                margin="32px"
+              ></Image>
+            </Box>
+            <Box animation={{
+              type: "slideDown",
+              delay: 20,
+              duration: 1000,
+            }}>
+              <Image
+                src="./real_metaverse.png"
+                width="464px"
+                height="448px"
+                margin="32px"
+              ></Image>
+            </Box>
           </Box>
         ) : (
-          <Box direction="row">
-            <Image
-              src="./a_pseudo_banksy_mint.png"
-              width="640px"
-              height="620px"
-              margin="32px"
-            ></Image>
-
-            <Image
-              src="./real_metaverse.png"
-              width="640px"
-              height="620px"
-              margin="32px"
-            ></Image>
+          <Box
+            direction="row"
+          
+          >
+            <Box animation={{
+                  type: "slideUp",
+                  delay: 20,
+                  duration: 1000,
+                }}>
+              <Image
+                src="./a_pseudo_banksy_mint.png"
+                width="576px"
+                height="558px"
+                margin="32px"
+              ></Image>
+            </Box>
+            <Box animation={{
+              type: "slideDown",
+              delay: 20,
+              duration: 1000,
+            }}>
+              <Image
+                src="./real_metaverse.png"
+                width="576px"
+                height="558px"
+                margin="32px"
+              ></Image>
+            </Box>
           </Box>
         )
       }
@@ -799,7 +871,6 @@ const DiscordButton = (props) => (
         duration: 1000,
       }}
     >
-
       <Text size="large" marginTop="20">
         discord
       </Text>
@@ -876,7 +947,6 @@ const FooterSection = () => (
           color="white"
         >
           <Text size="large">code</Text>
-          
         </Anchor>
         {"|"}
 
@@ -887,8 +957,6 @@ const FooterSection = () => (
         >
           {/* {"|  "} */}
           <Text size="large">design canvas</Text>
-
-          
         </Anchor>
 
         {"|"}
@@ -900,7 +968,6 @@ const FooterSection = () => (
         >
           {" "}
           <Text size="large">twitter</Text>
-
         </Anchor>
       </Box>
 
@@ -911,9 +978,7 @@ const FooterSection = () => (
           color="white"
         >
           {" "}
-          <Text size="large">project evolution
-</Text>
-
+          <Text size="large">project evolution</Text>
         </Anchor>
       </Box>
 
@@ -986,29 +1051,34 @@ function App() {
           </ResponsiveContext.Consumer>
           <Box justify="center" alignContent="center">
             <Paragraph size="medium">
-              {/* <Heading size="middle">too long; but read  </Heading> */}
-
               <Accordion>
                 <AccordionPanel
                   margin="20px"
                   label={
                     <Text size="medium">
-                      <Heading>too long; but read</Heading>
+                      <Heading>manifest</Heading>
                     </Text>
                   }
                 >
-                  <Box background="white" height="middle" width="middle">
-                    <Paragraph alignSelf="center" margin="12px">
+                  <Box background="yellow" height="middle" width="middle">
+                    <Paragraph
+                      color="black"
+                      alignSelf="center"
+                      margin="12px"
+                      size="large"
+                    >
                       stateful.art aims to build a resilient, diverse and
-                      solidarity-oriented ground for residents of remote cities.
+                      solidarity-oriented ground future of art residencies.
                       <br></br>
                       <br></br>
                       activities mainly focus on incentivising democratic
                       initiative taking via art direction in the tokenomics.
                       <br></br>
                       <br></br>
-                      project itself is a DAO with its governance token issued
-                      as $START.
+                      project is a DAO with a governance token issued as{" "}
+                      <Text size="xlarge" color="black">
+                        $START.
+                      </Text>
                       <br></br>
                       <br></br>
                       initially started a few city treasuries for some artistic
@@ -1022,16 +1092,31 @@ function App() {
 
           <Box justify="center" alignContent="center">
             <Heading size="middle" alignSelf="center">
-              <Box animation="pulse">what ; why ; how ; where</Box>
+              <Box
+                animation={{
+                  type: "pulse",
+                  delay: 200,
+                  duration: 2400,
+                }}
+              >
+                what ; why ; how ; where
+              </Box>
             </Heading>
             <Box alignSelf="center">
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                stateful.art is an open-sourced design-thinking project, aiming
-                to initiate an experimental context;
+                this is an open-sourced design-thinking project, aiming to
+                initiate an experimental context for;
                 <br></br>
                 <br></br>
-                creating commons for artistic and later, activist scenes of
-                cities.
+                creating reflective commons and incentives for artistic and
+                later,
+                <br></br>
+                activist scenes of cities.
+              </Paragraph>
+
+              <Paragraph alignSelf="center" size="large" textAlign="center">
+                project utilises inclusion of the artistic phenomenonsas tokens
+                for $GENREs and $FUSIONs.
               </Paragraph>
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
@@ -1054,7 +1139,8 @@ function App() {
               </Heading>
               <Paragraph alignSelf="center" size="large" textAlign="center">
                 "an artistic approach for progressively developing inter-cities
-                connectivity for the existing or future (art) residencies."
+                connectivity and exchanges for existing and future (art)
+                residencies and establish trust"
               </Paragraph>
 
               {/* <Heading size="middle">introducing DAAOs.</Heading> */}
@@ -1062,7 +1148,7 @@ function App() {
 
             <Box direction="row" alignSelf="center">
               <Text size="xlarge" weight="bolder" margin="small">
-                {" "}
+                {/* {" "} */}
                 "come, as you are."{" "}
               </Text>
               <Heading size="middle" color="green">
