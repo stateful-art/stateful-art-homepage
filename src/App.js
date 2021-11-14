@@ -77,8 +77,9 @@ const GenreCardList = () => {
                 round="small"
                 background="background-front"
                 responsive={false}
+                
               >
-                <Text size="small">berlin, hamburg, istanbul, los angeles</Text>
+                <Text weight="bold">Berlin, Hamburg, Istanbul, Los Angeles</Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -90,7 +91,9 @@ const GenreCardList = () => {
               background="light-1"
             >
               <CardHeader alignSelf="center" pad="small" background="light-1">
+                <Text size="large" weight="bolder">
                 $HIPHOP
+                </Text>
               </CardHeader>
               <CardBody pad="small" background="orange">
                 <Anchor
@@ -98,7 +101,7 @@ const GenreCardList = () => {
                   target="_blank"
                   color="white"
                 >
-                  <Box>
+                  <Box animation="zoomOut">
                     <Image
                       src="./hiphop.png"
                       width="120px"
@@ -131,7 +134,7 @@ const GenreCardList = () => {
                 background="background-front"
                 responsive={false}
               >
-                <Text weight="bold">Hamburg</Text>
+                <Text weight="bold" font="large">Hamburg</Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -310,7 +313,7 @@ const GenreCardList = () => {
                 background="background-front"
                 responsive={false}
               >
-                <Text size="small">berlin, hamburg, istanbul, los angeles</Text>
+                <Text size="medium" weight="bolder">berlin, hamburg, istanbul, los angeles</Text>
               </Box>
             }
             dropProps={{ align: { left: "right" } }}
@@ -785,19 +788,18 @@ const DiscordButton = (props) => (
       tag="footer"
       direction="row"
       justify="center"
-      pad="small"
+      pad="medium"
       gap="medium"
       //flex={true}
       background="#5865F2"
+      round="large"
       animation={{
         type: "jiggle",
         delay: 20,
         duration: 1000,
       }}
     >
-      {/* 
 
-*/}
       <Text size="large" marginTop="20">
         discord
       </Text>
