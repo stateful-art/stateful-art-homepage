@@ -719,36 +719,95 @@ const GenreCardList = () => {
 
 const OnTheWall = () => (
   <Grommet>
-      <Heading size="medium" textAlign="center"> solidarity,</Heading>
-      <Heading size="medium" textAlign="center"> on the wall.</Heading>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,32L0,64L96,64L96,256L192,256L192,224L288,224L288,320L384,320L384,32L480,32L480,128L576,128L576,288L672,288L672,256L768,256L768,160L864,160L864,32L960,32L960,160L1056,160L1056,0L1152,0L1152,160L1248,160L1248,160L1344,160L1344,32L1440,32L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"></path></svg>
-    
-    <Image
-      src="./a_pseudo_banksy_mint.png"
-      width="640px"
-      height="620px"
-      margin="32px"
-    ></Image>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#ff5500"
+        fill-opacity="0.8"
+        d="M0,64L0,96L96,96L96,128L192,128L192,192L288,192L288,128L384,128L384,64L480,64L480,192L576,192L576,64L672,64L672,288L768,288L768,128L864,128L864,96L960,96L960,128L1056,128L1056,64L1152,64L1152,32L1248,32L1248,192L1344,192L1344,288L1440,288L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"
+      ></path>
+    </svg>
+    <Heading size="medium" textAlign="center">
+      {" "}
+      a metaversal solidarity, on the walls.
+    </Heading>
+
+    <ResponsiveContext.Consumer>
+      {(size) =>
+        size === "small" ? (
+          <Box direction="column">
+            <Image
+              src="./a_pseudo_banksy_mint.png"
+              width="640px"
+              height="620px"
+              margin="32px"
+            ></Image>
+
+            <Image
+              src="./real_metaverse.png"
+              width="640px"
+              height="620px"
+              margin="32px"
+            ></Image>
+          </Box>
+        ) : (
+          <Box direction="row">
+            <Image
+              src="./a_pseudo_banksy_mint.png"
+              width="640px"
+              height="620px"
+              margin="32px"
+            ></Image>
+
+            <Image
+              src="./real_metaverse.png"
+              width="640px"
+              height="620px"
+              margin="32px"
+            ></Image>
+          </Box>
+        )
+      }
+    </ResponsiveContext.Consumer>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#ff5500"
+        fill-opacity="0.8"
+        d="M0,64L96,96L192,128L288,192L384,128L480,64L576,192L672,64L768,288L864,128L960,96L1056,128L1152,64L1248,32L1344,192L1440,288L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z"
+      ></path>
+    </svg>
   </Grommet>
 );
 
 const DiscordButton = (props) => (
-  <Box
-    tag="footer"
-    direction="row"
-    justify="center"
-    pad="small"
-    gap="small"
-    //flex={true}
-    background="#EB459E"
-  >
-    {/* 
+  <Anchor href="https://discord.gg/EXN7Mta2wu" target="_blank" color="black">
+    <Box
+      tag="footer"
+      direction="row"
+      justify="center"
+      pad="small"
+      gap="medium"
+      //flex={true}
+      background="#5865F2"
+      animation={{
+        type: "jiggle",
+        delay: 20,
+        duration: 1000,
+      }}
+    >
+      {/* 
 
 */}
-    <Anchor href="https://discord.gg/EXN7Mta2wu" target="_blank" color="black">
-      <Text size="large">community @ discord</Text>
-    </Anchor>
-  </Box>
+      <Text size="large" marginTop="20">
+        discord
+      </Text>
+      <Image
+        src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
+        width="60x"
+        height="60px"
+      />
+    </Box>{" "}
+  </Anchor>
 );
 
 const FooterSection = () => (
@@ -766,24 +825,21 @@ const FooterSection = () => (
         {/* 
 
   */}
+
+        <Box direction="row">
+          <Text size="xxlarge">$START {"  "}</Text>
+          <Text size="xlarge"> @{"   "}</Text>
+        </Box>
+
         <Anchor
           href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
           target="_blank"
           color="white"
         >
-          $START
-        </Anchor>
-        <br></br>
-        at{" "}
-        <Anchor
-          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
-          target="_blank"
-          color="white"
-        >
-          <Image src="habitat_logo.png" width="80px" height="24px"></Image>
+          <Image src="habitat_logo.png" width="144px" height="36px"></Image>
         </Anchor>
       </Box>
-
+      {/* 
       <Box
         tag="footer"
         direction="row"
@@ -793,9 +849,7 @@ const FooterSection = () => (
         //flex={true}
         background="#EB459E"
       >
-        {/* 
-
-  */}
+ 
         <Anchor
           href="https://discord.gg/EXN7Mta2wu"
           target="_blank"
@@ -803,8 +857,8 @@ const FooterSection = () => (
         >
           community @ discord
         </Anchor>
-      </Box>
-
+      </Box> */}
+      <DiscordButton />
       <Box
         tag="footer"
         direction="row"
@@ -819,20 +873,23 @@ const FooterSection = () => (
           target="_blank"
           color="white"
         >
-          code
+          <Text size="large">code</Text>
+          
         </Anchor>
-        {"<>"}
+        {"|"}
 
         <Anchor
           href="https://miro.com/app/board/o9J_l3gy0-U=/"
           target="_blank"
           color="white"
         >
-          {" "}
-          workspace
+          {/* {"|  "} */}
+          <Text size="large">design canvas</Text>
+
+          
         </Anchor>
 
-        {"<>"}
+        {"|"}
 
         <Anchor
           href="https://twitter.com/StatefulArt"
@@ -840,7 +897,8 @@ const FooterSection = () => (
           color="white"
         >
           {" "}
-          twitter
+          <Text size="large">twitter</Text>
+
         </Anchor>
       </Box>
 
@@ -851,7 +909,9 @@ const FooterSection = () => (
           color="white"
         >
           {" "}
-          project evolution
+          <Text size="large">project evolution
+</Text>
+
         </Anchor>
       </Box>
 
@@ -874,7 +934,7 @@ const FooterSection = () => (
       </Box> */}
 
       <Box align="center" justify="center" margin="30p">
-        <Text size="medium" margin="8px">
+        <Text size="large" margin="20px">
           {" "}
           contact@stateful.art
         </Text>
@@ -884,7 +944,7 @@ const FooterSection = () => (
           href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
           target="_blank"
         >
-          <Paragraph> the revolution would be minted</Paragraph>
+          <Paragraph size="large"> the revolution will be minted</Paragraph>
         </Anchor>
         <Directions color="red" />
 
@@ -902,19 +962,23 @@ function App() {
           <ResponsiveContext.Consumer>
             {(size) =>
               size === "small" ? (
-                <Image
-                  src="./stateful-art-top.png"
-                  width="262px"
-                  height="150px"
-                  margin="20px"
-                ></Image>
+                <Box animation="fadeIn">
+                  <Image
+                    src="./stateful-art-top.png"
+                    width="262px"
+                    height="150px"
+                    margin="20px"
+                  ></Image>
+                </Box>
               ) : (
-                <Image
-                  src="./stateful-art-top.png"
-                  width="525px"
-                  height="300px"
-                  margin="60px"
-                ></Image>
+                <Box animation="fadeIn">
+                  <Image
+                    src="./stateful-art-top.png"
+                    width="525px"
+                    height="300px"
+                    margin="60px"
+                  ></Image>
+                </Box>
               )
             }
           </ResponsiveContext.Consumer>
@@ -937,15 +1001,16 @@ function App() {
                       solidarity-oriented ground for residents of remote cities.
                       <br></br>
                       <br></br>
-                      activities mainly focus on creation of commons in terms of
-                      financials, tech infrastructure and common stakes in terms
-                      of democratic initiative taking via art direction in the
-                      tokenomics.
+                      activities mainly focus on incentivising democratic
+                      initiative taking via art direction in the tokenomics.
                       <br></br>
                       <br></br>
                       project itself is a DAO with its governance token issued
-                      as $START. initially started a few city treasuries for
-                      some artistic movements (see below).
+                      as $START.
+                      <br></br>
+                      <br></br>
+                      initially started a few city treasuries for some artistic
+                      movements (see below).
                     </Paragraph>
                   </Box>
                 </AccordionPanel>
@@ -955,30 +1020,35 @@ function App() {
 
           <Box justify="center" alignContent="center">
             <Heading size="middle" alignSelf="center">
-              what ; why ; how ; where
+              <Box animation="pulse">what ; why ; how ; where</Box>
             </Heading>
             <Box alignSelf="center">
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                stateful.art is an open-sourced blockchain project, aiming to
-                initiate an experimental context;
+                stateful.art is an open-sourced design-thinking project, aiming
+                to initiate an experimental context;
+                <br></br>
+                <br></br>
+                creating commons for artistic and later, activist scenes of
+                cities.
               </Paragraph>
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                {/* xxx */}
-                to create commons for artistic communities of cities.
+                connecting cities in peer-to-peer and mesh-to-mesh fashions.
               </Paragraph>
+
               <Image
                 src="./cities_bridged_by_genres.png"
-                width="360px"
+                width="400px"
                 height="300px"
-                margin="20px"
+                margin="10px"
                 alignSelf="center"
               ></Image>
               <Heading size="small" alignSelf="center">
-                mutually inclusive
+                {"< "}mutually inclusive {" >"}
               </Heading>
+              <br></br>
               <Heading size="small" alignSelf="center">
-                autonomous empowerment zones
+                {"< "} autonomous empowerment zones {" >"}
               </Heading>
               <Paragraph alignSelf="center" size="large" textAlign="center">
                 "an artistic approach for progressively developing inter-cities
@@ -1070,9 +1140,9 @@ function App() {
             <CaretDown color="yellow" />
             <CaretDown color="yellow" />
           </Box>
-          
+
           <Heading size="medium">what's next?</Heading>
-          <OnTheWall/>
+          <OnTheWall />
 
           <Box align="center" alignContent="center" justify="center">
             {/* <Image
