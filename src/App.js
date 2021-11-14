@@ -190,12 +190,15 @@ const GenreCardList = () => {
           </Tip>
         </Box>
 
-        <Box direction="row" alignSelf="center" 
-        animation={{
-          type: "fadeIn",
-          delay: 20,
-          duration: 1000,
-        }}>
+        <Box
+          direction="row"
+          alignSelf="center"
+          animation={{
+            type: "fadeIn",
+            delay: 20,
+            duration: 1000,
+          }}
+        >
           <Tip
             plain
             content={
@@ -384,12 +387,15 @@ const GenreCardList = () => {
             </Card>
           </Tip>
         </Box>
-        <Box size direction="row" alignSelf="center"
-        animation={{
-          type: "slideDown",
-          delay: 20,
-          duration: 1000,
-        }}
+        <Box
+          size
+          direction="row"
+          alignSelf="center"
+          animation={{
+            type: "slideDown",
+            delay: 20,
+            duration: 1000,
+          }}
         >
           <Tip
             size="large"
@@ -748,48 +754,48 @@ const GenreCardList = () => {
 
 const OnTheWall = () => (
   <Grommet>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#ff5500"
         fill-opacity="0.8"
         d="M0,64L0,96L96,96L96,128L192,128L192,192L288,192L288,128L384,128L384,64L480,64L480,192L576,192L576,64L672,64L672,288L768,288L768,128L864,128L864,96L960,96L960,128L1056,128L1056,64L1152,64L1152,32L1248,32L1248,192L1344,192L1344,288L1440,288L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"
       ></path>
     </svg>
-    <Heading size="medium" textAlign="center">
+    {/* <Heading size="medium" textAlign="center">
       {" "}
       a metaversal solidarity, on the walls.
-    </Heading>
+    </Heading> */}
 
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
-          <Heading size="small" textAlign="center">
-          {" "}
-          a metaversal solidarity, on the walls.
-        </Heading>
+          <Heading size="xsmall" textAlign="center">
+            {" "}
+            a metaversal solidarity, <br></br>
+            on the walls
+          </Heading>
         ) : (
           <Heading size="medium" textAlign="center">
-          {" "}
-          a metaversal solidarity, on the walls.
-        </Heading> 
+            {" "}
+            a metaversal solidarity, on the walls.
+          </Heading>
         )
       }
     </ResponsiveContext.Consumer>
 
-{/* /////////// */}
-
+    {/* /////////// */}
 
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
           <Box direction="column">
-        <Box animation={{
-                  type: "slideUp",
-                  delay: 20,
-                  duration: 1000,
-                }}>
+            <Box
+              animation={{
+                type: "slideUp",
+                delay: 20,
+                duration: 1000,
+              }}
+            >
               <Image
                 src="./a_pseudo_banksy_mint.png"
                 width="464px"
@@ -797,11 +803,13 @@ const OnTheWall = () => (
                 margin="32px"
               ></Image>
             </Box>
-            <Box animation={{
-              type: "slideDown",
-              delay: 20,
-              duration: 1000,
-            }}>
+            <Box
+              animation={{
+                type: "slideDown",
+                delay: 20,
+                duration: 1000,
+              }}
+            >
               <Image
                 src="./real_metaverse.png"
                 width="464px"
@@ -811,15 +819,14 @@ const OnTheWall = () => (
             </Box>
           </Box>
         ) : (
-          <Box
-            direction="row"
-          
-          >
-            <Box animation={{
-                  type: "slideUp",
-                  delay: 20,
-                  duration: 1000,
-                }}>
+          <Box direction="row">
+            <Box
+              animation={{
+                type: "slideUp",
+                delay: 20,
+                duration: 1000,
+              }}
+            >
               <Image
                 src="./a_pseudo_banksy_mint.png"
                 width="576px"
@@ -827,11 +834,13 @@ const OnTheWall = () => (
                 margin="32px"
               ></Image>
             </Box>
-            <Box animation={{
-              type: "slideDown",
-              delay: 20,
-              duration: 1000,
-            }}>
+            <Box
+              animation={{
+                type: "slideDown",
+                delay: 20,
+                duration: 1000,
+              }}
+            >
               <Image
                 src="./real_metaverse.png"
                 width="576px"
@@ -1119,10 +1128,6 @@ function App() {
                 for $GENREs and $FUSIONs.
               </Paragraph>
 
-              <Paragraph alignSelf="center" size="large" textAlign="center">
-                connecting cities in peer-to-peer and mesh-to-mesh fashions.
-              </Paragraph>
-
               <Image
                 src="./cities_bridged_by_genres.png"
                 width="400px"
@@ -1130,6 +1135,14 @@ function App() {
                 margin="10px"
                 alignSelf="center"
               ></Image>
+              <Box background="yellow" margin="small">
+                <Paragraph color="black" alignSelf="center" size="large" textAlign="center">
+                  connecting cities in a mesh-to-mesh fashion.
+                  <br></br><br></br>
+                  cities come together with their artistic identities. 
+                </Paragraph>
+              </Box>
+
               <Heading size="small" alignSelf="center">
                 {"< "}mutually inclusive {" >"}
               </Heading>
