@@ -36,7 +36,7 @@ const theme = {
   },
 };
 
-const DesignPrinciples = () => {
+const StartManifest = () => {
   return (
     <Box justify="center" alignContent="center">
       <Paragraph size="large">
@@ -45,31 +45,52 @@ const DesignPrinciples = () => {
             // margin="20px"
             label={
               <Text size="medium">
-                <Heading>design principles</Heading>
+                <Heading>free-styler</Heading>
               </Text>
             }
           >
-            <Box background="#FFFF99" height="middle" width="large">
-              <Paragraph>Build solidarity, not organisations.</Paragraph>
-
-              <Paragraph color="black" alignSelf="center" size="medium">
-                art is intersectional, so our cities. every city has an
-                identity, and that as well, artistically. connecting abstraction
-                exist $GENREs, then $CAUSEs and $SKILLs ground between cities to
-                stand together.
-              </Paragraph>
-
-              <Paragraph color="black" alignSelf="center" size="medium">
-                there are no user types. there are behaviours, and we find
-                common ground via audience, resident and artists being our base.
-              </Paragraph>
-            </Box>
+            <Box background="#FFFF99" height="middle" width="large"></Box>
           </AccordionPanel>
         </Accordion>
       </Paragraph>
     </Box>
   );
 };
+
+// const DesignPrinciples = () => {
+//   return (
+//     <Box justify="center" alignContent="center">
+//       <Paragraph size="large">
+//         <Accordion>
+//           <AccordionPanel
+//             // margin="20px"
+//             label={
+//               <Text size="medium">
+//                 <Heading>design principles</Heading>
+//               </Text>
+//             }
+//           >
+//             <Box background="#FFFF99" height="middle" width="large">
+//               <Paragraph>Build solidarity, not organisations.</Paragraph>
+
+//               <Paragraph color="black" alignSelf="center" size="medium">
+//                 art is intersectional, so our cities. every city has an
+//                 identity, and that as well, artistically. connecting abstraction
+//                 exist $GENREs, then $CAUSEs and $SKILLs ground between cities to
+//                 stand together.
+//               </Paragraph>
+
+//               <Paragraph color="black" alignSelf="center" size="medium">
+//                 there are no user types. there are behaviours, and we find
+//                 common ground via audience, resident and artists being our base.
+//               </Paragraph>
+//             </Box>
+//           </AccordionPanel>
+//         </Accordion>
+//       </Paragraph>
+//     </Box>
+//   );
+// };
 
 const CitiesConnViaGenres = () => {
   return (
@@ -92,12 +113,20 @@ const OrganiCities = () => {
           d="M0,96L0,288L72,288L72,32L144,32L144,192L216,192L216,224L288,224L288,0L360,0L360,160L432,160L432,192L504,192L504,256L576,256L576,128L648,128L648,128L720,128L720,320L792,320L792,192L864,192L864,64L936,64L936,192L1008,192L1008,96L1080,96L1080,224L1152,224L1152,160L1224,160L1224,192L1296,192L1296,288L1368,288L1368,96L1440,96L1440,0L1368,0L1368,0L1296,0L1296,0L1224,0L1224,0L1152,0L1152,0L1080,0L1080,0L1008,0L1008,0L936,0L936,0L864,0L864,0L792,0L792,0L720,0L720,0L648,0L648,0L576,0L576,0L504,0L504,0L432,0L432,0L360,0L360,0L288,0L288,0L216,0L216,0L144,0L144,0L72,0L72,0L0,0L0,0Z"
         ></path>
       </svg>
-       <Heading size="medium" alignSelf="center">Decentralised</Heading>        
+      <Heading size="medium" alignSelf="center">
+        Decentralised
+      </Heading>
       <Text size="large" alignSelf="center">
-      <Heading size="medium" alignSelf="center"> Autonomous {"&"} Artistic</Heading>        
+        <Heading size="medium" alignSelf="center">
+          {" "}
+          Autonomous {"&"} Artistic
+        </Heading>
       </Text>{" "}
       <br></br>
-      <Heading size="medium" alignSelf="center"> OrganiCities</Heading>
+      <Heading size="medium" alignSelf="center">
+        {" "}
+        OrganiCities
+      </Heading>
       <br></br>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -279,8 +308,72 @@ const GenreCardsHorizontal = (direction) => {
                 @ 1 city
               </Text>
               <Attraction />
-              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
-              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+              {/*
+              <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> 
+              */}
+            </CardFooter>
+          </Card>
+        </Tip>
+
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text weight="bold" font="large">
+                Hamburg
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small">
+              <Text size="large" weight="bolder">
+                $DUB
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="black">
+              {/* <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
+                target="_blank"
+                color="white"
+              > */}
+              <Box>
+                <Image
+                  src="./dub.jpeg"
+                  width="100px"
+                  height="104px"
+                  style={{
+                    marginLeft: "22px",
+                    marginRight: "36px",
+                    marginTop: "2px",
+                  }}
+                ></Image>
+              </Box>
+              {/* </Anchor> */}
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ no city
+              </Text>
+              <Attraction />
+              {/*
+              <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> 
+              */}
             </CardFooter>
           </Card>
         </Tip>
@@ -352,6 +445,65 @@ const GenreCardsHorizontal = (direction) => {
             </CardFooter>
           </Card>
         </Tip>
+
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              {/* <Text weight="bold">Berlin, Hamburg</Text> */}
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small">
+              <Text size="large" weight="bolder">
+                $PAINTING
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="red">
+              {/* <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x6220750e4877cca63e0d68e41b88188ee4cde9b1afc9a6ce11edd72b1c3f0c9c"
+                target="_blank"
+                color="white"
+              > */}
+              <Box alignSelf="center">
+                <Image
+                  src="./painting_picasso.jpeg"
+                  width="92px"
+                  height="130px"
+                  style={{
+                    marginLeft: "22px",
+                    marginRight: "22px",
+                    marginTop: "2px",
+                    marginBottom: "1px",
+                  }}
+                ></Image>
+              </Box>
+              {/* </Anchor> */}
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ no cities
+              </Text>
+              <Attraction />
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+        </Tip>
       </Box>
       <Box direction="row">
         <Tip
@@ -410,7 +562,7 @@ const GenreCardsHorizontal = (direction) => {
             </CardBody>
             <CardFooter pad={{ horizontal: "small" }} background="light-2">
               <Text size="large" weight="bold">
-                @ 0 cities
+                @ no cities
               </Text>
               <Attraction />
               {/* <Button icon={<Attraction color="red" />} hoverIndicator />
@@ -453,7 +605,7 @@ const GenreCardsHorizontal = (direction) => {
                 $PUNK
               </Text>
             </CardHeader>
-            <CardBody pad="small" background="purple">
+            <CardBody pad="small" background="black">
               <Anchor
                 href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
                 target="_blank"
@@ -461,13 +613,12 @@ const GenreCardsHorizontal = (direction) => {
               >
                 <Box>
                   <Image
-                    src="./rock_horizontal.png"
-                    width="100px"
-                    height="60px"
+                    src="./punk.png"
+                    width="110px"
+                    height="110px"
                     style={{
                       marginLeft: "22px",
                       marginRight: "36px",
-                      marginTop: "12px",
                     }}
                   ></Image>
                 </Box>
@@ -598,7 +749,7 @@ const GenreCardsHorizontal = (direction) => {
             </CardHeader>
             <CardBody pad="small" background="white">
               <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
-                start an artistic community DAO for your city today,
+                come join our discord server,  initiate new $GENREs in new cities.
                 <br></br>
               </Anchor>
               <Paragraph textAlign="center">for "real".</Paragraph>
@@ -912,7 +1063,7 @@ const GenreCardsVertical = (direction) => {
               >
                 <Box>
                   <Image
-                    src="./rock_horizontal.png"
+                    src="./punk.png"
                     width="100px"
                     height="60px"
                     style={{
@@ -1366,7 +1517,6 @@ const GenreCardsVertical = (direction) => {
 
 const OnTheWall = () => (
   <Grommet>
-
     {/* <Heading size="medium" textAlign="center">
       {" "}
       a metaversal solidarity, on the walls.
@@ -1379,14 +1529,14 @@ const OnTheWall = () => (
             <Heading size="xsmall" textAlign="center">
               {" "}
               a metaversal solidarity, <br></br>
-              on the walls"
+              on the wall"
             </Heading>
           </>
         ) : (
           <>
             <Heading size="medium" textAlign="center">
               {" "}
-              a metaversal solidarity, on the walls.
+              a metaversal solidarity, on the walls
             </Heading>
           </>
         )
@@ -1649,7 +1799,6 @@ function App() {
           <ResponsiveContext.Consumer>
             {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
           </ResponsiveContext.Consumer>
-         
 
           <Box justify="center" alignContent="center">
             <Heading size="small" alignSelf="center">
@@ -1684,6 +1833,16 @@ function App() {
                   </Heading>
                 </Box>
               </Box>
+
+              <Box>
+                <Paragraph alignSelf="center" size="large" textAlign="center">
+                  "an artistic approach for progressively developing
+                  inter-cities connectivity, decentralised exchanges and
+                  audience/citizens side activated and engaged collective
+                  governance mechanisms establish mesh-to-mesh connections that
+                  are made of peer-to-peer connections of cities and hopes."
+                </Paragraph>
+              </Box>
               <OrganiCities />
               {/* <Box
                 background="#323001"
@@ -1699,29 +1858,44 @@ function App() {
             <Box alignSelf="center">
               <Paragraph alignSelf="center" size="large" textAlign="center">
                 stateful.art is an open-sourced design-thinking project, aiming
-                to initiate an experimental context* to tackle {" "}
+                to initiate an experimental context* to tackle{" "}
                 <Anchor
                   href="https://www.interaction-design.org/literature/topics/wicked-problems"
                   target="_blank"
                 >
                   wicked problems
-                </Anchor>
-                {" "}
-                of our time, and planet hence in the future, preparing for civic global resolutions including environmental issues, migrations. 
-
+                </Anchor>{" "}
+                of our time. hence in the future, preparing for civic global
+                resolutions including environmental issues, migrations.
                 <br></br>
+                <br></br>* $STARTing with re-defining future art residencies
+                that are community-based, and not any more, solely initiated,
+                organised and consented by institutional structures and
+                processes, that are not transparent at all, nor designed to always stay as open calls.
                 <br></br>
-                $STARTing with something called artist
-                in residency, aka. art residency programs.
-                <br></br>
-                <Heading> Art have been and will be, on our pathways of a real peace. Does not matter how loud it is.</Heading>
+                <Heading>
+                  {" "}
+                  Art is a piece of peace, <br></br>doesn't matter how loud it
+                  is.
+                </Heading>
                 <br></br>* project initiates a couple of $GENRE and defined a
                 couple of initial cities for voting communitiy-supported
                 residency proposals per artistic movement and cities with DAOs
-                for that solidarity and intentional, conscious actions.
+                for that solidarity and intentional, conscious actions from
+                residents of those cities.
                 <br></br>
                 {/* <br></br> <br></br>  */}
               </Paragraph>
+
+              <ResponsiveContext.Consumer>
+                {(size) =>
+                  size === "small" ? (
+                    <GenreCardsVertical direction={"column"} />
+                  ) : (
+                    <GenreCardsHorizontal direction={"row"} />
+                  )
+                }
+              </ResponsiveContext.Consumer>
               <CitiesConnViaGenres />
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
@@ -1767,43 +1941,77 @@ function App() {
                 <br></br>
                 <br></br>many states having hard time reflecting local and
                 global societies' common will, rights and hopes.
-               
-                <br></br> with this initiative project, simply inviting all to take global matters to
-                citizens of those cities and countries to decide, act and even
-                build and propose better solutions.
+                <br></br> with this initiative project, simply inviting all to
+                take global matters to citizens of those cities and countries to
+                decide, act and even build and propose better solutions.
                 <br></br>
                 <br></br> and doing it in a resilient and undeniable way; with
-                blockchain, DAOs, and new NFT minting that are
-                there to evolve to build capacity of creating commons in
-                multiple cities of even two countries, that are maybe "not an allie".
+                blockchain, DAOs, and new NFT minting.
+                <br></br>
+                <br></br>
+                for that, lately started an example smart contract project based
+                on ERC-1155 standard and named that
+                <Anchor
+                  href="https://github.com/stateful-art/local-zines"
+                  target="_blank"
+                >
+                  {" "}
+                  "LocalZines".{" "}
+                </Anchor>
+                {"<|"}CheckItOut.
+                <br></br>
+                <br></br>
+                with that, creating a minting scenario, where supply is hoping
+                to make NFTs a accessibility and sustainability of the arts,
+                knowledge and the notion of togetherness.
+                <br></br>
+                <br></br> you'll se in the "Banksy Case" below, that an artist
+                can just dedicate to art communities (some initiated as below
+                and they are linked to their respective $GENRE DAO communities
+                so to say.
                 <br></br>
                 <br></br> if the matter is sovereignity, then it will be those
-                communities in their cities cities that would at least show
-                their will for change.
+                communities in their cities that would at least show their will
+                for change, intentionally.
                 <br></br>
                 <br></br> how? well, with $GENRE abstraction, we try to reflect
                 what it is like in real life. via people having both containing
                 and expressing their taste and stake in creative communities in
-                their cities and of course, that's the point: remotes too; as
-                long as people there are open those positive impact. 
+                their cities and of course, that's the point: remotes too.
                 <br></br>
-                <br></br>so that's how
-                they build mutual empowerment zones between cities, not
-                countries.
                 <br></br>
-                <br></br>while taking part in welcoming art residencies of the future, they are encouraged to
-                take initiative and start something truly unique out there, and help developing different governance and ungovernance mechanisms .
+                as long as people there are open those positive impact. so we
+                create those tokens that people can use globally for such and a
+                lot of ways.
+                <br></br>
+                <br></br>
+                so that's how we build mutual empowerment zones between cities,
+                not countries. it's after all more direct connections and could
+                be even more sustainable.
+                <Text> </Text>
+                <Text> </Text>
+                <br></br>
+                <br></br>while taking part in welcoming art residencies of the
+                future, they are encouraged to take initiative and start
+                something truly unique out there, and help developing different
+                governance and ungovernance mechanisms.
               </Paragraph>
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                project, as-is, defined in the realms and art and activism, that are movemental.
+                project, as-is, defined in the realms and art and activism, that
+                are movemental.
                 <br></br>
-                in a binary world, and impact being delegated; we'll be signing
-                those global petitions as world citizens, in the next
-                convention.
+                even in a binary world, where individual and collective impact
+                being delegated;
+                <br></br> <br></br>
+                we'll be signing those future petitions golbally, as world
+                citizens, hopefully and even surely, before the next convention.
                 <br></br>
-                there's tech, there is will and the vision. well, it's up to
-                people to organise, after all.
+                <br></br>
+                and from there, we'll diversify our positive impact in a
+                borderless fashion. there's tech, there is will and the vision.
+                well, it's up to people to organise and co-imagine and want
+                that, for other livings too, after all.
               </Paragraph>
 
               {/* <Paragraph alignSelf="center" size="large" textAlign="center">
@@ -1812,16 +2020,9 @@ function App() {
               </Paragraph> */}
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                the way we started this, totally welcomes new ones to join and build unique organisational models
-                and activities to build a resilient, diverse and
-                solidarity-oriented ground for artists and activists, globally.
-                
-                <br></br>
-                <br></br>
-
+              
                 our initial endevours mainly focus on incentivising democratic
                 initiative taking via a timely art direction in the tokenomics.
-          
                 <br></br>
                 <br></br>
                 project is initiated as a Decentralised Autonomous Organisation
@@ -1870,13 +2071,6 @@ function App() {
                 </Paragraph>
               </Box> */}
 
-              <Paragraph alignSelf="center" size="large" textAlign="center">
-                "an artistic approach for progressively developing inter-cities
-                connectivity, decentralised exchanges and audience/citizens side activated and engaged collective governance mechanisms
-                establish mesh-to-mesh connections that are made of peer-to-peer
-                connections of cities and hopes."
-              </Paragraph>
-
               {/* <Heading size="middle">introducing DAAOs.</Heading> */}
             </Box>
           </Box>
@@ -1921,7 +2115,7 @@ function App() {
             {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
           </ResponsiveContext.Consumer> */}
 
-          <ResponsiveContext.Consumer>
+          {/* <ResponsiveContext.Consumer>
             {(size) =>
               size === "small" ? (
                 <GenreCardsVertical direction={"column"} />
@@ -1929,7 +2123,7 @@ function App() {
                 <GenreCardsHorizontal direction={"row"} />
               )
             }
-          </ResponsiveContext.Consumer>
+          </ResponsiveContext.Consumer> */}
 
           <Box justify="center" alignContent="center">
             <CaretDown color="yellow" />
