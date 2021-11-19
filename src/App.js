@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import {
-  Accordion,
-  AccordionPanel,
+  // Accordion,
+  // AccordionPanel,
   Anchor,
   Box,
   Card,
@@ -36,26 +36,26 @@ const theme = {
   },
 };
 
-const StartManifest = () => {
-  return (
-    <Box justify="center" alignContent="center">
-      <Paragraph size="large">
-        <Accordion>
-          <AccordionPanel
-            // margin="20px"
-            label={
-              <Text size="medium">
-                <Heading>free-styler</Heading>
-              </Text>
-            }
-          >
-            <Box background="#FFFF99" height="middle" width="large"></Box>
-          </AccordionPanel>
-        </Accordion>
-      </Paragraph>
-    </Box>
-  );
-};
+// const StartManifest = () => {
+//   return (
+//     <Box justify="center" alignContent="center">
+//       <Paragraph size="large">
+//         <Accordion>
+//           <AccordionPanel
+//             // margin="20px"
+//             label={
+//               <Text size="medium">
+//                 <Heading>free-styler</Heading>
+//               </Text>
+//             }
+//           >
+//             <Box background="#FFFF99" height="middle" width="large"></Box>
+//           </AccordionPanel>
+//         </Accordion>
+//       </Paragraph>
+//     </Box>
+//   );
+// };
 
 // const DesignPrinciples = () => {
 //   return (
