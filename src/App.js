@@ -470,7 +470,7 @@ const GenreCardsHorizontal = (direction) => {
           >
             <CardHeader alignSelf="center" pad="small">
               <Text size="large" weight="bolder">
-                $PAINTING
+                $CUBISM
               </Text>
             </CardHeader>
             <CardBody pad="small" background="red">
@@ -1857,15 +1857,17 @@ function App() {
             </Heading>
             <Box alignSelf="center">
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                stateful.art is an open-sourced design-thinking project, aiming
-                to initiate an experimental context* to tackle{" "}
+                stateful.art is an open-sourced design-thinking project, initiating an experimental context* to tackle{" "}
                 <Anchor
                   href="https://www.interaction-design.org/literature/topics/wicked-problems"
                   target="_blank"
                 >
                   wicked problems
                 </Anchor>{" "}
-                of our time. hence in the future, preparing for civic global
+                of our time. 
+                <br></br>
+                <br></br>
+                hence in the future, preparing for civic global
                 resolutions including environmental issues, migrations.
                 <br></br>
                 <br></br>* $STARTing with re-defining future art residencies
