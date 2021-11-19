@@ -39,46 +39,35 @@ const theme = {
 const DesignPrinciples = () => {
   return (
     <Box justify="center" alignContent="center">
-    <Paragraph size="large">
-      <Accordion>
-        <AccordionPanel
-          // margin="20px"
-          label={
-            <Text size="medium">
-              <Heading>design principles</Heading>
-            </Text>
-          }
-        >
-          <Box background="#FFFF99" height="middle" width="large">
-            <Box direction="column">
+      <Paragraph size="large">
+        <Accordion>
+          <AccordionPanel
+            // margin="20px"
+            label={
+              <Text size="medium">
+                <Heading>design principles</Heading>
+              </Text>
+            }
+          >
+            <Box background="#FFFF99" height="middle" width="large">
+              <Paragraph>Build solidarity, not organisations.</Paragraph>
 
-                  <Paragraph color="black" alignSelf="center" size="medium">
-            art is intersectional, so our cities.
-            every city has an identity, and that as well, artistically.
-            connecting abstraction exist $GENREs, then $CAUSEs and
-            $SKILLs ground between cities to stand together.
-            </Paragraph>
+              <Paragraph color="black" alignSelf="center" size="medium">
+                art is intersectional, so our cities. every city has an
+                identity, and that as well, artistically. connecting abstraction
+                exist $GENREs, then $CAUSEs and $SKILLs ground between cities to
+                stand together.
+              </Paragraph>
 
-              
-            <Paragraph color="black" alignSelf="center" size="medium">
-            art is intersectional, so our cities.
-            every city has an identity, and that as well, artistically.
-            connecting abstraction exist $GENREs, then $CAUSEs and
-            $SKILLs ground between cities to stand together.
-            </Paragraph>
-
-            <Paragraph color="black" alignSelf="center" size="medium">
-              there are no user types. there are behaviours, and we find
-              common ground via audience, resident and artists being our
-              base.
-            </Paragraph>
+              <Paragraph color="black" alignSelf="center" size="medium">
+                there are no user types. there are behaviours, and we find
+                common ground via audience, resident and artists being our base.
+              </Paragraph>
             </Box>
-       
-          </Box>
-        </AccordionPanel>
-      </Accordion>
-    </Paragraph>
-  </Box>
+          </AccordionPanel>
+        </Accordion>
+      </Paragraph>
+    </Box>
   );
 };
 
@@ -103,16 +92,12 @@ const OrganiCities = () => {
           d="M0,96L0,288L72,288L72,32L144,32L144,192L216,192L216,224L288,224L288,0L360,0L360,160L432,160L432,192L504,192L504,256L576,256L576,128L648,128L648,128L720,128L720,320L792,320L792,192L864,192L864,64L936,64L936,192L1008,192L1008,96L1080,96L1080,224L1152,224L1152,160L1224,160L1224,192L1296,192L1296,288L1368,288L1368,96L1440,96L1440,0L1368,0L1368,0L1296,0L1296,0L1224,0L1224,0L1152,0L1152,0L1080,0L1080,0L1008,0L1008,0L936,0L936,0L864,0L864,0L792,0L792,0L720,0L720,0L648,0L648,0L576,0L576,0L504,0L504,0L432,0L432,0L360,0L360,0L288,0L288,0L216,0L216,0L144,0L144,0L72,0L72,0L0,0L0,0Z"
         ></path>
       </svg>
-      <Text size="large" alignSelf="center" margin="small">
-        Decentralised
-      </Text>
+       <Heading size="medium" alignSelf="center">Decentralised</Heading>        
       <Text size="large" alignSelf="center">
-        Autonomous {"&"} Artistic
+      <Heading size="medium" alignSelf="center"> Autonomous {"&"} Artistic</Heading>        
       </Text>{" "}
       <br></br>
-      <Text size="large" alignSelf="center">
-        OrganiCities
-      </Text>
+      <Heading size="medium" alignSelf="center"> OrganiCities</Heading>
       <br></br>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -175,7 +160,7 @@ const LogoBig = () => {
 //   },
 // };
 
-const GenreCardList = (direction) => {
+const GenreCardsHorizontal = (direction) => {
   return (
     <>
       {/* <Box direction="row"> */}
@@ -497,7 +482,458 @@ const GenreCardList = (direction) => {
             </CardFooter>
           </Card>
         </Tip>
-        FOLK
+        {/* FOLK */}
+        {/* ROCK */}
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text size="medium" weight="bolder">
+                Berlin, Hamburg, Istanbul, Los Angeles
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader
+              alignSelf="center"
+              pad="small"
+              background="light-1"
+              color="white"
+            >
+              <Text size="large" weight="bolder">
+                $ROCK
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="purple">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
+                target="_blank"
+                color="white"
+              >
+                <Box>
+                  <Image
+                    src="./rock_horizontal.png"
+                    width="100px"
+                    height="60px"
+                    style={{
+                      marginLeft: "22px",
+                      marginRight: "36px",
+                      marginTop: "12px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 4 cities
+              </Text>
+
+              <Attraction />
+            </CardFooter>
+          </Card>
+        </Tip>
+      </Box>
+      <Box
+        size
+        direction="row"
+        alignSelf="center"
+        animation={{
+          type: "slideDown",
+          delay: 20,
+          duration: 1000,
+        }}
+      >
+        <Tip
+          size="large"
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text textAlign="center" weight="bold">
+                join our discord channel and events to learn how.
+              </Text>
+              <Text size="small" alignSelf="center" textAlign="center">
+                build resilient, free and democratically scalable,creative
+                mechanisms for your city.
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+            alignContent="center"
+          >
+            <CardHeader
+              alignSelf="center"
+              pad="small"
+              background="light-1"
+              color="white"
+            >
+              <Aggregate size="large"></Aggregate>
+            </CardHeader>
+            <CardBody pad="small" background="white">
+              <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
+                start an artistic community DAO for your city today,
+                <br></br>
+              </Anchor>
+              <Paragraph textAlign="center">for "real".</Paragraph>
+            </CardBody>
+          </Card>
+        </Tip>
+      </Box>
+      {/* </Box> */}
+    </>
+  );
+};
+
+const GenreCardsVertical = (direction) => {
+  return (
+    <>
+      {/* <Box direction="row"> */}
+      <Box direction={{ direction }}>
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "medium" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+              // animation={{
+              //   type: "jiggle",
+              //   delay: 20,
+              //   duration: 4000,
+              // }}
+            >
+              <Text weight="bold">Berlin, Hamburg, Istanbul, Los Angeles</Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small" background="light-1">
+              <Text size="large" weight="bolder">
+                $HIPHOP
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="orange">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0xa21629c00a7d9c88ea98673a0b81becd156cfe416920ec6d40b408d1506eb1e4"
+                target="_blank"
+                color="white"
+              >
+                <Box animation="zoomOut">
+                  <Image
+                    src="./hiphop.png"
+                    width="120px"
+                    height="80px"
+                    style={{
+                      marginLeft: "20px",
+                      marginRight: "36px",
+                      marginTop: "12px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 4 cities <Attraction />
+              </Text>
+            </CardFooter>
+          </Card>
+        </Tip>
+
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text weight="bold" font="large">
+                Hamburg
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small">
+              <Text size="large" weight="bolder">
+                $ELECTRO
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="black">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
+                target="_blank"
+                color="white"
+              >
+                <Box>
+                  <Image
+                    src="./electronic_music.jpeg"
+                    width="120px"
+                    height="104px"
+                    style={{
+                      marginLeft: "22px",
+                      marginRight: "36px",
+                      marginTop: "2px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 1 city
+              </Text>
+              <Attraction />
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+        </Tip>
+      </Box>
+
+      <Box
+        direction="row"
+        alignSelf="center"
+        animation={{
+          type: "fadeIn",
+          delay: 20,
+          duration: 1000,
+        }}
+      >
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text weight="bold">Berlin, Hamburg</Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small">
+              <Text size="large" weight="bolder">
+                $GRAFFITI
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="red">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x6220750e4877cca63e0d68e41b88188ee4cde9b1afc9a6ce11edd72b1c3f0c9c"
+                target="_blank"
+                color="white"
+              >
+                <Box alignSelf="center">
+                  <Image
+                    src="./graffiti.jpeg"
+                    width="130px"
+                    height="104px"
+                    style={{
+                      marginLeft: "22px",
+                      marginRight: "36px",
+                      marginTop: "2px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 2 cities
+              </Text>
+              <Attraction />
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+        </Tip>
+      </Box>
+      <Box direction="row">
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="#FFFF99"
+              responsive={false}
+              animation={{
+                type: "slideLeft",
+                delay: 20,
+                duration: 1000,
+              }}
+            >
+              <Text size="medium">
+                reggae community currently have no city-level treasury.
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader alignSelf="center" pad="small" background="light-1">
+              <Text size="large" weight="bolder">
+                $REGGAE
+              </Text>
+            </CardHeader>
+            <CardBody background="black">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x594080e1603af01cba9155a6fa6899b833c5549d555c89a2e7d578be33495ff3"
+                target="_blank"
+                color="white"
+              >
+                <Box>
+                  <Image
+                    src="./reggae.jpeg"
+                    width="90px"
+                    height="76px"
+                    style={{
+                      marginLeft: "48px",
+                      marginRight: "36px",
+                      marginTop: "20px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 0 cities
+              </Text>
+              <Attraction />
+              {/* <Button icon={<Attraction color="red" />} hoverIndicator />
+              <Button icon={<ShareOption color="plain" />} hoverIndicator /> */}
+            </CardFooter>
+          </Card>
+        </Tip>
+        {/* PUNK     */}
+        <Tip
+          plain
+          content={
+            <Box
+              pad="small"
+              gap="small"
+              width={{ max: "small" }}
+              round="small"
+              background="background-front"
+              responsive={false}
+            >
+              <Text size="medium" weight="bolder">
+                Hamburg
+              </Text>
+            </Box>
+          }
+          dropProps={{ align: { left: "right" } }}
+        >
+          <Card
+            height="small"
+            margin="small"
+            width="small"
+            background="light-1"
+          >
+            <CardHeader
+              alignSelf="center"
+              pad="small"
+              background="light-1"
+              color="white"
+            >
+              <Text size="large" weight="bolder">
+                $PUNK
+              </Text>
+            </CardHeader>
+            <CardBody pad="small" background="purple">
+              <Anchor
+                href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
+                target="_blank"
+                color="white"
+              >
+                <Box>
+                  <Image
+                    src="./rock_horizontal.png"
+                    width="100px"
+                    height="60px"
+                    style={{
+                      marginLeft: "22px",
+                      marginRight: "36px",
+                      marginTop: "12px",
+                    }}
+                  ></Image>
+                </Box>
+              </Anchor>
+            </CardBody>
+            <CardFooter pad={{ horizontal: "small" }} background="light-2">
+              <Text size="large" weight="bold">
+                @ 1 city
+              </Text>
+
+              <Attraction />
+            </CardFooter>
+          </Card>
+        </Tip>
+        {/* FOLK */}
         {/* ROCK */}
         <Tip
           plain
@@ -930,13 +1366,7 @@ const GenreCardList = (direction) => {
 
 const OnTheWall = () => (
   <Grommet>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#ff5500"
-        fill-opacity="0.8"
-        d="M0,64L0,96L96,96L96,128L192,128L192,192L288,192L288,128L384,128L384,64L480,64L480,192L576,192L576,64L672,64L672,288L768,288L768,128L864,128L864,96L960,96L960,128L1056,128L1056,64L1152,64L1152,32L1248,32L1248,192L1344,192L1344,288L1440,288L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"
-      ></path>
-    </svg>
+
     {/* <Heading size="medium" textAlign="center">
       {" "}
       a metaversal solidarity, on the walls.
@@ -946,23 +1376,20 @@ const OnTheWall = () => (
       {(size) =>
         size === "small" ? (
           <>
-          <Heading size="xsmall" textAlign="center">
-            {" "}
-            a metaversal solidarity, <br></br>
-            on the walls
-          </Heading>
-          <Paragraph> because this planet deserving this.</Paragraph>
+            <Heading size="xsmall" textAlign="center">
+              {" "}
+              a metaversal solidarity, <br></br>
+              on the walls"
+            </Heading>
           </>
         ) : (
           <>
-          <Heading size="medium" textAlign="center">
-            {" "}
-            a metaversal solidarity, on the walls.
-          </Heading>
-          <Paragraph> because this planet deserving this.</Paragraph>
-
+            <Heading size="medium" textAlign="center">
+              {" "}
+              a metaversal solidarity, on the walls.
+            </Heading>
           </>
-          )
+        )
       }
     </ResponsiveContext.Consumer>
 
@@ -1035,8 +1462,7 @@ const OnTheWall = () => (
         )
       }
     </ResponsiveContext.Consumer>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 320">
       <path
         fill="#ff5500"
         fill-opacity="0.8"
@@ -1223,7 +1649,6 @@ function App() {
           <ResponsiveContext.Consumer>
             {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
           </ResponsiveContext.Consumer>
-
          
 
           <Box justify="center" alignContent="center">
@@ -1234,10 +1659,13 @@ function App() {
                   animation={{
                     type: "slideUp",
                     delay: 300,
-                    duration: 1000,
+                    duration: 4000,
                   }}
                 >
-                  ?what, why
+                  <Heading size="medium" alignSelf="center">
+                    {" "}
+                    ?what, why
+                  </Heading>
                 </Box>
                 <Box>
                   <Aed />
@@ -1247,17 +1675,20 @@ function App() {
                   animation={{
                     type: "slideDown",
                     delay: 300,
-                    duration: 2000,
+                    duration: 5000,
                   }}
                 >
-                  how {"&"} where
+                  <Heading size="medium" alignSelf="center">
+                    {" "}
+                    how {"&"} where
+                  </Heading>
                 </Box>
               </Box>
-
+              <OrganiCities />
               {/* <Box
                 background="#323001"
                 animation={{
-                  type: "pulse",
+                  type: "pulse",projec
                   delay: 300,
                   duration: 2400,
                 }}
@@ -1268,37 +1699,111 @@ function App() {
             <Box alignSelf="center">
               <Paragraph alignSelf="center" size="large" textAlign="center">
                 stateful.art is an open-sourced design-thinking project, aiming
-                to initiate an experimental context for something new:
+                to initiate an experimental context* to tackle {" "}
+                <Anchor
+                  href="https://www.interaction-design.org/literature/topics/wicked-problems"
+                  target="_blank"
+                >
+                  wicked problems
+                </Anchor>
+                {" "}
+                of our time, and planet hence in the future, preparing for civic global resolutions including environmental issues, migrations. 
+
+                <br></br>
+                <br></br>
+                $STARTing with something called artist
+                in residency, aka. art residency programs.
+                <br></br>
+                <Heading> Art have been and will be, on our pathways of a real peace. Does not matter how loud it is.</Heading>
+                <br></br>* project initiates a couple of $GENRE and defined a
+                couple of initial cities for voting communitiy-supported
+                residency proposals per artistic movement and cities with DAOs
+                for that solidarity and intentional, conscious actions.
+                <br></br>
                 {/* <br></br> <br></br>  */}
               </Paragraph>
-
-              <OrganiCities />
+              <CitiesConnViaGenres />
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                we are encouraging all to come together, coordinate and organize via creating new solidarity
-                networks within and between cities.
+                we are encouraging all to come together, coordinate and organize
+                via creating new solidarity networks within and between cities.
                 <br></br>
-                in core of its tokenomics, project is utilising abstract phenomenons like $GENREs and $CAUSEs 
                 <br></br>
-                this hopefully will not be that challenging, once people start experiencing their common stakes, rights and hopes at remotes, that are still on this planet.
+                in core of its tokenomics, project is utilising abstract
+                phenomenons like
+                <Text>$GENREs</Text>
+                and
+                <Text>$CAUSEs.</Text>
+                <br></br>
+                <br></br>
+                so that people that are new to blockchain have uniting starting
+                points and create their values and use those in anywhere
+                relating to artistic content, locality and especially
+                solidarity-based exchanges.
+                {/* in the future. but especially in galleries/cafe/bars that are streaming, displaying and maybe merchandising in those artistic genres, already. */}
+                <br></br>
+                <br></br>literally, those artistic movements are having their
+                unique tokens that have places to start proposing and and
+                engaging with other proposals.
+                <br></br>once people start experiencing their common stakes,
+                rights and hopes at remotes, that are still on this planet.
+              </Paragraph>
+
+              <Heading size="medium" alignSelf="center">
+                {" "}
+                reasonings
+              </Heading>
+              <Paragraph alignSelf="center" size="large" textAlign="center">
+                especially at the recent convention, COP26, we have eventually
+                seen what is
+                <Text weight="bolder" color="red" size="large">
+                  {" "}
+                  unsustainable:
+                </Text>
+                <Text weight="bolder" color="orange" size="large">
+                  {" "}
+                  "ignorance".
+                </Text>{" "}
+                <br></br>
+                <br></br>many states having hard time reflecting local and
+                global societies' common will, rights and hopes.
+               
+                <br></br> with this initiative project, simply inviting all to take global matters to
+                citizens of those cities and countries to decide, act and even
+                build and propose better solutions.
+                <br></br>
+                <br></br> and doing it in a resilient and undeniable way; with
+                blockchain, DAOs, and new NFT minting that are
+                there to evolve to build capacity of creating commons in
+                multiple cities of even two countries, that are maybe "not an allie".
+                <br></br>
+                <br></br> if the matter is sovereignity, then it will be those
+                communities in their cities cities that would at least show
+                their will for change.
+                <br></br>
+                <br></br> how? well, with $GENRE abstraction, we try to reflect
+                what it is like in real life. via people having both containing
+                and expressing their taste and stake in creative communities in
+                their cities and of course, that's the point: remotes too; as
+                long as people there are open those positive impact. 
+                <br></br>
+                <br></br>so that's how
+                they build mutual empowerment zones between cities, not
+                countries.
+                <br></br>
+                <br></br>while taking part in welcoming art residencies of the future, they are encouraged to
+                take initiative and start something truly unique out there, and help developing different governance and ungovernance mechanisms .
               </Paragraph>
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                especially at the recent convention, COP26, we have eventually seen what is 
-                <Text weight="bolder" color="red" size="large"> unsustainable:</Text> 
-                <Text weight="bolder" color="orange" size="large"> "ignorance".</Text> 
-                <br></br>many states having hard time reflecting local and global societies' common will, rights and hopes.
-                <br></br><br></br> if the matter is sovereignity, then it will be those communities in their cities cities that would at least show their will for change.
-              </Paragraph>
-
-  
-              <Paragraph alignSelf="center" size="large" textAlign="center">
-                project defined in the realms and art and activism, that are movemental.
+                project, as-is, defined in the realms and art and activism, that are movemental.
                 <br></br>
-                in a binary world, and impact being delegated; we'll be signing those global petitions as world citizens, in the next convention.
+                in a binary world, and impact being delegated; we'll be signing
+                those global petitions as world citizens, in the next
+                convention.
                 <br></br>
-                there's tech, there is will and the vision. well, it's up to people to organise, after all.
-                
+                there's tech, there is will and the vision. well, it's up to
+                people to organise, after all.
               </Paragraph>
 
               {/* <Paragraph alignSelf="center" size="large" textAlign="center">
@@ -1307,14 +1812,21 @@ function App() {
               </Paragraph> */}
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
-                project proposes and welcomes new unique organisational models and activities to build a resilient, diverse and solidarity-oriented
-                ground for artists and activists, globally. activities mainly
-                focus on incentivising democratic initiative taking via a timely art
-                direction in the tokenomics.
+                the way we started this, totally welcomes new ones to join and build unique organisational models
+                and activities to build a resilient, diverse and
+                solidarity-oriented ground for artists and activists, globally.
+                
                 <br></br>
                 <br></br>
-                project is a DAO with a governance token issued as{" "}
-                <Text size="xlarge" color="black">
+
+                our initial endevours mainly focus on incentivising democratic
+                initiative taking via a timely art direction in the tokenomics.
+          
+                <br></br>
+                <br></br>
+                project is initiated as a Decentralised Autonomous Organisation
+                (DAO) and located on 0xhabitat.org token issued as{" "}
+                <Text size="xlarge" color="#f33fe4">
                   $START.
                 </Text>
                 <br></br>
@@ -1360,21 +1872,12 @@ function App() {
 
               <Paragraph alignSelf="center" size="large" textAlign="center">
                 "an artistic approach for progressively developing inter-cities
-                connectivity and exchanges for existing and future (art)
-                residencies to establish a creative and multi-lateral trust."
+                connectivity, decentralised exchanges and audience/citizens side activated and engaged collective governance mechanisms
+                establish mesh-to-mesh connections that are made of peer-to-peer
+                connections of cities and hopes."
               </Paragraph>
 
               {/* <Heading size="middle">introducing DAAOs.</Heading> */}
-            </Box>
-
-            <Box direction="row" alignSelf="center">
-              <Text size="xlarge" weight="bolder" margin="small">
-                {/* {" "} */}
-                "come, as you are."{" "}
-              </Text>
-              <Heading size="middle" color="green">
-                but where?
-              </Heading>
             </Box>
           </Box>
 
@@ -1397,7 +1900,7 @@ function App() {
             </svg> */}
           </Box>
 
-          <Box direction="column">
+          {/* <Box direction="column">
             <Box
               // tag="footer"
               direction="row"
@@ -1408,13 +1911,25 @@ function App() {
               background="black"
               margin="large"
             ></Box>
-          </Box>
+          </Box> */}
 
           <Box justify="center" alignContent="center">
             <CaretUp color="red" />
           </Box>
 
-          <GenreCardList direction={"column"} />
+          {/* <ResponsiveContext.Consumer>
+            {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
+          </ResponsiveContext.Consumer> */}
+
+          <ResponsiveContext.Consumer>
+            {(size) =>
+              size === "small" ? (
+                <GenreCardsVertical direction={"column"} />
+              ) : (
+                <GenreCardsHorizontal direction={"row"} />
+              )
+            }
+          </ResponsiveContext.Consumer>
 
           <Box justify="center" alignContent="center">
             <CaretDown color="yellow" />
