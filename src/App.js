@@ -23,7 +23,6 @@ import {
   CaretDown,
   CaretUp,
   Directions,
-
 } from "grommet-icons";
 import React from "react";
 
@@ -89,9 +88,8 @@ const OurSongs = () => {
         <MusicAndScience />
         <br></br>
         <Heading size="medium" textAlign="center">
-          initial playlist for peace
+           the flow is you
         </Heading>
-
         <iframe
           maxWidth="42%"
           maxHeight="100%"
@@ -543,6 +541,9 @@ const DesignPrinciples = () => {
           solidarity less real.
           <br></br>
           <br></br>
+          <br></br>
+          <Braille gap="xlarge" /> catalyse STEM to STEAM transformation.
+          <br></br>
         </Text>
 
         <Text size="large">
@@ -559,9 +560,7 @@ const DesignPrinciples = () => {
           <br></br>
           <br></br>
           <Braille gap="xlarge" /> use tech to make walls fall.
-          <br></br>
-          <Braille gap="xlarge" /> extend STEM with arts, to STEAM.
-          <br></br>
+       
         </Text>
       </Box>
 
@@ -619,8 +618,6 @@ const MusicAndScience = () => {
 //     ></Image>
 //   );
 // };
-
-
 
 // const STEAM = () => {
 //   return (
@@ -793,51 +790,65 @@ const ArtMovements = (direction) => {
           size="large"
           marginTop="20%"
         >
-          <Paragraph alignSelf="center" size="xlarge" textAlign="start">
-          at st.art, so far each $GENRE's crypto-community,  initiated on
-            <Anchor
-              color=""
-              background="yellow"
-              href="https://0xhabitat.org"
-              target="_blank"
-            >
-              {" "}
-              0xhabitat.org
+          <Paragraph alignSelf="center" size="xlarge" textAlign="end">
+            <br></br>
+            <br></br>
+            stateful.art is an artistic design-thinking project, that uses abstraction, real and betweens to create future exchanges and solidarity networks. initiated some already (below) and they'll be totally shared with community, real artists and everyone, people.
+             provide context,
+            tooling and efforts on building co-ops around achieving a unique
+            vision for global peace.
+            <br></br>
+            <br></br> and using tech for good, and art unleashing what
+            open-source communities and notions brought to our lives in the last
+            decades: it is a 3E: encouragement + empowerment = enablement.
+            <strong> </strong>
+            "as a natural accummulation in time, voting global matters globally,
+            as individuals, on blockchain.
+            <br></br>
+            without being enforced to delegation, direct voting in matters like
+            climate change, migration, trade wars,
+            <Anchor href="https://en.wikipedia.org/wiki/List_of_global_issues#United_Nations_list">
+              and many more.
             </Anchor>
             <br></br>
+            it must be every individuals' right to have their vote accepted by
+            other individuals, orgs and states. even if there is a dictatorship in their countries. 
+            <br></br><br></br>
+            so this project, want to explore what would be the foundationals and essentials for the next level of democracy, which shall be a progressive and peaceful one.
+            st.art is is highly passionate about solving  <Anchor href="https://www.interaction-design.org/literature/topics/wicked-problems"
+            target="_blank">
+            {" "}wicked problems {" "}
+            </Anchor>
+            of now and the future.
             <br></br>
-            a voting module technique, called signalling, is selected initially, so that those calls and artist proposals are always kept open. also multiple proposal can be voted with different weights. 
-
-            <br></br>
-            <br></br>
-being applied to enhance our culture for democracy and introduce new opportunities. 
-            <br></br>
-            <br></br>
-
             
-            
-            <DiscordButton />
-            <br></br> community is quite new, all is just started. feel invited!
-          </Paragraph>
-         
-          <Paragraph alignSelf="center" size="xlarge" textAlign="end">
-            stateful.art is a design-thinking project.
+            at least the ones have
+            democracies can start bringing up this issue to their public
+            concern.
+            <br></br> <br></br>
+            they need concensus is a self and community-supported inclusion
+            story of every individual in our civilisation. globally and
+            transparently."
             <br></br>
-            st.art will provide an imaginable context.
-            <br></br>we'll make use of those DAAOs for audience/community
-            supported and engaged, crypt
+            <br></br>
+            context and a developed concept, around audience/community supported
+            and engaged,
             <Anchor
               href="https://en.wikipedia.org/wiki/Artist-in-residence"
               target="_blank"
               referrerPolicy="no-referrer"
             >
               {" "}
-              artists-in-residence
+              artists-in-residence{" "}
             </Anchor>
-            programs, including existing parties as well, for sure.
+            programs, including existing parties as well,to develop new voting
+            and governance modules together so it is city's observable will and
+            determination will make walls, fall. again, and again.
             <br></br>
             <br></br>
-            CabinDAO's
+            <br></br>
+            <br></br>
+            CabinDAO's{" "}
             <Anchor
               href="https://www.creatorcabins.com/"
               target="_blank"
@@ -847,11 +858,40 @@ being applied to enhance our culture for democracy and introduce new opportuniti
             </Anchor>
             is a successful crypto-based residency program, empowers artists
             with sustainable cabins and chill atmosphere, somewhere natural in
-            Texas, USA. have a look at that project, and imagine in every city
-            there are tens of spaces started emerging, as such.
+            Texas, USA.
+           
+          </Paragraph>
+          <Paragraph alignSelf="center" size="xlarge" textAlign="start">
+
+           project is using abstractions to reflect real life scenes of our cities at core of its tokenomics.
+            as token families; such as $GENREs ($BASE, $FUSION) $CAUSEs,
+            artistic and activist crypto-community enabler, to be an aggregation
+            hub for a civic registry.
+            <br></br>
+            <br></br>
+            <br></br>a voting module technique, called signalling, is selected
+            initially, so that those project calls and artist proposals are always
+            open.
+            <br></br>also multiple proposal can be voted with different weights
+            and be able to change at any given time. this is just one module to
+            experiment. however purpose is to encourage and empower communities
+            configuring their own settings and build their own infrastructure.
+            <br></br>
+            <br></br>
+            methods are on evaluation to reach out next generation politicians
+            and entreprenours. so they will not be boxed into borders. holistic,
+            one, borderless planet mindset.
+            <br></br>
+            <br></br> <DiscordButton />
+            <br></br> community is quite new, all is just started. feel invited!
+            <br></br>
+            <br></br>
+            have a look at the project, and imagine in every city (10000+) there
+            are tens of spaces started emerging, as such. then also scale it
+            with activist movements and imaine surfaces and dimensions they
+            would potentially intersect as well.
           </Paragraph>
         </Box>
-
       </Box>
       {/* <Box direction="row"> */}
       <Box direction={{ direction }}>
@@ -2530,10 +2570,14 @@ const FooterSection = () => (
           target="_blank"
           color="white"
         >
-          <Image src="xdai_stable_chain.png" width="144px" height="36px"></Image>
+          <Image
+            src="xdai_stable_chain.png"
+            width="144px"
+            height="36px"
+          ></Image>
         </Anchor>
       </Box>
-  
+
       <DiscordButton />
       <Box
         tag="footer"
@@ -2682,9 +2726,8 @@ function App() {
                 marginTop="20%"
               >
                 <Paragraph alignSelf="center" size="Xlarge" textAlign="start">
-                
                   <Anchor
-                    color=""
+                    color="pink"
                     background="yellow"
                     href="https://en.wikipedia.org/wiki/Post-structuralism"
                     target="_blank"
@@ -2692,15 +2735,33 @@ function App() {
                     {" "}
                     post-structural
                   </Anchor>
-                  ist & progressive art direction in decentralised governance
-                  and tokenomics. <br></br> <br></br> this is our metaverse, this is our restoration.
+                  ist & progressive art direction in decentralized{" "}
+                  <Anchor
+                    color="yellow"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Decentralization"
+                    target="_blank"
+                  >
+                     governance{" "}
+                  </Anchor>
+                  and{" "}
+                  <Anchor
+                    color="gray"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Post-structuralism"
+                    target="_blank"
+                  >
+                    tokenomics.{" "}
+                  </Anchor>
+                  <br></br> <br></br> this is our metaverse, <br></br> this is
+                  our restoration.
                 </Paragraph>
 
                 <Paragraph alignSelf="center" size="Xlarge" textAlign="end">
                   $START a metaversal revolution with love, peace, and
                   creativity.
                   <br></br>
-                  for the 21st century.
+                  for the 21st century. <br></br>
                   <Anchor
                     href="https://www.interaction-design.org/literature/topics/wicked-problems"
                     target="_blank"
@@ -2712,55 +2773,63 @@ function App() {
                   {/* add soulstorm here */}
                 </Paragraph>
               </Box>
-
-              <Box
-        tag="footer"
-        direction="row"
-        justify="center"
-        pad="small"
-        gap="small"
-        //flex={true}
-        background="black"
-      >
-        <Box direction="row">
-          <Text size="xxlarge">$START DAO{" |> "}</Text>
-        </Box>
-
-        <Anchor
-          href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
-          target="_blank"
-          color="white"
-        >
-          <Image src="habitat_logo.png" width="200px" height="50px"></Image>
-        </Anchor>
-      </Box>
-
-      <Box
-        tag="footer"
-        direction="row"
-        justify="center"
-        pad="small"
-        gap="small"
-        //flex={true}
-        background="black"
-      >
-        <Box direction="row">
-          <Text size="xxlarge">$START coin {" |> "}</Text>
-        </Box>
-
-        <Anchor
-          href="https://blockscout.com/xdai/mainnet/token/0x51f3eD55d11C806AA014794cDce29ea16619635C"
-          target="_blank"
-          color="white"
-        >
-          <Image src="xdai_stable_chain.png" width="200px" height="50px"></Image>
-        </Anchor>
-      </Box>
-  
-
               <Box justify="center" alignContent="center" size="large">
                 <ArtMovements direction={"row"} />
               </Box>
+              <Box
+                tag="footer"
+                direction="row"
+                justify="center"
+                pad="small"
+                gap="small"
+                //flex={true}
+                background="black"
+              >
+                <Box direction="row">
+                  <Text size="xxlarge">$START DAO{" |> "}</Text>
+                </Box>
+
+                <Anchor
+                  href="https://0xhabitat.org/app/#habitat-community,0xbb2fe36ba4fb98a3b268a3d7ee872081ad0155376abbbb8cf91d97275ac8ec58"
+                  target="_blank"
+                  color="white"
+                >
+                  <Image
+                    src="habitat_logo.png"
+                    width="200px"
+                    height="50px"
+                  ></Image>
+                </Anchor>
+              </Box>
+
+
+              
+              <Box
+                tag="footer"
+                direction="row"
+                justify="center"
+                pad="small"
+                gap="small"
+                //flex={true}
+                background="black"
+              >
+                <Box direction="row">
+                  <Text size="xxlarge">$START coin {" |> "}</Text>
+                </Box>
+                
+                <Anchor
+                  href="https://blockscout.com/xdai/mainnet/token/0x51f3eD55d11C806AA014794cDce29ea16619635C"
+                  target="_blank"
+                  color="white"
+                >
+                  <Image
+                    src="xdai_stable_chain.png"
+                    width="200px"
+                    height="50px"
+                  ></Image>
+                </Anchor>
+              </Box>
+
 
               <Box justify="center" alignContent="center" size="large">
                 <OurSongs />
