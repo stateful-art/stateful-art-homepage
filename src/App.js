@@ -10,21 +10,19 @@ import {
   Image,
   Paragraph,
   ResponsiveContext,
-  Tab,
-  Tabs,
   Text,
   Tip,
-  Header,
 } from "grommet";
 import {
   Aggregate,
   Attraction,
-  Braille,
   CaretDown,
   CaretUp,
   Directions,
 } from "grommet-icons";
 import React from "react";
+import {IntroSmall, IntroBig} from "./components/Intro";
+
 
 const theme = {
   global: {
@@ -33,108 +31,9 @@ const theme = {
   },
 };
 
-const CoreValues = () => {
-  return (
-    <Box alignSelf="center">
-      <Tabs size="large">
-        <Tab title="projects" size="large">
-          <Box pad="medium">
-            <Heading size="medium">
-              local
-              <Anchor
-                href="https://en.wikipedia.org/wiki/Fanzine"
-                target="_blank"
-              >
-                {" "}
-                zines{" "}
-              </Anchor>
-            </Heading>
-            -- initial smart contracts and thoughts around a collaborative and
-            impactful NFT minting + fair marketplace scenario. details
-            <Anchor
-              href="https://www.interaction-design.org/literature/topics/wicked-problems"
-              target="_blank"
-            >
-              @ github repo.
-            </Anchor>{" "}
-          </Box>
-        </Tab>
 
-        <Tab title="manifest/tl;br" size="large">
-          <Box pad="medium">
-            <Manifest />
-          </Box>
-        </Tab>
-        <Tab title="design principles" size="large">
-          <Box pad="medium">
-            <DesignPrinciples />
-          </Box>
-        </Tab>
-      </Tabs>
-    </Box>
-  );
-};
 
-const OurSongs = () => {
-  return (
-    <>
-      <Box
-        justify="center"
-        alignContent="center"
-        size="medium"
-        direction="column"
-      >
-        <br></br>
-        <MusicAndScience />
-        <br></br>
-        <Heading size="medium" textAlign="center">
-           the flow is you
-        </Heading>
-        <iframe
-          maxWidth="42%"
-          maxHeight="100%"
-          src="https://www.youtube.com/embed/tBzlhIYELeM"
-          title="rest in peace, Jeff Alexander"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
 
-        {/* Steel Pulse - Handsworth Revolution */}
-        <iframe
-          maxWidth="42%"
-          maxHeight="100%"
-          src="https://www.youtube.com/embed/A3LFvaAD2-Y"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          maxWidth="42%"
-          maxHeight="100%"
-          src="https://www.youtube.com/embed/7jMlFXouPk8"
-          title="hope flows"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          maxWidth="42%"
-          maxHeight="100%"
-          src="https://www.youtube.com/embed/XRz-_u2tN0c"
-          title="say it, yes to good, not to bad. you know what's what, just feel it."
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br></br>
-      </Box>
-    </>
-  );
-};
 
 // const DefIntro = () => {
 //   return (
@@ -165,245 +64,7 @@ const OurSongs = () => {
 //   </Box>;
 // };
 
-const Manifest = () => {
-  return (
-    <>
-      <Heading size="medium" alignSelf="center">
-        {" "}
-        a manifestation from
-        <br></br> now and future.
-      </Heading>
-      {/* <Heading>free-styler</Heading> */}
-      <Paragraph size="large">
-        <Heading>~ freestyler ~</Heading>
-        <strong> stateful</strong>
-        <strong>.</strong>
-        <strong style={{ color: "red" }}>art</strong> is a design-thinking
-        project with questions and concepts to solve
-        <Anchor
-          href="https://www.interaction-design.org/literature/topics/wicked-problems"
-          target="_blank"
-        >
-          {" "}
-          wicked problems{" "}
-        </Anchor>
-        of past, now and the future.
-        <br></br>
-        <br></br>
-        project initiated and will remain majorly in in the realms of science,
-        technology, education, arts and mathematics, so to help STEAM on
-        positively inclined expressions of the people and other livings.
-        <br></br>
-        <br></br>
-        <Header></Header>
-        in streamlining goodness without going dystopian.
-        <br></br>
-        <br></br>
-        project respect existing power structures that expose capacity and
-        intention on serving to all livings.
-        <br></br>
-        <br></br>
-        hopefully that potential paradigm shift on current governing mechanisms
-        set in place as their fellow residents experience and enjoy the fair
-        distribution of rights.
-        <br></br>
-        <br></br>
-        this umbrella project, for the world. already have developed with
-        FOSS/free & open source software in years, we have the capacity to start
-        connecting to each individual and organisation in the world.
-        <Header>multi-token NFT project: LocalZines</Header>
-        <Anchor
-          style={{ background: "red" }}
-          href="https://en.wikipedia.org/wiki/Fanzine"
-          target="_blank"
-        >
-          zines, or fanzines
-        </Anchor>
-        are self-made and distributed, sold and mostly without hard cover, comes
-        in a few pages, but a total space for freedom and its expressions,
-        <br></br>
-        <br></br>
-        <br></br>a locality and solidarity aware, collective NFT magazine and a
-        first contemplation on a round-robin algorithm use in a fair
-        marketplace.
-        <br></br>
-        <br></br>
-        in summary, marketplace will let collaborators and communities schedule
-        which edition will be on sale next.)
-        <br></br>
-        <br></br>
-        hoping to add more functionality and configuration options with further
-        ideating with more artists, locals and organisations
-        <br></br>
-        <br></br>
-        with this one, collaborators' inclusion of other cities, and minting
-        them and supply on sale stocks and attach to scheduled periods, unlock
-        to a sale when it's turn. cities via dedicating some number of digital
-        artworks directly to those communities on minting phase, making them
-        owners of some copies from genesis, so to say.
-        <br></br>
-        <br></br>
-        https://eips.ethereum.org/EIPS/eip-1155 it is so far technically
-        designed via use of
-        <Anchor
-          style={{ color: "black", background: "yellow" }}
-          href="https://github.com/stateful-art/local-zines"
-          target="_blank"
-        >
-          ERC-1155 multi token standard
-        </Anchor>
-        for multi-token NFTs. we'll include incentives in forms of smart
-        contract functions.
-        <br></br> <br></br>
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        :/DAAOs initiated @0xhabitat.org -{">"} DAAOs artistic and activist
-        movements and residents of cities will be able to interact throug
-        interact with them, on Ethereum blockchain. and , transparent and
-        generous culture, knowledge
-        <br></br>
-        <br></br>
-        well, they are already out there. we are just motivated to reflect what
-        it is.
-        <br></br>
-        <br></br>
-        is a calling all to take action for a worldwide direct democratical
-        activities on capacity-making on peaceful resolutions.
-        <br></br>
-        <br></br>
-        through artists, creatives in general, including scientist, and all
-        civic-augmented and oriented interactions for global consensus, when
-        needed.
-        <br></br>
-        <br></br>
-        consensus between people, ensuring they are not enemies, they want to
-        <br></br>
-        <br></br>
-        as blockchain enabling us as individuals and communities to have a stake
-        on cities they reside or remotes that are undeniably, still on this
-        planet.
-        <br></br> <br></br>
-        #bypassAutocracy and then #cancelAutocracy.
-        <br></br>
-        <br></br>
-        <Heading size="small">
-          you and the rest, it is our roaster, our reflective metaverse
-        </Heading>
-        <br></br>
-        there exists no silver bullet to tame a violent beast, that have a
-        consistent will on creating inequalities and domination for ages.
-        <br></br>. projects vote for global matters, as world citizens? on
-        direct global voting for global matters.to citizens of cities and
-        countries to decide, act and even build and propose better solutions.
-        especially at the recent convention, COP26, we have eventually seen what
-        is
-        <Text weight="bolder" color="red" size="large">
-          {" "}
-          unsustainable:
-        </Text>
-        <Text weight="bolder" color="orange" size="large">
-          {" "}
-          "ignorance".
-        </Text>{" "}
-        <br></br>
-        <br></br>many states having hard time reflecting local and global
-        societies' common will, demands, rights and hopes. that's why we want to
-        create a hub, where a solid base is given and people choose tech and
-        governance/ungovernance modules they'd like to implement. we'll develop
-        those with you, all together.
-        <br></br>
-        <br></br>
-        hereby, st.art will be a movemental, umbrella project; residing
-        somewhere intersectional and unbounded for the sake of collective
-        creativity and ability to timely coordinate and organise. on whereabouts
-        of the arts, technology, politics, projects and non-hierarchical,
-        pseudo-binding, co-op concepts and imagination for change, we can
-        observe a collaboration place for a planetary common wealth and
-        realising our potentials as individuals and as human beings. those will
-        be illustrative and functional .<br></br>
-        <br></br>
-        to be co-imaginated, an emancipating space for every individual that
-        motivated to be more expressive, hopeful and be welcoming.
-        <br></br>
-        <br></br>
-        isolation of populations, nationalism, a need for exclusivity and
-        domination.
-        <br></br>
-        <br></br>
-        as observed, delegation is not the wisest way to make decisions on
-        behalf of a whole planet.
-        <br></br>
-        <br></br>
-        no one have asked billions of people how they would respond to globally
-        observable, prolonged and procrastinated catastrophies. such as climate
-        change, wars, migration, still-armament and many more.
-        <Heading>many thanks to collaborated communities in crypto, </Heading>
-        <br></br>
-        <br></br>
-        this project, as-is found the multi-sided support from good fellows in
-        the blockchain communities, worldwide.
-        <br></br>
-        global society, better influenced by experts on respective topics; is to
-        decide global matters and show solidarity. directly and not once in x
-        years. continuously, as they wanted.
-        <br></br>
-        <br></br>
-        we will help you building locally and globally governable organisations,
-        through which people in different cities, can experience having stake on
-        commons and build social, financial and environmentally empowering
-        capacities with wide community support: that is our on-restoration
-        civilisation. starting with those projects create resources for multiple
-        locations, so it is to attempt to build an on the go defined phenomenon:
-        mutually-inclusive, inter-city zones.) , connected, demand, discovery
-        and expression bases.
-        <Anchor
-          style={{ color: "red" }}
-          href="https://en.wikipedia.org/wiki/List_of_global_issues"
-          target="_blank"
-        >
-          {" "}
-          and many more..{" "}
-        </Anchor>
-        <br></br>
-        <br></br>
-        project makes an open call to anyone in the world, yet as well
-        democratically developed countries to initiate those city, country,
-        union/alliance - wide voting.
-        <br></br>
-        we have democracy basically for that reason. to understand and feel we
-        are living together.
-        <br></br>
-        <br></br>
-        this project, again as an artwork, does not limit itself.
-        <br></br>
-        <br></br>
-        hopefully, it's candidate to be one of exchange and co-imagination and
-        expressing and reflecting a planetary domain of commons and hopes.
-        <br></br>
-        <br></br>
-        encourager, empowerer and enabler of a such restoration.
-        <br></br>
-        <br></br>
-        we'd like to introduce concepts, contexts and collective efforts on
-        direct global voting for global matters. to citizens of cities and
-        countries to decide, act and even build and propose better solutions.
-        <br></br>
-        <br></br>
-        for that reason, as an exploratory and participatory way, st.art will
-        contemplate on connecting residents of cities, having stakes on each
-        others' lives.
-        <br></br>
-        <br></br>
-        on collective decision making and co-imagination infrastructure on
-        blockchain.
-        <br></br>
-        <br></br> and doing it in a resilient and undeniable way; with
-        blockchain, DAOs, and impact and collaboration NFT minting.
-      </Paragraph>
-    </>
-  );
-};
+
 
 // const DesignPrinciples = () => {
 //   return (
@@ -499,278 +160,10 @@ const Manifest = () => {
 //   );
 // };
 
-// const StartManifest = () => {
-//   return (
-//     <Box justify="center" alignContent="center">
-//       <Paragraph size="large">
-//         <Accordion>
-//           <AccordionPanel
-//             // margin="20px"
-//             label={
 
-//             }
-//           >
-//             <Box background="#FFFF99" height="middle" width="large"></Box>
-//           </AccordionPanel>
-//         </Accordion>
-//       </Paragraph>
-//     </Box>
-//   );
-//};
 
-const DesignPrinciples = () => {
-  return (
-    <>
-      <Heading size="medium" alignSelf="center">
-        {" "}
-      </Heading>
-      <Box alignSelf="center" direction="row-responsive">
-        <Text size="large">
-          <Braille gap="xlarge" />
-          <Braille gap="xlarge" /> walls cannot resist creativity.
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> with arts and causes, we unite.
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> populism and exclusivity are tools of
-          non-creative personalities.
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> diversity is real. lack of it makes
-          solidarity less real.
-          <br></br>
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> catalyse STEM to STEAM transformation.
-          <br></br>
-        </Text>
 
-        <Text size="large">
-          <Braille gap="xlarge" /> collectively explore, evaluate and develop
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> build tools, not products.
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> stay competitive - cooperative
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> create hubs and connectors, not siloes.
-          <br></br>
-          <br></br>
-          <Braille gap="xlarge" /> use tech to make walls fall.
-       
-        </Text>
-      </Box>
 
-      <Paragraph size="large">
-        {" "}
-        “don't get set into one form, adapt it and build your own, and let it
-        grow, be like water.
-        <br></br>
-        empty your mind, be formless, shapeless — like water. Now you put water
-        in a cup, it becomes the cup; You put water into a bottle it becomes the
-        bottle; You put it in a teapot it becomes the teapot. Now water can flow
-        or it can crash. Be water, my friend.”
-        <br></br> - Bruce Lee
-      </Paragraph>
-    </>
-
-    //  <Box background="#FFFF99" height="middle" width="large">
-    //           <Paragraph>Build solidarity, not organisations.</Paragraph>
-
-    //           <Paragraph color="black" alignSelf="center" size="medium">
-    //             art is intersectional, so our cities. every city has an
-    //             identity, and that as well, artistically. connecting abstraction
-    //             exist $GENREs, then $CAUSEs and $SKILLs ground between cities to
-    //             stand together.
-    //           </Paragraph>
-
-    //           <Paragraph color="black" alignSelf="center" size="medium">
-    //             there are no user types. there are behaviours, and we find
-    //             common ground via audience, resident and artists being our base.
-    //           </Paragraph>
-    //         </Box>
-  );
-};
-
-const MusicAndScience = () => {
-  return (
-    <Image
-      src="./art_flows_in_space_and_time.png"
-      width="400px"
-      height="300px"
-      margin="10px"
-      alignSelf="center"
-    ></Image>
-  );
-};
-
-// const BridgingCities = () => {
-//   return (
-//     <Image
-//       src="./bridging_cities_with_arts_and_rights.png"
-//       width="400px"
-//       height="300px"
-//       margin="10px"
-//       alignSelf="center"
-//     ></Image>
-//   );
-// };
-
-// const STEAM = () => {
-//   return (
-//     <>
-//       <Box>
-//         <Header>will be STEAMing change.</Header>
-//         <Image
-//           src="https://www.breteaufoundation.org/wp-content/uploads/2021/06/shutterstock_1845520450-scaled-e1622734962453-1536x719.jpg"
-//           width="400px"
-//           height="300px"
-//           margin="10px"
-//           alignSelf="center"
-//         ></Image>
-//       </Box>
-//       <Paragraph>
-//         Promoting STEAM Education in Latin America Penny Atkinson, Volunteer
-//         Writer
-//       </Paragraph>
-//     </>
-//   );
-// };
-
-// const CitiesConnViaGenres = () => {
-//   return (
-//     <Image
-//       src="./cities_bridged_by_genres.png"
-//       width="400px"
-//       height="300px"
-//       margin="10px"
-//       alignSelf="center"
-//     ></Image>
-//   );
-// };
-// const OrganiCities = () => {
-//   return (
-//     <Box direction="column" alignSelf="center">
-//       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-//         <path
-//           fill="#273036"
-//           fill-opacity="1"
-//           d="M0,96L0,288L72,288L72,32L144,32L144,192L216,192L216,224L288,224L288,0L360,0L360,160L432,160L432,192L504,192L504,256L576,256L576,128L648,128L648,128L720,128L720,320L792,320L792,192L864,192L864,64L936,64L936,192L1008,192L1008,96L1080,96L1080,224L1152,224L1152,160L1224,160L1224,192L1296,192L1296,288L1368,288L1368,96L1440,96L1440,0L1368,0L1368,0L1296,0L1296,0L1224,0L1224,0L1152,0L1152,0L1080,0L1080,0L1008,0L1008,0L936,0L936,0L864,0L864,0L792,0L792,0L720,0L720,0L648,0L648,0L576,0L576,0L504,0L504,0L432,0L432,0L360,0L360,0L288,0L288,0L216,0L216,0L144,0L144,0L72,0L72,0L0,0L0,0Z"
-//         ></path>
-//       </svg>
-//       <Heading size="small" alignSelf="center">
-//         come, as you are.
-//       </Heading>
-//       <Text size="large" alignSelf="center">
-//         <Box
-//           marginLeft="42px"
-//           animation={{
-//             type: "pulse",
-//             delay: 700,
-//             duration: 2400,
-//           }}
-//         >
-//           {" "}
-//           <Heading size="small" alignSelf="center">
-//             Autonomous
-//           </Heading>
-//           <Aed size="xlarge" />{" "}
-//           <Heading size="small" alignSelf="center">
-//             Artistic
-//           </Heading>
-//         </Box>
-//       </Text>{" "}
-//       <Heading size="medium" alignSelf="center">
-//         {" "}
-//         OrganiCities
-//       </Heading>
-//       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-//         <path
-//           fill="#ffd700"
-//           fill-opacity="1"
-//           d="M0,96L0,288L72,288L72,32L144,32L144,192L216,192L216,224L288,224L288,0L360,0L360,160L432,160L432,192L504,192L504,256L576,256L576,128L648,128L648,128L720,128L720,320L792,320L792,192L864,192L864,64L936,64L936,192L1008,192L1008,96L1080,96L1080,224L1152,224L1152,160L1224,160L1224,192L1296,192L1296,288L1368,288L1368,96L1440,96L1440,320L1368,320L1368,320L1296,320L1296,320L1224,320L1224,320L1152,320L1152,320L1080,320L1080,320L1008,320L1008,320L936,320L936,320L864,320L864,320L792,320L792,320L720,320L720,320L648,320L648,320L576,320L576,320L504,320L504,320L432,320L432,320L360,320L360,320L288,320L288,320L216,320L216,320L144,320L144,320L72,320L72,320L0,320L0,320Z"
-//         ></path>
-//       </svg>
-//     </Box>
-//   );
-// };
-
-// const LogoSmall = () => {
-//   return (
-//     <Box
-//       animation={{
-//         type: "slideRight",
-//         delay: 10,
-//         duration: 2000,
-//       }}
-//     >
-//       <Image src="./logo_textual.png" style={{ maxWidth: "20%" }}></Image>
-//       {/* <Image
-//         style={{maxWidth: "100%"}}
-//         // src="./mantra.svg"
-//         src="./connecting_cities_with_arts.svg"
-//         // src="./stateful-art-top.png"
-//         // width="525px"
-//         // height="300px"
-//         margin="10px"
-//       ></Image> */}
-//     </Box>
-//   );
-// };
-
-const LogoBig = () => {
-  return (
-    <Box
-      animation={{
-        type: "",
-        delay: 10,
-        duration: 2000,
-      }}
-    >
-      <Image src="./logo_textual.png" style={{ maxWidth: "20%" }}></Image>
-      {/* <Image
-        style={{maxWidth: "100%"}}
-        // src="./mantra.svg"
-        src="./connecting_cities_with_arts.svg"
-        // src="./stateful-art-top.png"
-        // width="525px"
-        // height="300px"
-        margin="10px"
-      ></Image> */}
-    </Box>
-  );
-};
-
-// const ParticipantsAccordionTheme = {
-//   accordion: {
-//     heading: {
-//       level: 3,
-//       margin: { vertical: "20px", horizontal: "24px" },
-//     },
-//     hover: {
-//       heading: {
-//         color: "accent-2",
-//       },
-//     },
-//     icons: {
-//       collapse: SubtractCircle,
-//       expand: AddCircle,
-//       color: "orange",
-//     },
-//     border: undefined,
-//     panel: {
-//       // border: {
-//       //   side: 'horizontal',
-//       //   size: 'medium',
-//       //   color: '#DADADA',
-//       //   style: 'dotted',
-//       // },
-//     },
-//   },
-// };
 
 const ArtMovements = (direction) => {
   return (
@@ -783,23 +176,36 @@ const ArtMovements = (direction) => {
         direction="column"
       >
         <Box
-          direction="row"
           pad="small"
           gap="small"
           alignSelf="center"
           size="large"
+          marginTop="5%"
+        >
+        </Box>
+
+        <Box
+          direction="row"
+          pad="small"
+          gap="small"
+          alignSelf="center"
+          size="xlarge"
+          textAlign=""
           marginTop="20%"
         >
           <Paragraph alignSelf="center" size="xlarge" textAlign="end">
             <br></br>
             <br></br>
-            stateful.art is an artistic design-thinking project, that uses abstraction, real and betweens to create future exchanges and solidarity networks. initiated some already (below) and they'll be totally shared with community, real artists and everyone, people.
-             provide context,
-            tooling and efforts on building co-ops around achieving a unique
-            vision for global peace.
+            stateful.art is an artistic design-thinking project, that uses
+            abstraction, real and betweens to create future exchanges and
+            solidarity networks. initiated some already (below) and they'll be
+            totally shared with community, real artists and everyone, people.
+            provide context, tooling and efforts on building co-ops around
+            achieving a unique vision for global peace.
             <br></br>
-            <br></br> and using tech for good, and art unleashing what
-            open-source communities and notions brought to our lives in the last
+            <br></br> and using tech for good, and art unleashing that part in
+            there as well, as in many.
+            {/* open-source communities and notions brought to our lives in the last
             decades: it is a 3E: encouragement + empowerment = enablement.
             <strong> </strong>
             "as a natural accummulation in time, voting global matters globally,
@@ -810,27 +216,7 @@ const ArtMovements = (direction) => {
             <Anchor href="https://en.wikipedia.org/wiki/List_of_global_issues#United_Nations_list">
               and many more.
             </Anchor>
-            <br></br>
-            it must be every individuals' right to have their vote accepted by
-            other individuals, orgs and states. even if there is a dictatorship in their countries. 
-            <br></br><br></br>
-            so this project, want to explore what would be the foundationals and essentials for the next level of democracy, which shall be a progressive and peaceful one.
-            st.art is is highly passionate about solving  <Anchor href="https://www.interaction-design.org/literature/topics/wicked-problems"
-            target="_blank">
-            {" "}wicked problems {" "}
-            </Anchor>
-            of now and the future.
-            <br></br>
-            
-            at least the ones have
-            democracies can start bringing up this issue to their public
-            concern.
-            <br></br> <br></br>
-            they need concensus is a self and community-supported inclusion
-            story of every individual in our civilisation. globally and
-            transparently."
-            <br></br>
-            <br></br>
+            <br></br> */}
             context and a developed concept, around audience/community supported
             and engaged,
             <Anchor
@@ -859,19 +245,17 @@ const ArtMovements = (direction) => {
             is a successful crypto-based residency program, empowers artists
             with sustainable cabins and chill atmosphere, somewhere natural in
             Texas, USA.
-           
           </Paragraph>
           <Paragraph alignSelf="center" size="xlarge" textAlign="start">
-
-           project is using abstractions to reflect real life scenes of our cities at core of its tokenomics.
-            as token families; such as $GENREs ($BASE, $FUSION) $CAUSEs,
-            artistic and activist crypto-community enabler, to be an aggregation
-            hub for a civic registry.
+            project is using abstractions to reflect real life scenes of our
+            cities at core of its tokenomics. as token families; such as $GENREs
+            ($BASE, $FUSION) $CAUSEs, artistic and activist crypto-community
+            enabler, to be an aggregation hub for a civic registry.
             <br></br>
             <br></br>
             <br></br>a voting module technique, called signalling, is selected
-            initially, so that those project calls and artist proposals are always
-            open.
+            initially, so that those project calls and artist proposals are
+            always open.
             <br></br>also multiple proposal can be voted with different weights
             and be able to change at any given time. this is just one module to
             experiment. however purpose is to encourage and empower communities
@@ -2672,7 +2056,11 @@ const FooterSection = () => (
 function App() {
   return (
     <Grommet theme={theme}>
-      <Box align="center" background="black" justify="end" direction="column">
+  {/* <ResponsiveContext.Consumer>
+        {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
+  </ResponsiveContext.Consumer>      
+   */}
+  <Box align="center" background="black" justify="center" direction="column">
         <Box
           direction="column"
           align="center"
@@ -2683,37 +2071,19 @@ function App() {
             delay: 20,
             duration: 4000,
           }}
-        >
-          {/* top logo here */}
-
-          <Box
-            animation={{
-              type: "zoomOut",
-              delay: 0,
-              duration: 16000,
-            }}
           >
-            <LogoBig />
-            {/* <ResponsiveContext.Consumer>
-              {(size) => (size === "small" ? <LogoSmall /> : <LogoBig />)}
-            </ResponsiveContext.Consumer> */}
-          </Box>
+       
+          
+    <ResponsiveContext.Consumer>
+          {(size) => (size === "small" ? <IntroSmall /> : <IntroBig />)}
+    </ResponsiveContext.Consumer>   
 
-          <Image
+          {/* <Image
             src="./Ryn_Shaparenko_worknumber_799.png"
             style={{ maxWidth: "42%" }}
             alt="drawing by Ryn Shaparenko: worknumber 799"
-          ></Image>
-          {"     "}
-          <Anchor
-            color="orange"
-            alignSelf="center"
-            size="medium"
-            href="https://en.grafisch-studio.de/product-page/zeichnung-werknummer-799"
-            target="_blank"
-          >
-            Berliner artist Ryn Shaparenko's drawing {"<\\"} worknumber 799
-          </Anchor>
+          ></Image> */}
+       
 
           <Box justify="center" alignContent="center" size="large">
             <Heading size="small" alignSelf="center">
@@ -2725,7 +2095,7 @@ function App() {
                 size="large"
                 marginTop="20%"
               >
-                <Paragraph alignSelf="center" size="Xlarge" textAlign="start">
+                <Paragraph alignSelf="start" size="Xlarge" textAlign="start">
                   <Anchor
                     color="pink"
                     background="yellow"
@@ -2742,7 +2112,7 @@ function App() {
                     href="https://en.wikipedia.org/wiki/Decentralization"
                     target="_blank"
                   >
-                     governance{" "}
+                    governance{" "}
                   </Anchor>
                   and{" "}
                   <Anchor
@@ -2753,24 +2123,24 @@ function App() {
                   >
                     tokenomics.{" "}
                   </Anchor>
-                  <br></br> <br></br> this is our metaverse, <br></br> this is
-                  our restoration.
+                  <br></br> <br></br> this is our metaverse |>
                 </Paragraph>
 
-                <Paragraph alignSelf="center" size="Xlarge" textAlign="end">
-                  $START a metaversal revolution with love, peace, and
+                <Paragraph alignSelf="start" size="Xlarge" textAlign="end">
+                  $START a self-manifesting revolution; with love, peace, and
                   creativity.
-                  <br></br>
-                  for the 21st century. <br></br>
                   <Anchor
-                    href="https://www.interaction-design.org/literature/topics/wicked-problems"
+                    href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
                     target="_blank"
                   >
                     {" "}
                     everyday {"& "}
-                    everywhere.{" "}
+                    everywhere,{" "}
                   </Anchor>
-                  {/* add soulstorm here */}
+                  <br></br>
+                  for the <Text size="xxlarge">21st century.</Text> <br></br>
+                  <br></br>this is
+                  our restoration.
                 </Paragraph>
               </Box>
               <Box justify="center" alignContent="center" size="large">
@@ -2802,8 +2172,6 @@ function App() {
                 </Anchor>
               </Box>
 
-
-              
               <Box
                 tag="footer"
                 direction="row"
@@ -2816,7 +2184,7 @@ function App() {
                 <Box direction="row">
                   <Text size="xxlarge">$START coin {" |> "}</Text>
                 </Box>
-                
+
                 <Anchor
                   href="https://blockscout.com/xdai/mainnet/token/0x51f3eD55d11C806AA014794cDce29ea16619635C"
                   target="_blank"
@@ -2830,15 +2198,7 @@ function App() {
                 </Anchor>
               </Box>
 
-
-              <Box justify="center" alignContent="center" size="large">
-                <OurSongs />
-              </Box>
-
-              <Box justify="center" alignContent="center" size="large">
-                <CoreValues />
-              </Box>
-
+            
               <Heading size="medium" alignSelf="center">
                 {" "}
                 come, as you are{" "}
