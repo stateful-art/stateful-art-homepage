@@ -198,7 +198,7 @@ const Rock = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
+            href=""
             target="_blank"
             color="white"
           >
@@ -313,7 +313,7 @@ const Punk = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href="https://0xhabitat.org/app/#habitat-community,0x58dac8cfce8db55de5ee3b16a27461a41cf074b0f1a04d73661846dfa2dccd95"
+            href=""
             target="_blank"
             color="white"
           >
@@ -376,7 +376,7 @@ const Reggae = () => {
         </CardHeader>
         <CardBody background="black">
           <Anchor
-            href="https://0xhabitat.org/app/#habitat-community,0x594080e1603af01cba9155a6fa6899b833c5549d555c89a2e7d578be33495ff3"
+            href=""
             target="_blank"
             color="white"
           >
@@ -405,58 +405,58 @@ const Reggae = () => {
   );
 };
 
-const Jazz = () => {
-  return (
-    <Tip
-      plain
-      content={
-        <Box
-          pad="small"
-          gap="small"
-          width={{ max: "small" }}
-          round="small"
-          background="background-front"
-          responsive={false}
-        >
-          <Text weight="bold">
-            where it'll first start, who knows? well, you do!
-          </Text>
-        </Box>
-      }
-      dropProps={{ align: { left: "right" } }}
-    >
-      <Card height="small" margin="small" width="small" background="light-1">
-        <CardHeader alignSelf="center" pad="small">
-          <Text size="large" weight="bolder">
-            $JAZZ
-          </Text>
-        </CardHeader>
-        <CardBody pad="small" background="black">
-          <Box alignSelf="center">
-            <Image
-              src="./jazz.png"
-              width="92px"
-              height="130px"
-              style={{
-                marginLeft: "22px",
-                marginRight: "22px",
-                marginTop: "2px",
-                marginBottom: "1px",
-              }}
-            ></Image>
-          </Box>
-          {/* </Anchor> */}
-        </CardBody>
-        <CardFooter pad={{ horizontal: "small" }} background="light-2">
-          <Text size="large" weight="bold">
-            @ no cities
-          </Text>
-          <Attraction />
-        </CardFooter>
-      </Card>
-    </Tip>
-  );
-};
+// const Jazz = () => {
+//   return (
+//     <Tip
+//       plain
+//       content={
+//         <Box
+//           pad="small"
+//           gap="small"
+//           width={{ max: "small" }}
+//           round="small"
+//           background="background-front"
+//           responsive={false}
+//         >
+//           <Text weight="bold">
+//             where it'll first start, who knows? well, you do!
+//           </Text>
+//         </Box>
+//       }
+//       dropProps={{ align: { left: "right" } }}
+//     >
+//       <Card height="small" margin="small" width="small" background="light-1">
+//         <CardHeader alignSelf="center" pad="small">
+//           <Text size="large" weight="bolder">
+//             $JAZZ
+//           </Text>
+//         </CardHeader>
+//         <CardBody pad="small" background="black">
+//           <Box alignSelf="center">
+//             <Image
+//               src="./jazz.png"
+//               width="92px"
+//               height="130px"
+//               style={{
+//                 marginLeft: "22px",
+//                 marginRight: "22px",
+//                 marginTop: "2px",
+//                 marginBottom: "1px",
+//               }}
+//             ></Image>
+//           </Box>
+//           {/* </Anchor> */}
+//         </CardBody>
+//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
+//           <Text size="large" weight="bold">
+//             @ no cities
+//           </Text>
+//           <Attraction />
+//         </CardFooter>
+//       </Card>
+//     </Tip>
+//   );
+// };
 
 const HipHop = () => {
   return (
@@ -484,7 +484,7 @@ const HipHop = () => {
         </CardHeader>
         <CardBody pad="small" background="orange">
           <Anchor
-            href="https://0xhabitat.org/app/#habitat-community,0xa21629c00a7d9c88ea98673a0b81becd156cfe416920ec6d40b408d1506eb1e4"
+            href=""
             target="_blank"
             color="white"
           >
@@ -540,7 +540,7 @@ const ElectronicMusic = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href="https://0xhabitat.org/app/#habitat-community,0x1b84234a852a468cc28f33a1702925d620d347f43ab3809892522e5ffe6362f6"
+            href=""
             target="_blank"
             color="white"
           >
@@ -569,106 +569,106 @@ const ElectronicMusic = () => {
   );
 };
 
-const PoliticalArt = () => {
-  return (
-    <Tip
-      plain
-      content={
-        <Box
-          pad="small"
-          gap="small"
-          width={{ max: "small" }}
-          round="small"
-          background="background-front"
-          responsive={false}
-        >
-          <Text size="medium" weight="bolder">
-            @ no cities yet. so start one ;)
-          </Text>
-        </Box>
-      }
-      dropProps={{ align: { left: "right" } }}
-    >
-      <Card height="small" margin="small" width="small" background="light-1">
-        <CardHeader
-          alignSelf="center"
-          pad="small"
-          background="light-1"
-          color="white"
-        >
-          <Text size="large" weight="bolder">
-            $POLITICAL
-          </Text>
-        </CardHeader>
-        <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
-            <Box>
-              <Image
-                src="./political_art.png"
-                width="160px"
-                height="100px"
-              ></Image>
-            </Box>
-          </Anchor>
-        </CardBody>
-        <CardFooter pad={{ horizontal: "small" }} background="light-2">
-          <Text size="large" weight="bold">
-            @ no cities yet
-          </Text>
+// const PoliticalArt = () => {
+//   return (
+//     <Tip
+//       plain
+//       content={
+//         <Box
+//           pad="small"
+//           gap="small"
+//           width={{ max: "small" }}
+//           round="small"
+//           background="background-front"
+//           responsive={false}
+//         >
+//           <Text size="medium" weight="bolder">
+//             @ no cities yet. so start one ;)
+//           </Text>
+//         </Box>
+//       }
+//       dropProps={{ align: { left: "right" } }}
+//     >
+//       <Card height="small" margin="small" width="small" background="light-1">
+//         <CardHeader
+//           alignSelf="center"
+//           pad="small"
+//           background="light-1"
+//           color="white"
+//         >
+//           <Text size="large" weight="bolder">
+//             $POLITICAL
+//           </Text>
+//         </CardHeader>
+//         <CardBody pad="small" background="black">
+//           <Anchor href="" target="_blank" color="white">
+//             <Box>
+//               <Image
+//                 src="./political_art.png"
+//                 width="160px"
+//                 height="100px"
+//               ></Image>
+//             </Box>
+//           </Anchor>
+//         </CardBody>
+//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
+//           <Text size="large" weight="bold">
+//             @ no cities yet
+//           </Text>
 
-          <Attraction />
-        </CardFooter>
-      </Card>
-    </Tip>
-  );
-};
+//           <Attraction />
+//         </CardFooter>
+//       </Card>
+//     </Tip>
+//   );
+// };
 
-const Pop = () => {
-  return (
-    <Tip
-      plain
-      content={
-        <Box
-          pad="small"
-          gap="small"
-          width={{ max: "small" }}
-          round="small"
-          background="background-front"
-          responsive={false}
-        >
-          <Text size="medium" weight="bolder">
-            Berlin, Hamburg, Istanbul, Los Angeles
-          </Text>
-        </Box>
-      }
-      dropProps={{ align: { left: "right" } }}
-    >
-      <Card height="small" margin="small" width="small" background="light-1">
-        <CardHeader
-          alignSelf="center"
-          pad="small"
-          background="light-1"
-          color="white"
-        >
-          <Text size="large" weight="bolder">
-            $POP
-          </Text>
-        </CardHeader>
-        <CardBody pad="small" background="purple">
-          <Anchor href="" target="_blank" color="white">
-            <Box>
-              <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
-            </Box>
-          </Anchor>
-        </CardBody>
-        <CardFooter pad={{ horizontal: "small" }} background="light-2">
-          <Text size="large" weight="bold">
-            @ no cities yet
-          </Text>
+// const Pop = () => {
+//   return (
+//     <Tip
+//       plain
+//       content={
+//         <Box
+//           pad="small"
+//           gap="small"
+//           width={{ max: "small" }}
+//           round="small"
+//           background="background-front"
+//           responsive={false}
+//         >
+//           <Text size="medium" weight="bolder">
+//             Berlin, Hamburg, Istanbul, Los Angeles
+//           </Text>
+//         </Box>
+//       }
+//       dropProps={{ align: { left: "right" } }}
+//     >
+//       <Card height="small" margin="small" width="small" background="light-1">
+//         <CardHeader
+//           alignSelf="center"
+//           pad="small"
+//           background="light-1"
+//           color="white"
+//         >
+//           <Text size="large" weight="bolder">
+//             $POP
+//           </Text>
+//         </CardHeader>
+//         <CardBody pad="small" background="purple">
+//           <Anchor href="" target="_blank" color="white">
+//             <Box>
+//               <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
+//             </Box>
+//           </Anchor>
+//         </CardBody>
+//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
+//           <Text size="large" weight="bold">
+//             @ no cities yet
+//           </Text>
 
-          <Attraction />
-        </CardFooter>
-      </Card>
-    </Tip>
-  );
-};
+//           <Attraction />
+//         </CardFooter>
+//       </Card>
+//     </Tip>
+//   );
+// };

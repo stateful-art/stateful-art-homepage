@@ -82,6 +82,4 @@ export const NavBar = () => (
   // </Grommet>
 );
 
-export default {
-  title: "x",
-};
+export default NavBar;
