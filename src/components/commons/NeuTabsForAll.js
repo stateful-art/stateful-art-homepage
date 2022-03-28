@@ -1,11 +1,9 @@
 import { Anchor, Box, Image, Tab, Tabs } from "grommet";
 import React from "react";
-import { ArtDirectionPicasso } from "../../ArtDirectionPicasso";
-import { ArtDirectionDaVinci } from "../../ArtDirectionDaVinci";
-
-import { ArtDirectionKahlo } from "../../ArtDirectionKahlo";
 import { ArtDirectionJanVermeer } from "../../ArtDirectionJanVermeer";
-
+import { ArtDirectionKahlo } from "../../ArtDirectionKahlo";
+import { ArtDirectionPicasso } from "../../ArtDirectionPicasso";
+// import { ArtDirectionDaVinci } from "../../ArtDirectionDaVinci";
 
 
 export const ModesInTabs = () => {
@@ -22,8 +20,8 @@ export const ModesInTabs = () => {
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/540px-1665_Girl_with_a_Pearl_Earring.jpg"
 
 // src="https://spokenvision.com/wp-content/uploads/2017/03/Mona-Lisa-770x876.jpg"
-                  width="292px"
-                  height="360px"
+                  width="324"
+                  height="384"
             
                 ></Image>
               </Box>
