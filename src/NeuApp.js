@@ -27,13 +27,11 @@ function NeuApp() {
           size === "small" ? (
             <>
               <NavBar />
-
-          
             </>
           ) : (
             <>
               <NavBar />
-             
+
               <Box
                 align="center"
                 background="black"
@@ -44,7 +42,6 @@ function NeuApp() {
 
                 <ModesInTabs />
 
-              
                 <Box justify="center" alignContent="center" size="large">
                   <Heading size="small" alignSelf="center">
                     <Box
@@ -63,13 +60,13 @@ function NeuApp() {
                         <Anchor
                           color="pink"
                           background="yellow"
-                          href="https://en.wikipedia.org/wiki/Post-structuralism"
+                          href="https://en.wikipedia.org/wiki/Expressionism"
                           target="_blank"
                         >
                           {" "}
-                          post-structural
+                          an expressive {" "}
                         </Anchor>
-                        ist & progressive art direction in decentralized{" "}
+                         & progressive art direction in decentralized{" "}
                         <Anchor
                           color="yellow"
                           background="yellow"
@@ -246,7 +243,6 @@ function NeuApp() {
 //       ></Image>
 //     </Box>
 
-   
 //   </Grommet>
 // );
 
@@ -290,9 +286,7 @@ const FooterSection = () => (
         gap="small"
         //flex={true}
         background="black"
-      >
-       
-      </Box>
+      ></Box>
 
       <Box
         tag="footer"
@@ -302,9 +296,7 @@ const FooterSection = () => (
         gap="small"
         //flex={true}
         background="black"
-      >
-       
-      </Box>
+      ></Box>
 
       <Box
         tag="footer"
@@ -357,8 +349,6 @@ const FooterSection = () => (
         </Anchor>
       </Box>
 
-     
-
       <Box align="center" justify="center" margin="30p">
         <Text size="large" margin="20px">
           {" "}
@@ -376,6 +366,9 @@ const FooterSection = () => (
 
         <Text size="small"> © all rights left </Text>
       </Box>
+       <Box pad="small" alignSelf="center">
+          <Image src="./logo.svg" style={{ maxWidth: "22%" }} alignSelf="center"></Image>
+        </Box>
     </Box>
   </>
 );
@@ -407,14 +400,7 @@ const IntroTextHorizontal = () => {
 
         <Box size="medium" margin="20px">
           <Paragraph size="large" textAlign="end">
-            initiating future exchanges and solidarity networks on the{" "}
-            <Anchor
-              color="#AA99FF"
-              href="https://ethereum.org/en/"
-              target="_blank"
-            >
-              ethereum
-            </Anchor>{" "}
+            initiating creative exchange and solidarity networks between cities on{" "}
             <Anchor
               color="yellow"
               href="https://en.wikipedia.org/wiki/Blockchain"
@@ -430,6 +416,7 @@ const IntroTextHorizontal = () => {
       </Box>
 
       <Box pad="medium" direction="column">
+       
         <Box pad="small" alignSelf="center">
           <Anchor
             size="large"
