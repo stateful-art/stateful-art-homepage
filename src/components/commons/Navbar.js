@@ -6,7 +6,7 @@ import { Chat, Menu as MenuIcon } from "grommet-icons";
 export const NavBar = () => (
   <Header background="red" pad="medium" height="xsmall">
     <Anchor
-      href="https://tools.grommet.io/"
+      href=""
       icon={<Image src="./logo.svg" style={{ maxWidth: "22%" }}></Image>}
     />
     <ResponsiveContext.Consumer>
@@ -21,14 +21,14 @@ export const NavBar = () => (
                 {
                   label: (
                     <Box pad="small" background="">
-                      about
+                      Art of Peace
                     </Box>
                   ),
-                  href: "#",
+                  href: "https://demover.se",
                 },
                 {
-                  label: <Box pad="small">manifest</Box>,
-                  href: "#",
+                  label: <Box pad="small">community</Box>,
+                  href: "",
                 },
                 {
                   label: <Box pad="small">projects</Box>,

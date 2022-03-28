@@ -367,7 +367,12 @@ const FooterSection = () => (
         <Text size="small"> © all rights left </Text>
       </Box>
        <Box pad="small" alignSelf="center">
-          <Image src="./logo.svg" style={{ maxWidth: "22%" }} alignSelf="center"></Image>
+       <Anchor
+      href="https://stateful.art"
+      icon={<Image src="./logo.svg" style={{ maxWidth: "22%" }} alignSelf="center"></Image>}
+    />
+
+          
         </Box>
     </Box>
   </>
