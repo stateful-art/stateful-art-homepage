@@ -64,9 +64,9 @@ function NeuApp() {
                           target="_blank"
                         >
                           {" "}
-                          an expressive {" "}
+                          an expressive{" "}
                         </Anchor>
-                         & progressive art direction in decentralized{" "}
+                        & progressive art direction in decentralized{" "}
                         <Anchor
                           color="yellow"
                           background="yellow"
@@ -366,14 +366,6 @@ const FooterSection = () => (
 
         <Text size="small"> © all rights left </Text>
       </Box>
-       <Box pad="small" alignSelf="center">
-       <Anchor
-      href="https://stateful.art"
-      icon={<Image src="./logo.svg" style={{ maxWidth: "22%" }} alignSelf="center"></Image>}
-    />
-
-          
-        </Box>
     </Box>
   </>
 );
@@ -383,7 +375,7 @@ const IntroTextHorizontal = () => {
     <>
       <Box direction="column"></Box>
       <Box direction="row" size="large">
-        <Box size="medium" margin="20px">
+        <Box size="medium" margin="12px">
           <Paragraph textAlign="start" size="large">
             stateful
             <Text color="yellow" size="large">
@@ -403,9 +395,10 @@ const IntroTextHorizontal = () => {
           </Paragraph>
         </Box>
 
-        <Box size="medium" margin="20px">
+        <Box size="medium" margin="12px">
           <Paragraph size="large" textAlign="end">
-            initiating creative exchange and solidarity networks between cities on{" "}
+            initiating creative exchange and solidarity networks between cities
+            on{" "}
             <Anchor
               color="yellow"
               href="https://en.wikipedia.org/wiki/Blockchain"
@@ -421,7 +414,6 @@ const IntroTextHorizontal = () => {
       </Box>
 
       <Box pad="medium" direction="column">
-       
         <Box pad="small" alignSelf="center">
           <Anchor
             size="large"
@@ -460,8 +452,8 @@ const IntroTextHorizontal = () => {
           <Text color="red" size="large">
             art
           </Text>{" "}
-          comes in three states, in the scales of expression and
-          interpretations:
+          comes in multi-states & blends, in the scales of expression and
+          reflections:
         </Paragraph>
       </Box>
     </>

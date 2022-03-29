@@ -34,9 +34,10 @@ export const ArtDirectionKahlo = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-        <HipHop />
+        {/* <HipHop /> */}
+        <Surreal />
+        <PoliticalArt/>
 
-        <StreetArt />
         <ElectronicMusic />
         <Punk />
       </Box>
@@ -50,7 +51,8 @@ export const ArtDirectionKahlo = (direction) => {
           duration: 1000,
         }}
       >
-        <Cubist />
+                <StreetArt />
+
         <Rock />
         <Box
           animation={{
@@ -60,7 +62,9 @@ export const ArtDirectionKahlo = (direction) => {
           }}
         >
           <CallForAction />
+        
         </Box>
+        <HipHop/>
       </Box>
     
     </>
@@ -226,7 +230,60 @@ const Rock = () => {
   );
 };
 
-const Cubist = () => {
+// const Cubist = () => {
+//   return (
+//     <Tip
+//       plain
+//       content={
+//         <Box
+//           pad="small"
+//           gap="small"
+//           width={{ max: "small" }}
+//           round="small"
+//           background="background-front"
+//           responsive={false}
+//         >
+//           <Text weight="bold">
+//             where it'll first start, who knows? well, you do!
+//           </Text>
+//         </Box>
+//       }
+//       dropProps={{ align: { left: "right" } }}
+//     >
+//       <Card height="small" margin="small" width="small" background="light-1">
+//         <CardHeader alignSelf="center" pad="small">
+//           <Text size="large" weight="bolder">
+//             $CUBIST
+//           </Text>
+//         </CardHeader>
+//         <CardBody pad="small" background="red">
+//           <Box alignSelf="center">
+//             <Image
+//               src="./painting_picasso.jpeg"
+//               width="92px"
+//               height="130px"
+//               style={{
+//                 marginLeft: "22px",
+//                 marginRight: "22px",
+//                 marginTop: "2px",
+//                 marginBottom: "1px",
+//               }}
+//             ></Image>
+//           </Box>
+//           {/* </Anchor> */}
+//         </CardBody>
+//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
+//           <Text size="large" weight="bold">
+//             @ no cities
+//           </Text>
+//           <Attraction />
+//         </CardFooter>
+//       </Card>
+//     </Tip>
+//   );
+// };
+
+const Surreal = () => {
   return (
     <Tip
       plain
@@ -249,13 +306,13 @@ const Cubist = () => {
       <Card height="small" margin="small" width="small" background="light-1">
         <CardHeader alignSelf="center" pad="small">
           <Text size="large" weight="bolder">
-            $CUBIST
+            $SURREAL
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
           <Box alignSelf="center">
             <Image
-              src="./painting_picasso.jpeg"
+              src="https://gallerima.com/magazine/wp-content/uploads/2021/02/Beurgois-ostention.jpg"
               width="92px"
               height="130px"
               style={{
@@ -568,59 +625,59 @@ const ElectronicMusic = () => {
   );
 };
 
-// const PoliticalArt = () => {
-//   return (
-//     <Tip
-//       plain
-//       content={
-//         <Box
-//           pad="small"
-//           gap="small"
-//           width={{ max: "small" }}
-//           round="small"
-//           background="background-front"
-//           responsive={false}
-//         >
-//           <Text size="medium" weight="bolder">
-//             @ no cities yet. so start one ;)
-//           </Text>
-//         </Box>
-//       }
-//       dropProps={{ align: { left: "right" } }}
-//     >
-//       <Card height="small" margin="small" width="small" background="light-1">
-//         <CardHeader
-//           alignSelf="center"
-//           pad="small"
-//           background="light-1"
-//           color="white"
-//         >
-//           <Text size="large" weight="bolder">
-//             $POLITICAL
-//           </Text>
-//         </CardHeader>
-//         <CardBody pad="small" background="black">
-//           <Anchor href="" target="_blank" color="white">
-//             <Box>
-//               <Image
-//                 src="./political_art.png"
-//                 width="160px"
-//                 height="100px"
-//               ></Image>
-//             </Box>
-//           </Anchor>
-//         </CardBody>
-//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
-//           <Text size="large" weight="bold">
-//             @ no cities yet
-//           </Text>
+const PoliticalArt = () => {
+  return (
+    <Tip
+      plain
+      content={
+        <Box
+          pad="small"
+          gap="small"
+          width={{ max: "small" }}
+          round="small"
+          background="background-front"
+          responsive={false}
+        >
+          <Text size="medium" weight="bolder">
+            @ no cities yet. so start one ;)
+          </Text>
+        </Box>
+      }
+      dropProps={{ align: { left: "right" } }}
+    >
+      <Card height="small" margin="small" width="small" background="light-1">
+        <CardHeader
+          alignSelf="center"
+          pad="small"
+          background="light-1"
+          color="white"
+        >
+          <Text size="large" weight="bolder">
+            $POLITICAL
+          </Text>
+        </CardHeader>
+        <CardBody pad="small" background="black">
+          <Anchor href="" target="_blank" color="white">
+            <Box>
+              <Image
+                src="./political_art.png"
+                width="160px"
+                height="100px"
+              ></Image>
+            </Box>
+          </Anchor>
+        </CardBody>
+        <CardFooter pad={{ horizontal: "small" }} background="light-2">
+          <Text size="large" weight="bold">
+            @ no cities yet
+          </Text>
 
-//           <Attraction />
-//         </CardFooter>
-//       </Card>
-//     </Tip>
-//   );
-// };
+          <Attraction />
+        </CardFooter>
+      </Card>
+    </Tip>
+  );
+};
 
 // const Pop = () => {
 //   return (
