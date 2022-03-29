@@ -89,32 +89,32 @@ export const ModesInTabs = () => {
           <Tab title="Picasso" size="large" pad="small">
             <Box pad="medium" gap="small">
               {/* Les Femmes d'Alger */}
-              <Image
+              {/* <Image
                 alt="Les Femmes d'Alger: (English: Women of Algiers) is a series of 15 paintings and numerous drawings by the Spanish artist Pablo Picasso. The series, created in 1954–1955, was inspired by Eugène Delacroix's 1834 painting The Women of Algiers in their Apartment (French: Femmes d'Alger dans leur appartement).[1] The series is one of several painted by Picasso in tribute to artists that he admired"
                 src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/05/12/16/picasso-getty.jpg?quality=100&width=990&auto=webp&crop=982:726,smart"
                 width="800px"
                 height="360px"
-              ></Image>
+              ></Image> */}
 
-              {/* <Image
+              <Image
                 alt="Guernica: It is a large 1937 oil painting on canvas by Spanish artist Pablo Picasso. It is one of his best-known works, regarded by many art critics as the most moving and powerful anti-war painting in history"
                 src="https://cdn.britannica.com/79/91479-050-24F98E12/Guernica-canvas-Pablo-Picasso-Madrid-Museo-Nacional-1937.jpg"
                 width="800px"
                 height="360px"
                
-              ></Image> */}
+              ></Image>
 
               <Box direction="column" alignSelf="center" elevation="medium">
                 <Box direction="row" alignSelf="center" pad="small">
                   <Box pad="xxsmall">
                     <Anchor
-                      href="https://en.wikipedia.org/wiki/Les_Femmes_d%27Alger"
-                      // href="https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+                      // href="https://en.wikipedia.org/wiki/Les_Femmes_d%27Alger"
+                      href="https://en.wikipedia.org/wiki/Guernica_(Picasso)"
                       target="_blank"
                       color="yellow"
                     >
-                      Women of Algiers
-                      {/* Guernica */}
+                      {/* Women of Algiers */}
+                      Guernica (aka. #fckWars)
                     </Anchor>
                   </Box>
                 </Box>
