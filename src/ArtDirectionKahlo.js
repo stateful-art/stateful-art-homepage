@@ -38,7 +38,7 @@ export const ArtDirectionKahlo = (direction) => {
         <Surreal />
         <PoliticalArt/>
 
-        <ElectronicMusic />
+        <CallForAction/>
         <Punk />
       </Box>
 
@@ -54,17 +54,9 @@ export const ArtDirectionKahlo = (direction) => {
                 <StreetArt />
 
         <Rock />
-        <Box
-          animation={{
-            type: "pulse",
-            delay: 120,
-            duration: 1000,
-          }}
-        >
-          <CallForAction />
-        
-        </Box>
         <HipHop/>
+        <ElectronicMusic />
+
       </Box>
     
     </>

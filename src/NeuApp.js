@@ -264,7 +264,7 @@ const DiscordButton = (props) => (
       }}
     >
       <Text size="large" marginTop="20">
-        community
+        Community
       </Text>
       <Image
         src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"

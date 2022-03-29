@@ -59,8 +59,10 @@ export const ArtDirectionJanVermeer = (direction) => {
             duration: 1000,
           }}
         >
+         
           <CallForAction />
         </Box>
+         <Jazz/> 
       </Box>
     
     </>
@@ -404,58 +406,58 @@ const Punk = () => {
 //   );
 // };
 
-// const Jazz = () => {
-//   return (
-//     <Tip
-//       plain
-//       content={
-//         <Box
-//           pad="small"
-//           gap="small"
-//           width={{ max: "small" }}
-//           round="small"
-//           background="background-front"
-//           responsive={false}
-//         >
-//           <Text weight="bold">
-//             where it'll first start, who knows? well, you do!
-//           </Text>
-//         </Box>
-//       }
-//       dropProps={{ align: { left: "right" } }}
-//     >
-//       <Card height="small" margin="small" width="small" background="light-1">
-//         <CardHeader alignSelf="center" pad="small">
-//           <Text size="large" weight="bolder">
-//             $JAZZ
-//           </Text>
-//         </CardHeader>
-//         <CardBody pad="small" background="black">
-//           <Box alignSelf="center">
-//             <Image
-//               src="./jazz.png"
-//               width="92px"
-//               height="130px"
-//               style={{
-//                 marginLeft: "22px",
-//                 marginRight: "22px",
-//                 marginTop: "2px",
-//                 marginBottom: "1px",
-//               }}
-//             ></Image>
-//           </Box>
-//           {/* </Anchor> */}
-//         </CardBody>
-//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
-//           <Text size="large" weight="bold">
-//             @ no cities
-//           </Text>
-//           <Attraction />
-//         </CardFooter>
-//       </Card>
-//     </Tip>
-//   );
-// };
+const Jazz = () => {
+  return (
+    <Tip
+      plain
+      content={
+        <Box
+          pad="small"
+          gap="small"
+          width={{ max: "small" }}
+          round="small"
+          background="background-front"
+          responsive={false}
+        >
+          <Text weight="bold">
+            where it'll first start, who knows? well, you do!
+          </Text>
+        </Box>
+      }
+      dropProps={{ align: { left: "right" } }}
+    >
+      <Card height="small" margin="small" width="small" background="light-1">
+        <CardHeader alignSelf="center" pad="small">
+          <Text size="large" weight="bolder">
+            $JAZZ
+          </Text>
+        </CardHeader>
+        <CardBody pad="small" background="black">
+          <Box alignSelf="center">
+            <Image
+              src="./jazz.png"
+              width="92px"
+              height="130px"
+              style={{
+                marginLeft: "22px",
+                marginRight: "22px",
+                marginTop: "2px",
+                marginBottom: "1px",
+              }}
+            ></Image>
+          </Box>
+          {/* </Anchor> */}
+        </CardBody>
+        <CardFooter pad={{ horizontal: "small" }} background="light-2">
+          <Text size="large" weight="bold">
+            @ no cities
+          </Text>
+          <Attraction />
+        </CardFooter>
+      </Card>
+    </Tip>
+  );
+};
 
 const HipHop = () => {
   return (
