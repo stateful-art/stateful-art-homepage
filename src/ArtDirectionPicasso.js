@@ -50,18 +50,10 @@ export const ArtDirectionPicasso = (direction) => {
           duration: 1000,
         }}
       >
-        <ElectronicMusic />
+        <CallForAction/>
         <Reggae/>
         <Rock />
-        <Box
-          animation={{
-            type: "pulse",
-            delay: 120,
-            duration: 1000,
-          }}
-        >
-          <CallForAction />
-        </Box>
+      <Jazz/>
       </Box>
     </>
   );
@@ -405,58 +397,58 @@ const Reggae = () => {
   );
 };
 
-// const Jazz = () => {
-//   return (
-//     <Tip
-//       plain
-//       content={
-//         <Box
-//           pad="small"
-//           gap="small"
-//           width={{ max: "small" }}
-//           round="small"
-//           background="background-front"
-//           responsive={false}
-//         >
-//           <Text weight="bold">
-//             where it'll first start, who knows? well, you do!
-//           </Text>
-//         </Box>
-//       }
-//       dropProps={{ align: { left: "right" } }}
-//     >
-//       <Card height="small" margin="small" width="small" background="light-1">
-//         <CardHeader alignSelf="center" pad="small">
-//           <Text size="large" weight="bolder">
-//             $JAZZ
-//           </Text>
-//         </CardHeader>
-//         <CardBody pad="small" background="black">
-//           <Box alignSelf="center">
-//             <Image
-//               src="./jazz.png"
-//               width="92px"
-//               height="130px"
-//               style={{
-//                 marginLeft: "22px",
-//                 marginRight: "22px",
-//                 marginTop: "2px",
-//                 marginBottom: "1px",
-//               }}
-//             ></Image>
-//           </Box>
-//           {/* </Anchor> */}
-//         </CardBody>
-//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
-//           <Text size="large" weight="bold">
-//             @ no cities
-//           </Text>
-//           <Attraction />
-//         </CardFooter>
-//       </Card>
-//     </Tip>
-//   );
-// };
+const Jazz = () => {
+  return (
+    <Tip
+      plain
+      content={
+        <Box
+          pad="small"
+          gap="small"
+          width={{ max: "small" }}
+          round="small"
+          background="background-front"
+          responsive={false}
+        >
+          <Text weight="bold">
+            where it'll first start, who knows? well, you do!
+          </Text>
+        </Box>
+      }
+      dropProps={{ align: { left: "right" } }}
+    >
+      <Card height="small" margin="small" width="small" background="light-1">
+        <CardHeader alignSelf="center" pad="small">
+          <Text size="large" weight="bolder">
+            $JAZZ
+          </Text>
+        </CardHeader>
+        <CardBody pad="small" background="black">
+          <Box alignSelf="center">
+            <Image
+              src="./jazz.png"
+              width="92px"
+              height="130px"
+              style={{
+                marginLeft: "22px",
+                marginRight: "22px",
+                marginTop: "2px",
+                marginBottom: "1px",
+              }}
+            ></Image>
+          </Box>
+          {/* </Anchor> */}
+        </CardBody>
+        <CardFooter pad={{ horizontal: "small" }} background="light-2">
+          <Text size="large" weight="bold">
+            @ no cities
+          </Text>
+          <Attraction />
+        </CardFooter>
+      </Card>
+    </Tip>
+  );
+};
 
 const HipHop = () => {
   return (
@@ -512,62 +504,62 @@ const HipHop = () => {
   );
 };
 
-const ElectronicMusic = () => {
-  return (
-    <Tip
-      plain
-      content={
-        <Box
-          pad="small"
-          gap="small"
-          width={{ max: "small" }}
-          round="small"
-          background="background-front"
-          responsive={false}
-        >
-          <Text weight="bold" font="large">
-            Hamburg
-          </Text>
-        </Box>
-      }
-      dropProps={{ align: { left: "right" } }}
-    >
-      <Card height="small" margin="small" width="small" background="light-1">
-        <CardHeader alignSelf="center" pad="small">
-          <Text size="large" weight="bolder">
-            $ELECTRO
-          </Text>
-        </CardHeader>
-        <CardBody pad="small" background="black">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
-            <Box>
-              <Image
-                src="./electronic_music.png"
-                width="120px"
-                height="104px"
-                style={{
-                  marginLeft: "22px",
-                  marginRight: "36px",
-                  marginTop: "2px",
-                }}
-              ></Image>
-            </Box>
-          </Anchor>
-        </CardBody>
-        <CardFooter pad={{ horizontal: "small" }} background="light-2">
-          <Text size="large" weight="bold">
-            @ 1 city
-          </Text>
-          <Attraction />
-        </CardFooter>
-      </Card>
-    </Tip>
-  );
-};
+// const ElectronicMusic = () => {
+//   return (
+//     <Tip
+//       plain
+//       content={
+//         <Box
+//           pad="small"
+//           gap="small"
+//           width={{ max: "small" }}
+//           round="small"
+//           background="background-front"
+//           responsive={false}
+//         >
+//           <Text weight="bold" font="large">
+//             Hamburg
+//           </Text>
+//         </Box>
+//       }
+//       dropProps={{ align: { left: "right" } }}
+//     >
+//       <Card height="small" margin="small" width="small" background="light-1">
+//         <CardHeader alignSelf="center" pad="small">
+//           <Text size="large" weight="bolder">
+//             $ELECTRO
+//           </Text>
+//         </CardHeader>
+//         <CardBody pad="small" background="black">
+//           <Anchor
+//             href=""
+//             target="_blank"
+//             color="white"
+//           >
+//             <Box>
+//               <Image
+//                 src="./electronic_music.png"
+//                 width="120px"
+//                 height="104px"
+//                 style={{
+//                   marginLeft: "22px",
+//                   marginRight: "36px",
+//                   marginTop: "2px",
+//                 }}
+//               ></Image>
+//             </Box>
+//           </Anchor>
+//         </CardBody>
+//         <CardFooter pad={{ horizontal: "small" }} background="light-2">
+//           <Text size="large" weight="bold">
+//             @ 1 city
+//           </Text>
+//           <Attraction />
+//         </CardFooter>
+//       </Card>
+//     </Tip>
+//   );
+// };
 
 // const PoliticalArt = () => {
 //   return (

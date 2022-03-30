@@ -59,7 +59,7 @@ export const NavBar = () => (
               <Anchor
                 href="https://discord.gg/EXN7Mta2wu"
                 target="_blank"
-                label="community"
+                label="Community"
                 color="white"
                 icon={<Chat />}
               />
