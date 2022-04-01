@@ -34,11 +34,43 @@ export const ArtDirectionJanVermeer = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
+       
+      <Box
+          animation={{
+            type: "slideRight",
+            delay: 1200,
+            duration: 12000,
+          }}
+        >
         <HipHop />
+        
+        </Box>
+        
 
+        <Box
+          animation={{
+            type: "slideDown",
+            delay: 1200,
+            duration: 12000,
+          }}
+        >
+        
         <StreetArt />
+        </Box>
+        
         <ElectronicMusic />
+
+        <Box
+          animation={{
+            type: "slideLeft",
+            delay: 1200,
+            duration: 12000,
+          }}
+        >
+        
         <Punk />
+        </Box>
+        
       </Box>
 
       <Box
@@ -52,17 +84,32 @@ export const ArtDirectionJanVermeer = (direction) => {
       >
         <Reggae/>
         {/* <Cubist /> */}
+
+
+     
         <Rock />
+
         <Box
           animation={{
             type: "pulse",
-            delay: 120,
+            delay: 12000,
             duration: 1000,
           }}
         >
           <CallForAction />
         </Box>
+        <Box
+          animation={{
+            type: "jiggle",
+            delay: 12000,
+            duration: 1200,
+          }}
+        >
+          
         <Pop/>
+        </Box>
+        
+
       </Box>
     
     </>
@@ -89,6 +136,7 @@ const StreetArt = () => {
     >
       <Card height="small" margin="small" width="small" background="light-1">
         <CardHeader alignSelf="center" pad="small">
+    
           <Text size="large" weight="bolder">
             $STREET
           </Text>
@@ -154,10 +202,9 @@ const CallForAction = () => {
           <Aggregate size="medium" weight="medium"></Aggregate>
         </CardHeader>
         <CardBody background="white">
-          <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
+          <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
-              {"<"} express yourself! {">"}
-              <br></br><br></br>
+  
               start an artistic community in your city
             </Paragraph>
           </Anchor>
@@ -178,6 +225,11 @@ const Rock = () => {
           round="small"
           background="background-front"
           responsive={false}
+          animation={{
+            type: "zoomOut",
+            delay: 20,
+            duration: 5000,
+          }}
         >
           <Text size="medium" weight="bolder">
             Berlin, Hamburg, Istanbul, Los Angeles
@@ -192,13 +244,17 @@ const Rock = () => {
           pad="small"
           background="light-1"
           color="white"
+
         >
+
           <Text size="large" weight="bolder">
             $ROCK
           </Text>
+
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
+
+ <Anchor
             href=""
             target="_blank"
             color="white"
@@ -215,6 +271,7 @@ const Rock = () => {
               ></Image>
             </Box>
           </Anchor>
+         
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
@@ -303,7 +360,7 @@ const Reggae = () => {
           width={{ max: "small" }}
           round="small"
           background="#FFFF99"
-          responsive={false}
+          responsive={true}
           animation={{
             type: "slideLeft",
             delay: 20,

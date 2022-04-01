@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Anchor, Box, Header, Image, Menu, ResponsiveContext } from "grommet";
-import { Chat, Menu as MenuIcon } from "grommet-icons";
+import { Add, Chat, Menu as MenuIcon } from "grommet-icons";
 
 export const NavBar = () => (
   <Header background="red" pad="medium" height="xsmall">
@@ -15,7 +15,11 @@ export const NavBar = () => (
           <Box justify="end">
             <Menu
               a11yTitle="Navigation Menu"
-              dropProps={{ align: { top: "bottom", right: "right" } }}
+              dropProps={{
+                align: { top: "bottom", right: "right" },
+                color: "black",
+                opacity: "medium",
+              }}
               icon={<MenuIcon color="black" />}
               items={[
                 {
@@ -25,15 +29,23 @@ export const NavBar = () => (
                     </Box>
                   ),
                   href: "https://demover.se",
+                  color: "black"
                 },
                 {
-                  label: <Box pad="small">community</Box>,
+                  label: <Box pad="small">Community</Box>,
+                  color: "purple",
+
                   href: "",
                 },
                 {
-                  label: <Box pad="small">projects</Box>,
-
-                  href: "#",
+                  label: <Box pad="small">StartDAO</Box>,
+color: "red",
+                  href: "https://app.dework.xyz/statefulart",
+                },
+                {
+                  label: <Box pad="small">Twitter</Box>,
+color: "#1DA1F2",
+                  href: "https://twitter.com/statefulArt",
                 },
               ]}
             />
@@ -64,14 +76,24 @@ export const NavBar = () => (
                 icon={<Chat />}
               />
             </Box>
-
             <Box background="purple" pad="small" round="medium" flex="false">
               <Anchor
                 href="https://app.dework.xyz/statefulart"
+                target="_blank"
+                label="#StartDAO"
+                color="white"
+                icon={<Add />}
+              />
+            </Box>
+
+            <Box background="#1DA1F2" pad="small" round="medium" flex="false">
+              <Anchor
+                href="https://twitter.com/statefulArt"
                 target={"_blank"}
-                label="StartDAO"
+                label="Twitter"
                 color="white"
                 pad="small"
+
               />
             </Box>
           </Box>

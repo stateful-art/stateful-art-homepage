@@ -152,10 +152,9 @@ const CallForAction = () => {
           <Aggregate size="medium" weight="medium"></Aggregate>
         </CardHeader>
         <CardBody background="white">
-          <Anchor href="https://discord.gg/eheV9EcudR" target="_blank">
+          <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
-              {"<"} express yourself! {">"}
-              <br></br><br></br>
+       
               start an artistic community in your city
             </Paragraph>
           </Anchor>

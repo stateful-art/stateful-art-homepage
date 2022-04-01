@@ -11,7 +11,10 @@ import {
 import { CaretDown, CaretUp, Directions } from "grommet-icons";
 import React from "react";
 import { ModesInTabs } from "./components/commons/NeuTabsForAll";
+import { ModesInTabsMobile } from "./components/commons/NeuTabsForMobile";
+
 import { NavBar } from "./components/commons/Navbar";
+
 const theme = {
   global: {
     font: { family: "Open Sans", size: "18px", height: "20px" },
@@ -27,6 +30,27 @@ function NeuApp() {
           size === "small" ? (
             <>
               <NavBar />
+              <Box
+                align="center"
+                background="black"
+                justify="center"
+                direction="column"
+              >
+                <IntroTextVertical />
+              </Box>
+              <Box alignContent="center" background="black">
+
+              <ModesInTabsMobile />
+              <Box margin={"large"} pad={"xlarge"}>
+                <DiscordButton />
+              </Box>
+
+
+
+            
+              </Box>
+
+                <FooterSectionMobile />
             </>
           ) : (
             <>
@@ -79,7 +103,7 @@ function NeuApp() {
                         <Anchor
                           color="gray"
                           background="yellow"
-                          href="https://en.wikipedia.org/wiki/Post-structuralism"
+                          href="https://decrypt.co/resources/tokenomics"
                           target="_blank"
                         >
                           tokenomics.{" "}
@@ -124,128 +148,6 @@ function NeuApp() {
   );
 }
 
-// const OnTheWall = () => (
-//   <Grommet>
-//     <Box>
-//       <Image
-//         src="./footer_wave_colored_sky.svg"
-//         maxWidth="100%"
-//         alt="#87ceeb, aka. sky blue"
-//       ></Image>
-//     </Box>
-
-//     <ResponsiveContext.Consumer>
-//       {(size) =>
-//         size === "small" ? (
-//           <>
-//             <Heading size="xsmall" textAlign="center">
-//               {" "}
-//               a solidarity, <br></br>
-//               on the wall"
-//             </Heading>
-//           </>
-//         ) : (
-//           <>
-//             <Heading size="medium" textAlign="center">
-//               {" "}
-//               solidarity, on the wall
-//             </Heading>
-//           </>
-//         )
-//       }
-//     </ResponsiveContext.Consumer>
-
-//     <ResponsiveContext.Consumer>
-//       {(size) =>
-//         size === "small" ? (
-//           <Box direction="column">
-//             <Box
-//               animation={{
-//                 type: "slideUp",
-//                 delay: 20,
-//                 duration: 1000,
-//               }}
-//             >
-//               <Image
-//                 src="./a_pseudo_banksy_mint.png"
-//                 width="464px"
-//                 height="448px"
-//                 margin="32px"
-//               ></Image>
-//             </Box>
-
-//             {"     "}
-//             <Anchor
-//               color="orange"
-//               alignSelf="center"
-//               size="medium"
-//               href="https://en.grafisch-studio.de/product-page/zeichnung-werknummer-799"
-//               target="_blank"
-//             >
-//               a pseudo Banksy piece, anonymously and generously sharing all that
-//               digital version of the wall atNFT will make
-//             </Anchor>
-//             <Box
-//               animation={{
-//                 type: "slideDown",
-//                 delay: 20,
-//                 duration: 1000,
-//               }}
-//             >
-//               <Image
-//                 src="./real_metaverse.png"
-//                 width="464px"
-//                 height="448px"
-//                 margin="32px"
-//               ></Image>
-//             </Box>
-//           </Box>
-//         ) : (
-//           <Box direction="row">
-//             <Box
-//               animation={{
-//                 type: "slideUp",
-//                 delay: 20,
-//                 duration: 1000,
-//               }}
-//             >
-//               <Image
-//                 src="./a_pseudo_banksy_mint.png"
-//                 width="576px"
-//                 height="558px"
-//                 margin="32px"
-//               ></Image>
-//             </Box>
-//             <Box
-//               animation={{
-//                 type: "slideDown",
-//                 delay: 20,
-//                 duration: 1000,
-//               }}
-//             >
-//               <Image
-//                 src="./real_metaverse.png"
-//                 width="576px"
-//                 height="558px"
-//                 margin="32px"
-//               ></Image>
-//             </Box>
-//           </Box>
-//         )
-//       }
-//     </ResponsiveContext.Consumer>
-
-//     <Box>
-//       <Image
-//         src="./footer_wave_colored_orange.svg"
-//         maxWidth="100%"
-//         alt="orange"
-//       ></Image>
-//     </Box>
-
-//   </Grommet>
-// );
-
 const DiscordButton = (props) => (
   <Anchor href="https://discord.gg/EXN7Mta2wu" target="_blank" color="black">
     <Box
@@ -273,6 +175,91 @@ const DiscordButton = (props) => (
       />
     </Box>{" "}
   </Anchor>
+);
+
+const FooterSectionMobile = () => (
+  <>
+    <Box direction="column">
+      <Box
+        tag="footer"
+        direction="row"
+        justify="center"
+        pad="small"
+        gap="small"
+        //flex={true}
+        background="black"
+      ></Box>
+
+      <Box
+        tag="footer"
+        direction="row"
+        justify="center"
+        pad="small"
+        gap="small"
+        //flex={true}
+        background="black"
+      ></Box>
+
+      <Box
+        tag="footer"
+        direction="row"
+        justify="center"
+        pad="small"
+        gap="small"
+        margin="medium"
+        //flex={true}
+        background="#323001"
+      >
+        <Anchor
+          href="https://github.com/stateful-art"
+          target="_blank"
+          color="white"
+        >
+          <Text size="large">code</Text>
+        </Anchor>
+        {"|"}
+
+        <Anchor
+          href="https://miro.com/app/board/o9J_l3gy0-U=/"
+          target="_blank"
+          color="white"
+        >
+          {/* {"|  "} */}
+          <Text size="large">design canvas</Text>
+        </Anchor>
+
+        {"|"}
+
+        <Anchor
+          href="https://twitter.com/StatefulArt"
+          target="_blank"
+          color="white"
+        >
+          {" "}
+          <Text size="large">twitter</Text>
+        </Anchor>
+      </Box>
+    
+
+      <Box align="center" justify="center" margin="30p">
+        <Text size="large" margin="20px">
+          {" "}
+          contact@stateful.art
+        </Text>
+      </Box>
+      <Box align="center" justify="center" margin="30p">
+        <Anchor
+          href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
+          target="_blank"
+        >
+          <Paragraph size="large"> the revolution will be minted</Paragraph>
+        </Anchor>
+        <Directions color="red" />
+
+        <Text size="small"> © all rights acknowledged </Text>
+      </Box>
+    </Box>
+  </>
 );
 
 const FooterSection = () => (
@@ -337,7 +324,7 @@ const FooterSection = () => (
           <Text size="large">twitter</Text>
         </Anchor>
       </Box>
-
+      {/* 
       <Box align="center" justify="center" margin="30p" background="red">
         <Anchor
           href="https://trello.com/b/DzBmDMd9/statefulart"
@@ -347,7 +334,7 @@ const FooterSection = () => (
           {" "}
           <Text size="  large">project evolution</Text>
         </Anchor>
-      </Box>
+      </Box> */}
 
       <Box align="center" justify="center" margin="30p">
         <Text size="large" margin="20px">
@@ -460,43 +447,70 @@ const IntroTextHorizontal = () => {
   );
 };
 
-// const IntroTextVertical = () => {
-//   return (
-//     <Box direction="column" size="large">
-//       <Box size="medium">
-//         <Paragraph textAlign="center" size="large">
-//           stateful
-//           <Text color="yellow" size="large">
-//             .
-//           </Text>
-//           <Text color="red" size="large">
-//             art
-//           </Text>{" "}
-//           is a design-thinking project; <br></br>providing context, tooling and
-//           efforts on <br></br>building cooperations to achieve <br></br> a
-//           prolonged, unique vision.
-//         </Paragraph>
-//       </Box>
+const IntroTextVertical = () => {
+  return (
+    <Box direction="column" size="large" margin="16px">
+      <Box size="medium">
+        <Paragraph textAlign="start" size="large">
+          stateful
+          <Text color="yellow" size="large">
+            .
+          </Text>
+          <Text color="red" size="large">
+            art
+          </Text>{" "}
+          is an open-sourced design-thinking project; providing context and
+          efforts on building cooperations to achieve a prolonged, unique
+          vision: <br></br>
+          <br></br>
+          <Paragraph textAlign="center">
+            <Anchor
+              size="large"
+              href="https://en.wikipedia.org/wiki/World_peace"
+              target="_blank"
+              color="#98bdff"
+            >
+              <strong>"World Peace".</strong>
+            </Anchor>{" "}
+          </Paragraph>
+          <Anchor
+            href="https://www.counterpunch.org/2015/08/21/the-russell-einstein-peace-manifesto-of-1955/"
+            target="_blank"
+            color="#98bdff"
+          ></Anchor>
+        </Paragraph>
+      </Box>
 
-//       <Box size="medium">
-//         <Paragraph size="large" textAlign="center">
-//           initiating future exchanges and solidarity networks on the{" "}
-//           <Anchor color="#AA99FF" href="https://ethereum.org/en/">
-//             ethereum
-//           </Anchor>{" "}
-//           <Anchor
-//             color="yellow"
-//             href="https://en.wikipedia.org/wiki/Blockchain"
-//           >
-//             blockchain
-//           </Anchor>
-//           <br></br>
-//           this is an exploratory restoration, <br></br>one that is quite
-//           movemental.
-//         </Paragraph>
-//       </Box>
-//     </Box>
-//   );
-// };
+      <Box size="medium">
+        <Paragraph size="large" textAlign="start">
+          initiating creative exchange and solidarity networks between cities on{" "}
+          <Anchor
+            color="yellow"
+            href="https://en.wikipedia.org/wiki/Blockchain"
+            target="_blank"
+          >
+            blockchain
+          </Anchor>
+          .<br></br>
+          this is our restoration, one that is <br></br>
+          peaceful & movemental.
+        </Paragraph>
+      </Box>
+      <Box size="medium">
+        <Paragraph textAlign="start" size="large">
+          as an artwork itself, stateful
+          <Text color="yellow" size="large">
+            .
+          </Text>
+          <Text color="red" size="large">
+            art
+          </Text>{" "}
+          comes in multi-states & blends, in the scales of expression and
+          reflections:
+        </Paragraph>
+      </Box>
+    </Box>
+  );
+};
 
 export default NeuApp;
