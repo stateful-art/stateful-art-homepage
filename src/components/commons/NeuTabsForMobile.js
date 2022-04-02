@@ -1,7 +1,6 @@
 import { Anchor, Box, Image, Tab, Tabs, ResponsiveContext, Paragraph } from "grommet";
 import React from "react";
 import { ArtDirectionJanVermeerMobile } from "../../ArtDirectionJanVermeerMobile";
-import { ArtDirectionKahlo } from "../../ArtDirectionKahlo";
 import { ArtDirectionKahloMobile } from "../../ArtDirectionKahloMobile";
 import { ArtDirectionPicasso } from "../../ArtDirectionPicasso";
 import { ArtDirectionPicassoMobile } from "../../ArtDirectionPicassoMobile";
