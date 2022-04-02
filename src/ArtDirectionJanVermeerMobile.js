@@ -61,8 +61,6 @@ export const ArtDirectionJanVermeerMobile = (direction) => {
         }}
       >
         <Reggae />
-        {/* <Cubist /> */}
-
         <Rock />
 
         <Box

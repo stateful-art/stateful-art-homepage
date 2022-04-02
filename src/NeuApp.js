@@ -459,20 +459,25 @@ const IntroTextVertical = () => {
           <Text color="red" size="large">
             art
           </Text>{" "}
-          is an open-sourced design-thinking project; providing context and
-          efforts on building cooperations to achieve a prolonged, unique
-          vision: <br></br>
+          
+          is an open-sourced design-thinking project; 
+          providing context and
           <br></br>
-          <Paragraph textAlign="center">
+          efforts on building cooperations to achieve 
+          <br></br> a prolonged, unique
+          vision: 
+          <br></br>
+          <br></br>
+          <Text alignContent="center">
             <Anchor
               size="large"
               href="https://en.wikipedia.org/wiki/World_peace"
               target="_blank"
               color="#98bdff"
             >
-              <strong>"World Peace"</strong>
+          World Peace
             </Anchor>{" "}
-          </Paragraph>
+          </Text>
           <Anchor
             href="https://www.counterpunch.org/2015/08/21/the-russell-einstein-peace-manifesto-of-1955/"
             target="_blank"
