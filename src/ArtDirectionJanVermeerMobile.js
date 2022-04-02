@@ -149,7 +149,7 @@ const CallForAction = () => {
             come'n visit discord channel!
           </Text>
           <Text size="small" alignSelf="center" textAlign="center">
-            initiate an artistic community in your city!
+            start an artistic community in your city!
           </Text>
         </Box>
       }

@@ -58,8 +58,15 @@ export const ArtDirectionJanVermeer = (direction) => {
         <StreetArt />
         </Box>
         
-        <ElectronicMusic />
-
+        <Box
+          animation={{
+            type: "pulse",
+            delay: 2000,
+            duration: 1000,
+          }}
+        >
+          <CallForAction />
+        </Box>
         <Box
           animation={{
             type: "slideLeft",
@@ -91,17 +98,17 @@ export const ArtDirectionJanVermeer = (direction) => {
 
         <Box
           animation={{
-            type: "pulse",
-            delay: 12000,
-            duration: 1000,
+            type: "slideUp",
+            delay: 3000,
+            duration: 3000,
           }}
         >
-          <CallForAction />
+          <ElectronicMusic />
         </Box>
         <Box
           animation={{
             type: "jiggle",
-            delay: 12000,
+            delay: 6000,
             duration: 1200,
           }}
         >
@@ -180,7 +187,7 @@ const CallForAction = () => {
             come'n visit discord channel!
           </Text>
           <Text size="small" alignSelf="center" textAlign="center">
-           initiate an artistic community in your city! 
+           start an artistic community in your city! 
           </Text>
         </Box>
       }
