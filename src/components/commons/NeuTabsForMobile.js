@@ -1,15 +1,17 @@
-import { Anchor, Box, Image, Tab, Tabs, ResponsiveContext } from "grommet";
+import { Anchor, Box, Image, Tab, Tabs, ResponsiveContext, Paragraph } from "grommet";
 import React from "react";
-import { ArtDirectionJanVermeer } from "../../ArtDirectionJanVermeer";
+import { ArtDirectionJanVermeerMobile } from "../../ArtDirectionJanVermeerMobile";
 import { ArtDirectionKahlo } from "../../ArtDirectionKahlo";
+import { ArtDirectionKahloMobile } from "../../ArtDirectionKahloMobile";
 import { ArtDirectionPicasso } from "../../ArtDirectionPicasso";
+import { ArtDirectionPicassoMobile } from "../../ArtDirectionPicassoMobile";
 // import { ArtDirectionDaVinci } from "../../ArtDirectionDaVinci";
 
 export const ModesInTabsMobile = () => {
   return (
     <Box justify="center" alignContent="center" size="xxlarge">
       <Box alignSelf="center">
-        <Tabs size="xlarge" gap="">
+        <Tabs size="large" gap="">
           <Tab title="jan Vermeer" size="large">
             {/* <Tab title="da Vinci" size="large"> */}
             <Box pad="medium" direction="column">
@@ -49,7 +51,7 @@ export const ModesInTabsMobile = () => {
               </Box>
             </Box>
             <Box justify="center" alignContent="center" size="medium">
-              <ArtDirectionJanVermeer direction={"row"} />
+              <ArtDirectionJanVermeerMobile direction={"row"} />
               {/* <ArtDirectionDaVinci direction={"row"} /> */}
             </Box>
           </Tab>
@@ -76,14 +78,16 @@ export const ModesInTabsMobile = () => {
                     href="https://en.wikipedia.org/wiki/Self-Portrait_with_Thorn_Necklace_and_Hummingbird"
                     target="_blank"
                   >
-                    Self-Portrait with Thorn Necklace and Hummingbird
+                    <Paragraph textAlign="center">
+                    Self-Portrait with Thorn Necklace <br></br> and Hummingbird
+                    </Paragraph>
                   </Anchor>
                 </Box>
               </Box>
             </Box>
 
             <Box justify="center" alignContent="center" size="medium">
-              <ArtDirectionKahlo direction={"row"} />
+              <ArtDirectionKahloMobile direction={"row"} />
             </Box>
           </Tab>
 
@@ -91,15 +95,16 @@ export const ModesInTabsMobile = () => {
         {(size) =>
           size === "small" ? (
             <Tab title="Picasso" size="large" pad="small">
-            <Box pad="medium" gap="small">
+            <Box pad="medium" gap="small" >
             
 
               <Image
+              alignSelf="center"
                 alt="Guernica: It is a large 1937 oil painting on canvas by Spanish artist Pablo Picasso. It is one of his best-known works, regarded by many art critics as the most moving and powerful anti-war painting in history"
                 src="https://cdn.britannica.com/79/91479-050-24F98E12/Guernica-canvas-Pablo-Picasso-Madrid-Museo-Nacional-1937.jpg"
              
-                width="440px"
-                height="192px"
+                width="360px"
+                height="140px"
               ></Image>
 
               <Box direction="column" alignSelf="center" elevation="medium">
@@ -118,7 +123,7 @@ export const ModesInTabsMobile = () => {
                 </Box>
               </Box>
               <Box justify="center" alignContent="center" size="medium">
-                <ArtDirectionPicasso direction={"row"} />
+                <ArtDirectionPicassoMobile direction={"row"} />
               </Box>
             </Box>
           </Tab>

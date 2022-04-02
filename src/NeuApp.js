@@ -451,7 +451,7 @@ const IntroTextVertical = () => {
   return (
     <Box direction="column" size="large" margin="16px">
       <Box size="medium">
-        <Paragraph textAlign="start" size="large">
+        <Paragraph textAlign="center" size="large">
           stateful
           <Text color="yellow" size="large">
             .
@@ -470,7 +470,7 @@ const IntroTextVertical = () => {
               target="_blank"
               color="#98bdff"
             >
-              <strong>"World Peace".</strong>
+              <strong>"World Peace"</strong>
             </Anchor>{" "}
           </Paragraph>
           <Anchor
@@ -482,7 +482,7 @@ const IntroTextVertical = () => {
       </Box>
 
       <Box size="medium">
-        <Paragraph size="large" textAlign="start">
+        <Paragraph size="large" textAlign="center">
           initiating creative exchange and solidarity networks between cities on{" "}
           <Anchor
             color="yellow"
@@ -492,12 +492,12 @@ const IntroTextVertical = () => {
             blockchain
           </Anchor>
           .<br></br>
-          this is our restoration, one that is <br></br>
+          this is our restoration,  <br></br> one that is
           peaceful & movemental.
         </Paragraph>
       </Box>
       <Box size="medium">
-        <Paragraph textAlign="start" size="large">
+        <Paragraph textAlign="center" size="large">
           as an artwork itself, stateful
           <Text color="yellow" size="large">
             .
