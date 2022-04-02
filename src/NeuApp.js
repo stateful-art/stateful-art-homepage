@@ -351,7 +351,7 @@ const FooterSection = () => (
         </Anchor>
         <Directions color="red" />
 
-        <Text size="small"> © all rights left </Text>
+        <Text size="small"> © all rights acknowledged </Text>
       </Box>
     </Box>
   </>
