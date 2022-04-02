@@ -630,7 +630,7 @@ const PoliticalArt = () => {
           responsive={false}
         >
           <Text size="medium" weight="bolder">
-            @ no cities yet. so start one ;)
+            @ no cities. so start one ;)
           </Text>
         </Box>
       }
@@ -660,7 +660,7 @@ const PoliticalArt = () => {
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
-            @ no cities yet
+            @ no cities
           </Text>
 
           <Attraction />
@@ -710,7 +710,7 @@ const PoliticalArt = () => {
 //         </CardBody>
 //         <CardFooter pad={{ horizontal: "small" }} background="light-2">
 //           <Text size="large" weight="bold">
-//             @ no cities yet
+//             @ no cities
 //           </Text>
 
 //           <Attraction />

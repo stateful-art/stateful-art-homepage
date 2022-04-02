@@ -92,7 +92,6 @@ const StreetArt = () => {
       plain
       content={
         <Box
-          pad="small"
           gap="small"
           width={{ max: "small" }}
           round="small"
@@ -111,7 +110,7 @@ const StreetArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box alignSelf="center">
               <Image
                 src="./street_art_by_bona.jpeg"
@@ -171,7 +170,7 @@ const CallForAction = () => {
           <Aggregate size="medium" weight="medium"></Aggregate>
         </CardHeader>
         <CardBody background="white">
-          <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
+          <Anchor href="https://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
               start an artistic community in your city
             </Paragraph>
@@ -194,9 +193,9 @@ const Rock = () => {
           background="background-front"
           responsive={false}
           animation={{
-            type: "zoomOut",
+            type: "fadeIn",
             delay: 20,
-            duration: 5000,
+            duration: 2000,
           }}
         >
           <Text size="medium" weight="bolder">
@@ -218,7 +217,7 @@ const Rock = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box>
               <Image
                 src="./rock.jpeg"
@@ -276,16 +275,16 @@ const Punk = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box>
               <Image
                 src="./punk.png"
                 width="100px"
                 height="80px"
                 style={{
-                  // marginLeft: "22px",
+                  marginLeft: "0x",
                   // marginRight: "36px",
-                  marginTop: "px",
+                  marginTop: "8px",
                 }}
               ></Image>
             </Box>
@@ -331,14 +330,14 @@ const Reggae = () => {
           </Text>
         </CardHeader>
         <CardBody background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box>
               <Image
                 src="./reggae.jpeg"
                 width="90px"
                 height="76px"
                 style={{
-                  marginLeft: "48px",
+                  marginLeft: "6px",
                   marginRight: "36px",
                   marginTop: "20px",
                 }}
@@ -422,6 +421,11 @@ const HipHop = () => {
           round="small"
           background="background-front"
           responsive={false}
+          animation={{
+            type: "zoomOut",
+            delay: 1200,
+            duration: 12000,
+          }}
         >
           <Text weight="bold">Berlin, Hamburg, Istanbul, Los Angeles</Text>
         </Box>
@@ -435,16 +439,16 @@ const HipHop = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="orange">
-          <Anchor href="" target="_blank" color="white">
-            <Box animation="zoomOut">
+          <Anchor color="white">
+            <Box>
               <Image
                 src="./hiphop.png"
                 width="120px"
                 height="80px"
                 style={{
-                  marginLeft: "20px",
-                  marginRight: "36px",
-                  marginTop: "12px",
+                  marginLeft: "-10px",
+                  marginRight: "42px",
+                  marginTop: "6px",
                 }}
               ></Image>
             </Box>
@@ -487,16 +491,16 @@ const ElectronicMusic = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box>
               <Image
                 src="./electronic_music.png"
                 width="120px"
                 height="104px"
                 style={{
-                  marginLeft: "22px",
+                  marginLeft: "-14px",
                   marginRight: "36px",
-                  marginTop: "2px",
+                  marginTop: "0px",
                 }}
               ></Image>
             </Box>
@@ -527,7 +531,7 @@ const ElectronicMusic = () => {
 //           responsive={false}
 //         >
 //           <Text size="medium" weight="bolder">
-//             @ no cities yet. so start one ;)
+//             @ no cities. so start one ;)
 //           </Text>
 //         </Box>
 //       }
@@ -545,7 +549,7 @@ const ElectronicMusic = () => {
 //           </Text>
 //         </CardHeader>
 //         <CardBody pad="small" background="black">
-//           <Anchor href="" target="_blank" color="white">
+//           <Anchor  color="white">
 //             <Box>
 //               <Image
 //                 src="./political_art.png"
@@ -557,7 +561,7 @@ const ElectronicMusic = () => {
 //         </CardBody>
 //         <CardFooter pad={{ horizontal: "small" }} background="light-2">
 //           <Text size="medium" weight="bold">
-//             @ no cities yet
+//             @ no cities
 //           </Text>
 
 //           <Attraction />
@@ -598,16 +602,16 @@ const Pop = () => {
             $POP
           </Text>
         </CardHeader>
-        <CardBody pad="small" background="purple">
-          <Anchor href="" color="white">
+        <CardBody background="purple">
+          <Anchor color="white">
             <Box>
-              <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
+              <Image src="./pop_art.jpeg" width="106px" height="120px"></Image>
             </Box>
           </Anchor>
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="medium" weight="bold">
-            @ no cities yet
+            @ no cities
           </Text>
 
           <Attraction />

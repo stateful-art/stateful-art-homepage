@@ -39,18 +39,49 @@ function NeuApp() {
                 <IntroTextVertical />
               </Box>
               <Box alignContent="center" background="black">
+                <ModesInTabsMobile />
 
-              <ModesInTabsMobile />
-              <Box margin={"large"} pad={"xlarge"}>
-                <DiscordButton />
+                <Paragraph
+                  alignSelf="start"
+                  size="large"
+                  textAlign="center"
+                  margin={"32px"}
+                >
+                  <Anchor
+                    color="pink"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Expressionism"
+                    target="_blank"
+                  >
+                    {" "}
+                    an expressive{" "}
+                  </Anchor>
+                  & progressive art direction in decentralized{" "}
+                  <Anchor
+                    color="yellow"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Decentralization"
+                    target="_blank"
+                  >
+                    governance{" "}
+                  </Anchor>
+                  and{" "}
+                  <Anchor
+                    color="gray"
+                    background="yellow"
+                    href="https://decrypt.co/resources/tokenomics"
+                    target="_blank"
+                  >
+                    tokenomics.{" "}
+                  </Anchor>
+                </Paragraph>
+
+                <Box margin={"small"} pad={"medium"}>
+                  <DiscordButton />
+                </Box>
               </Box>
 
-
-
-            
-              </Box>
-
-                <FooterSectionMobile />
+              <FooterSectionMobile />
             </>
           ) : (
             <>
@@ -165,8 +196,9 @@ const DiscordButton = (props) => (
         duration: 1000,
       }}
     >
-      <Text size="large" marginTop="20">
-        Community
+      <Text textAlign="center" size="large" marginTop="20">
+        Join
+        <br></br>StartDAO
       </Text>
       <Image
         src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
@@ -179,27 +211,7 @@ const DiscordButton = (props) => (
 
 const FooterSectionMobile = () => (
   <>
-    <Box direction="column">
-      <Box
-        tag="footer"
-        direction="row"
-        justify="center"
-        pad="small"
-        gap="small"
-        //flex={true}
-        background="black"
-      ></Box>
-
-      <Box
-        tag="footer"
-        direction="row"
-        justify="center"
-        pad="small"
-        gap="small"
-        //flex={true}
-        background="black"
-      ></Box>
-
+    <Box direction="column" background={"black"}>
       <Box
         tag="footer"
         direction="row"
@@ -207,7 +219,7 @@ const FooterSectionMobile = () => (
         pad="small"
         gap="small"
         margin="medium"
-        //flex={true}
+        flex={true}
         background="#323001"
       >
         <Anchor
@@ -239,24 +251,29 @@ const FooterSectionMobile = () => (
           <Text size="large">twitter</Text>
         </Anchor>
       </Box>
-    
 
-      <Box align="center" justify="center" margin="30p">
-        <Text size="large" margin="20px">
+      <Box align="center" justify="center" margin="30px">
+        <Text size="large" weight={"bolder"}>
           {" "}
           contact@stateful.art
         </Text>
       </Box>
-      <Box align="center" justify="center" margin="30p">
+      <Box align="center" justify="center" margin={"16px"}>
         <Anchor
           href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
           target="_blank"
         >
-          <Paragraph size="large"> the revolution will be minted</Paragraph>
+          <Paragraph size="large" color={"white"}>
+            {" "}
+            the revolution will be minted
+          </Paragraph>
         </Anchor>
         <Directions color="red" />
 
-        <Text size="small"> © all rights acknowledged </Text>
+        <Text size="medium" weight={"bolder"}>
+          {" "}
+          © all rights acknowledged{" "}
+        </Text>
       </Box>
     </Box>
   </>
@@ -336,22 +353,27 @@ const FooterSection = () => (
         </Anchor>
       </Box> */}
 
-      <Box align="center" justify="center" margin="30p">
+      <Box align="center" justify="center" margin="12px">
         <Text size="large" margin="20px">
           {" "}
           contact@stateful.art
         </Text>
       </Box>
-      <Box align="center" justify="center" margin="30p">
+      <Box align="center" justify="center" margin="16px">
         <Anchor
           href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
           target="_blank"
         >
           <Paragraph size="large"> the revolution will be minted</Paragraph>
         </Anchor>
-        <Directions color="red" />
+        <Box align="center" justify="center" margin="16px">
+          <Directions color="red" />
 
-        <Text size="small"> © all rights acknowledged </Text>
+          <Text size="medium" weight={"bolder"}>
+            {" "}
+            © all rights acknowledged{" "}
+          </Text>
+        </Box>
       </Box>
     </Box>
   </>
@@ -459,13 +481,10 @@ const IntroTextVertical = () => {
           <Text color="red" size="large">
             art
           </Text>{" "}
-          
-          is an open-sourced design-thinking project; 
-          providing context and
+          is an open-sourced design-thinking project; providing context and
           <br></br>
-          efforts on building cooperations to achieve 
-          <br></br> a prolonged, unique
-          vision: 
+          efforts on building cooperations to achieve
+          <br></br> a prolonged, unique vision:
           <br></br>
           <br></br>
           <Text alignContent="center">
@@ -475,7 +494,7 @@ const IntroTextVertical = () => {
               target="_blank"
               color="#98bdff"
             >
-          World Peace
+              World Peace
             </Anchor>{" "}
           </Text>
           <Anchor
@@ -497,8 +516,7 @@ const IntroTextVertical = () => {
             blockchain
           </Anchor>
           .<br></br>
-          this is our restoration,  <br></br> one that is
-          peaceful & movemental.
+          this is our restoration, <br></br> one that is peaceful & movemental.
         </Paragraph>
       </Box>
       <Box size="medium">
