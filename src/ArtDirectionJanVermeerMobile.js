@@ -317,7 +317,7 @@ const Reggae = () => {
       
         >
           <Text size="small">
-            reggae community currently have no city-level treasury.
+            why don't you start a crypto reggae community for a city?
           </Text>
         </Box>
       }
@@ -611,7 +611,7 @@ const Pop = () => {
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="medium" weight="bold">
-            @ no cities
+            @ 4 cities
           </Text>
 
           <Attraction />

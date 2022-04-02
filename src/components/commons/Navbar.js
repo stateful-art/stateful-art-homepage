@@ -1,14 +1,11 @@
 import React from "react";
 
 import { Anchor, Box, Header, Image, Menu, ResponsiveContext } from "grommet";
-import { Add, Chat, Menu as MenuIcon } from "grommet-icons";
+import {  Chat, Menu as MenuIcon } from "grommet-icons";
 
 export const NavBar = () => (
   <Header background="red" pad="medium" height="xsmall">
-    <Anchor
-      href=""
-      icon={<Image src="./logo.svg" style={{ maxWidth: "22%" }}></Image>}
-    />
+   <Image src="./logo.svg" style={{ maxWidth: "42%" }}></Image>
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
@@ -35,7 +32,7 @@ export const NavBar = () => (
                   label: <Box pad="small">Community</Box>,
                   color: "purple",
 
-                  href: "",
+                  href: "https://discord.gg/EXN7Mta2wu",
                 },
                 {
                   label: <Box pad="small">StartDAO</Box>,
@@ -62,7 +59,6 @@ color: "#1DA1F2",
               <Anchor
                 href="https://demover.se"
                 label="Art of Peace"
-                target={"_blank"}
                 color="black"
                 pad="small"
               />
@@ -80,9 +76,9 @@ color: "#1DA1F2",
               <Anchor
                 href="https://app.dework.xyz/statefulart"
                 target="_blank"
-                label="#StartDAO"
+                label="StartDAO"
                 color="white"
-                icon={<Add />}
+                // icon={<Add />}
               />
             </Box>
 

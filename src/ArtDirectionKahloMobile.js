@@ -409,7 +409,7 @@ const Punk = () => {
 //           }}
 //         >
 //           <Text size="medium">
-//             reggae community currently have no city-level treasury.
+//             why don't you start a crypto reggae community for a city?
 //           </Text>
 //         </Box>
 //       }
@@ -630,7 +630,7 @@ const PoliticalArt = () => {
           responsive={false}
         >
           <Text size="medium" weight="bolder">
-            @ no cities. so start one ;)
+            @ no cities.
           </Text>
         </Box>
       }

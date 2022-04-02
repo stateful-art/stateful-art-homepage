@@ -360,7 +360,7 @@ const Punk = () => {
 //           }}
 //         >
 //           <Text size="medium">
-//             reggae community currently have no city-level treasury.
+//             why don't you start a crypto reggae community for a city?
 //           </Text>
 //         </Box>
 //       }
