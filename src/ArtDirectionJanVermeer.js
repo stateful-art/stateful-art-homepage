@@ -305,7 +305,7 @@ const Punk = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor href="https://app.dework.xyz/punk" color="white">
             <Box>
               <Image
                 src="./punk.png"

@@ -360,7 +360,7 @@ const Punk = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href=""
+            href="https://app.dework.xyz/punk"
             target="_blank"
             color="white"
           >

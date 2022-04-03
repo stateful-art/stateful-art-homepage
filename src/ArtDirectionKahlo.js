@@ -358,7 +358,7 @@ const Punk = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            
+            href="https://app.dework.xyz/punk"
             color="white"
           >
             <Box>
