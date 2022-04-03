@@ -4,19 +4,20 @@ homepage of stateful.art (aka. start) project. it's one of its kind, partially m
 
 soon page will become multi-language as well. 
 
-project, and its home, https://stateful.art are artworks themselves.
-you are welcome to become a contributor to this collective work, or suggest a feature, or start something new with that and concept, and let the world know about it. Don't forget to tell us as well, we'd most probably help starting or list your community on start's homepage.
-they can be inspired from and interpreted in your taste in the arts.
-
-
 contains multiple states/variations/modes via taste in arts. we reference to them, as art directions. 
 clicked to images of those base $genre community, they dispatch to DAO, Decentralised Autonomous Organisation, currently defined for these genres, to illustrate and give a foundation.
-
-Feel welcomed to all those DAOs and be ready to receive and share $genre tokens, invite more artists for new cities started for each genre.
 
 Our mission, at start, is connecting cities with arts, and soon with rights/causes as well.
 Here's link to #startDAO, that's behind all of these developments, 
 networked with many individuals and communities on web2 and web3. 
+
+project, and its home, https://stateful.art are artworks themselves.
+you are welcome to become a contributor to this collective work, or suggest a feature, or start something new with that and concept, and let the world know about it. Don't forget to tell us as well, we'd most probably help starting or list your community on start's homepage. 
+
+let your taste in the arts and cities/localities help bridging as well!
+
+Feel welcomed to all those DAOs and be ready to receive and share $genre tokens, 
+invite more artists for new cities started for each genre.
 
 https://app.dework.xyz/statefulart
 
