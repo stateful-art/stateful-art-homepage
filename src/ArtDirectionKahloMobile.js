@@ -301,6 +301,8 @@ const Surreal = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
+        <Anchor href="https://app.dework.xyz/surreal" color={"white"}>
+
           <Box alignSelf="center">
             <Image
               src="https://gallerima.com/magazine/wp-content/uploads/2021/02/Beurgois-ostention.jpg"
@@ -314,7 +316,7 @@ const Surreal = () => {
               }}
             ></Image>
           </Box>
-          {/* </Anchor> */}
+          </Anchor>
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="small"weight="bold">

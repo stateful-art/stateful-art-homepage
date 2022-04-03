@@ -34,10 +34,10 @@ export const ArtDirectionKahlo = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-        <PoliticalArt/>
+        <PoliticalArt />
         <Surreal />
 
-        <CallForAction/>
+        <CallForAction />
         <Punk />
       </Box>
 
@@ -50,14 +50,12 @@ export const ArtDirectionKahlo = (direction) => {
           duration: 1000,
         }}
       >
-                <StreetArt />
+        <StreetArt />
 
         <Rock />
-        <HipHop/>
+        <HipHop />
         <ElectronicMusic />
-
       </Box>
-    
     </>
   );
 };
@@ -125,7 +123,7 @@ const CallForAction = () => {
             come'n visit discord channel!
           </Text>
           <Text size="small" alignSelf="center" textAlign="center">
-           start an artistic community in your city! 
+            start an artistic community in your city!
           </Text>
         </Box>
       }
@@ -149,7 +147,6 @@ const CallForAction = () => {
         <CardBody background="white">
           <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
-            
               start an artistic community in your city
             </Paragraph>
           </Anchor>
@@ -190,10 +187,7 @@ const Rock = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href="https://app.dework.xyz/rock"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/rock" color="white">
             <Box>
               <Image
                 src="./rock.jpeg"
@@ -299,20 +293,21 @@ const Surreal = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Box alignSelf="center">
-            <Image
-              src="https://gallerima.com/magazine/wp-content/uploads/2021/02/Beurgois-ostention.jpg"
-              width="92px"
-              height="130px"
-              style={{
-                marginLeft: "22px",
-                marginRight: "22px",
-                marginTop: "2px",
-                marginBottom: "1px",
-              }}
-            ></Image>
-          </Box>
-          {/* </Anchor> */}
+          <Anchor href="https://app.dework.xyz/surreal" color={"white"}>
+            <Box alignSelf="center">
+              <Image
+                src="https://gallerima.com/magazine/wp-content/uploads/2021/02/Beurgois-ostention.jpg"
+                width="92px"
+                height="130px"
+                style={{
+                  marginLeft: "22px",
+                  marginRight: "22px",
+                  marginTop: "2px",
+                  marginBottom: "1px",
+                }}
+              ></Image>
+            </Box>
+          </Anchor>
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
@@ -357,10 +352,7 @@ const Punk = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href="https://app.dework.xyz/punk"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/punk" color="white">
             <Box>
               <Image
                 src="./punk.png"
@@ -527,10 +519,7 @@ const HipHop = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="orange">
-          <Anchor
-            href="https://app.dework.xyz/hiphop"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/hiphop" color="white">
             <Box animation="zoomOut">
               <Image
                 src="./hiphop.png"
@@ -582,10 +571,7 @@ const ElectronicMusic = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href="https://app.dework.xyz/electronic"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/electronic" color="white">
             <Box>
               <Image
                 src="./electronic_music.png"
