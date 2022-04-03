@@ -10,6 +10,15 @@ they can be inspired from and interpreted in your taste in the arts.
 
 
 contains multiple states/variations/modes via taste in arts. we reference to them, as art directions. 
+clicked to images of those base $genre community, they dispatch to DAO, Decentralised Autonomous Organisation, currently defined for these genres, to illustrate and give a foundation.
+
+Feel welcomed to all those DAOs and be ready to receive and share $genre tokens, invite more artists for new cities started for each genre.
+
+Our mission, at start, is connecting cities with arts, and soon with rights/causes as well.
+Here's link to #startDAO, that's behind all of these developments, 
+networked with many individuals and communities on web2 and web3. 
+
+https://app.dework.xyz/statefulart
 
 ![](https://i.imgur.com/EIkk5xU.png)
 
