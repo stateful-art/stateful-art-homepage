@@ -484,7 +484,8 @@ const IntroTextVertical = () => {
           is an open-sourced <br></br>
           design-thinking project;<br></br>
           providing context and efforts<br></br>
-          on building cooperations to achieve a prolonged, unique vision:
+          on building cooperations <br></br>
+          to achieve a prolonged, unique vision:
           <br></br>
           <br></br>
           <Text alignContent="center">
