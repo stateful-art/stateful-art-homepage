@@ -13,8 +13,6 @@ import {
 import { Aggregate, Attraction } from "grommet-icons";
 import React from "react";
 
-
-
 export const ArtDirectionPicasso = (direction) => {
   return (
     <>
@@ -52,10 +50,10 @@ export const ArtDirectionPicasso = (direction) => {
           duration: 1000,
         }}
       >
-        <CallForAction/>
-        <Reggae/>
+        <CallForAction />
+        <Reggae />
         <Rock />
-      <Jazz/>
+        <Jazz />
       </Box>
     </>
   );
@@ -86,7 +84,7 @@ const StreetArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor href="https://app.dework.xyz/streetart" color="white">
             <Box alignSelf="center">
               <Image
                 src="./street_art_by_bona.jpeg"
@@ -148,7 +146,6 @@ const CallForAction = () => {
         <CardBody background="white">
           <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
-              
               start an artistic community in your city
             </Paragraph>
           </Anchor>
@@ -246,20 +243,21 @@ const Cubist = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Box alignSelf="center">
-            <Image
-              src="./painting_picasso.jpeg"
-              width="92px"
-              height="130px"
-              style={{
-                marginLeft: "22px",
-                marginRight: "22px",
-                marginTop: "2px",
-                marginBottom: "1px",
-              }}
-            ></Image>
-          </Box>
-          {/* </Anchor> */}
+          <Anchor href="https://app.dework.xyz/cubist" color={"white"}>
+            <Box alignSelf="center">
+              <Image
+                src="./painting_picasso.jpeg"
+                width="92px"
+                height="130px"
+                style={{
+                  marginLeft: "22px",
+                  marginRight: "22px",
+                  marginTop: "2px",
+                  marginBottom: "1px",
+                }}
+              ></Image>
+            </Box>
+          </Anchor>
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
@@ -304,10 +302,7 @@ const Punk = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href="https://app.dework.xyz/punk"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/punk" color="white">
             <Box>
               <Image
                 src="./punk.png"
@@ -352,9 +347,7 @@ const Reggae = () => {
             duration: 1000,
           }}
         >
-          <Text size="medium">
-            why don't you start a crypto reggae community for a city?
-          </Text>
+          <Text size="medium">Bissau</Text>
         </Box>
       }
       dropProps={{ align: { left: "right" } }}
@@ -366,11 +359,7 @@ const Reggae = () => {
           </Text>
         </CardHeader>
         <CardBody background="black">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/reggae" color="white">
             <Box>
               <Image
                 src="./reggae.jpeg"
@@ -387,7 +376,7 @@ const Reggae = () => {
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
-            @ no cities
+            @ 1 city
           </Text>
           <Attraction />
         </CardFooter>
@@ -474,11 +463,7 @@ const HipHop = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="orange">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="https://app.dework.xyz/hiphop" color="white">
             <Box animation="zoomOut">
               <Image
                 src="./hiphop.png"
@@ -531,8 +516,7 @@ const HipHop = () => {
 //         </CardHeader>
 //         <CardBody pad="small" background="black">
 //           <Anchor
-//             href=""
-//             target="_blank"
+//             href="https://app.dework.xyz/electronic"
 //             color="white"
 //           >
 //             <Box>
@@ -592,7 +576,7 @@ const HipHop = () => {
 //           </Text>
 //         </CardHeader>
 //         <CardBody pad="small" background="black">
-//           <Anchor href="" target="_blank" color="white">
+//           <Anchor href="https://app.dework.xyz/politicalart" color="white">
 //             <Box>
 //               <Image
 //                 src="./political_art.png"
@@ -646,7 +630,7 @@ const HipHop = () => {
 //           </Text>
 //         </CardHeader>
 //         <CardBody pad="small" background="purple">
-//           <Anchor href="" target="_blank" color="white">
+//           <Anchor href="https://app.dework.xyz/pop-2" color="white">
 //             <Box>
 //               <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
 //             </Box>

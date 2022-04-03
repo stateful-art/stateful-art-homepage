@@ -87,7 +87,7 @@ const StreetArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Anchor  color="white">
+          <Anchor href="https://app.dework.xyz/streetart" color="white">
             <Box alignSelf="center">
               <Image
                 src="./street_art_by_bona.jpeg"
@@ -420,7 +420,7 @@ const Punk = () => {
 //         </CardHeader>
 //         <CardBody background="black">
 //           <Anchor
-//             href=""
+//             href="https://app.dework.xyz/reggae"
 //             target="_blank"
 //             color="white"
 //           >
@@ -528,7 +528,7 @@ const HipHop = () => {
         </CardHeader>
         <CardBody pad="small" background="orange">
           <Anchor
-            
+            href="https://app.dework.xyz/hiphop"
             color="white"
           >
             <Box animation="zoomOut">
@@ -583,7 +583,7 @@ const ElectronicMusic = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            
+            href="https://app.dework.xyz/electronic"
             color="white"
           >
             <Box>
@@ -643,7 +643,7 @@ const PoliticalArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor  color="white">
+          <Anchor href="https://app.dework.xyz/politicalart" color="white">
             <Box>
               <Image
                 src="./political_art.png"
@@ -697,7 +697,7 @@ const PoliticalArt = () => {
 //           </Text>
 //         </CardHeader>
 //         <CardBody pad="small" background="purple">
-//           <Anchor  color="white">
+//           <Anchor href="https://app.dework.xyz/pop-2" color="white">
 //             <Box>
 //               <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
 //             </Box>
