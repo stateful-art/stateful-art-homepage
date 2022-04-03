@@ -34,9 +34,8 @@ export const ArtDirectionKahlo = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-        {/* <HipHop /> */}
-        <Surreal />
         <PoliticalArt/>
+        <Surreal />
 
         <CallForAction/>
         <Punk />
@@ -88,7 +87,7 @@ const StreetArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="red">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box alignSelf="center">
               <Image
                 src="./street_art_by_bona.jpeg"
@@ -192,8 +191,7 @@ const Rock = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href=""
-            target="_blank"
+            
             color="white"
           >
             <Box>
@@ -360,8 +358,7 @@ const Punk = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href=""
-            target="_blank"
+            
             color="white"
           >
             <Box>
@@ -531,8 +528,7 @@ const HipHop = () => {
         </CardHeader>
         <CardBody pad="small" background="orange">
           <Anchor
-            href=""
-            target="_blank"
+            
             color="white"
           >
             <Box animation="zoomOut">
@@ -587,8 +583,7 @@ const ElectronicMusic = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href=""
-            target="_blank"
+            
             color="white"
           >
             <Box>
@@ -648,7 +643,7 @@ const PoliticalArt = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor href="" target="_blank" color="white">
+          <Anchor  color="white">
             <Box>
               <Image
                 src="./political_art.png"
@@ -702,7 +697,7 @@ const PoliticalArt = () => {
 //           </Text>
 //         </CardHeader>
 //         <CardBody pad="small" background="purple">
-//           <Anchor href="" target="_blank" color="white">
+//           <Anchor  color="white">
 //             <Box>
 //               <Image src="./pop_art.jpeg" width="180px" height="120px"></Image>
 //             </Box>

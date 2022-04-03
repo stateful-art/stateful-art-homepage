@@ -481,10 +481,10 @@ const IntroTextVertical = () => {
           <Text color="red" size="large">
             art
           </Text>{" "}
-          is an open-sourced design-thinking project; providing context and
-          <br></br>
-          efforts on building cooperations to achieve
-          <br></br> a prolonged, unique vision:
+          is an open-sourced <br></br>
+          design-thinking project;<br></br>
+          providing context and efforts<br></br>
+          on building cooperations to achieve a prolonged, unique vision:
           <br></br>
           <br></br>
           <Text alignContent="center">
