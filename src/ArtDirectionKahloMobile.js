@@ -192,8 +192,8 @@ const Rock = () => {
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor
-            href=""
-            target="_blank"
+            href="https://app.dework.xyz/rock"
+            // target="_blank"
             color="white"
           >
             <Box>

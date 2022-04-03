@@ -34,18 +34,15 @@ export const ArtDirectionJanVermeer = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-       
-      <Box
+        <Box
           animation={{
             type: "slideRight",
             delay: 1200,
             duration: 12000,
           }}
         >
-        <HipHop />
-        
+          <HipHop />
         </Box>
-        
 
         <Box
           animation={{
@@ -54,10 +51,9 @@ export const ArtDirectionJanVermeer = (direction) => {
             duration: 12000,
           }}
         >
-        
-        <StreetArt />
+          <StreetArt />
         </Box>
-        
+
         <Box
           animation={{
             type: "pulse",
@@ -74,10 +70,8 @@ export const ArtDirectionJanVermeer = (direction) => {
             duration: 12000,
           }}
         >
-        
-        <Punk />
+          <Punk />
         </Box>
-        
       </Box>
 
       <Box
@@ -89,11 +83,9 @@ export const ArtDirectionJanVermeer = (direction) => {
           duration: 1000,
         }}
       >
-        <Reggae/>
+        <Reggae />
         {/* <Cubist /> */}
 
-
-     
         <Rock />
 
         <Box
@@ -112,13 +104,9 @@ export const ArtDirectionJanVermeer = (direction) => {
             duration: 1200,
           }}
         >
-          
-        <Pop/>
+          <Pop />
         </Box>
-        
-
       </Box>
-    
     </>
   );
 };
@@ -143,7 +131,6 @@ const StreetArt = () => {
     >
       <Card height="small" margin="small" width="small" background="light-1">
         <CardHeader alignSelf="center" pad="small">
-    
           <Text size="large" weight="bolder">
             $STREET
           </Text>
@@ -187,7 +174,7 @@ const CallForAction = () => {
             come'n visit discord channel!
           </Text>
           <Text size="small" alignSelf="center" textAlign="center">
-           start an artistic community in your city! 
+            start an artistic community in your city!
           </Text>
         </Box>
       }
@@ -211,7 +198,6 @@ const CallForAction = () => {
         <CardBody background="white">
           <Anchor href="hhttps://discord.gg/EXN7Mta2wu" target="_blank">
             <Paragraph textAlign="center">
-  
               start an artistic community in your city
             </Paragraph>
           </Anchor>
@@ -251,19 +237,15 @@ const Rock = () => {
           pad="small"
           background="light-1"
           color="white"
-
         >
-
           <Text size="large" weight="bolder">
             $ROCK
           </Text>
-
         </CardHeader>
         <CardBody pad="small" background="black">
-
- <Anchor
-            href=""
-            target="_blank"
+          <Anchor
+            href="https://app.dework.xyz/rock"
+            // target="_blank"
             color="white"
           >
             <Box>
@@ -278,7 +260,6 @@ const Rock = () => {
               ></Image>
             </Box>
           </Anchor>
-         
         </CardBody>
         <CardFooter pad={{ horizontal: "small" }} background="light-2">
           <Text size="large" weight="bold">
@@ -291,7 +272,6 @@ const Rock = () => {
     </Tip>
   );
 };
-
 
 const Punk = () => {
   return (
@@ -325,11 +305,7 @@ const Punk = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="" target="_blank" color="white">
             <Box>
               <Image
                 src="./punk.png"
@@ -388,11 +364,7 @@ const Reggae = () => {
           </Text>
         </CardHeader>
         <CardBody background="black">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="" target="_blank" color="white">
             <Box>
               <Image
                 src="./reggae.jpeg"
@@ -496,11 +468,7 @@ const HipHop = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="orange">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="" target="_blank" color="white">
             <Box animation="zoomOut">
               <Image
                 src="./hiphop.png"
@@ -552,11 +520,7 @@ const ElectronicMusic = () => {
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
-          <Anchor
-            href=""
-            target="_blank"
-            color="white"
-          >
+          <Anchor href="" target="_blank" color="white">
             <Box>
               <Image
                 src="./electronic_music.png"
