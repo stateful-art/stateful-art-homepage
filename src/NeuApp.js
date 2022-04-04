@@ -169,6 +169,17 @@ function NeuApp() {
                   <CaretDown color="yellow" />
                 </Box>
 
+                <Box>
+                  <iframe
+                    width="100%"
+                    height="272"
+                    src="https://www.youtube.com/embed/rwPM01cbQBc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </Box>
                 <FooterSection />
               </Box>
             </>
@@ -198,7 +209,7 @@ const DiscordButton = (props) => (
     >
       <Text textAlign="center" size="large" marginTop="20">
         Join
-        <br></br>StartDAO
+        <br></br>Community
       </Text>
       <Image
         src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
