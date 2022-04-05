@@ -487,14 +487,14 @@ const ElectronicMusic = () => {
       <Card height="small" margin="small" width="small" background="light-1">
         <CardHeader alignSelf="center" pad="small">
          <Text size="small" weight="bolder">
-            $ELECTRO
+            $CLASSICAL
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor href="https://app.dework.xyz/electronic" color="white">
             <Box>
               <Image
-                src="./electronic_music.png"
+                src=".https://i.imgur.com/vPe3K3Q.png"
                 width="120px"
                 height="104px"
                 style={{
