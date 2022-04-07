@@ -170,15 +170,9 @@ function NeuApp() {
                 </Box>
 
                 <Box>
-                  <iframe
-                    width="100%"
-                    height="272"
-                    src="https://www.youtube.com/embed/rwPM01cbQBc"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+         
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Box>
                 <FooterSection />
               </Box>
