@@ -37,7 +37,14 @@ export const ArtDirectionKahlo = (direction) => {
         <PoliticalArt />
         <Surreal />
 
+<Box     animation={{
+          type: "pulse",
+          delay: 40,
+          duration: 1000,
+        }}>
+
         <CallForAction />
+        </Box>
         <Punk />
       </Box>
 
@@ -45,9 +52,9 @@ export const ArtDirectionKahlo = (direction) => {
         direction="row"
         alignSelf="start"
         animation={{
-          type: "fadeIn",
-          delay: 20,
-          duration: 1000,
+          type: "pulse",
+          delay: 10,
+          duration: 2200,
         }}
       >
         <StreetArt />

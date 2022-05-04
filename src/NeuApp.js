@@ -77,7 +77,35 @@ function NeuApp() {
                 </Paragraph>
 
                 <Box margin={"small"} pad={"medium"}>
-                  <DiscordButton />
+                  <DiscordButton props={{size: "small"}} />
+
+         <Box alignSelf="center">
+         <Box justify="center" alignContent="center">
+                    <CaretUp color="red" />
+                  </Box>
+
+                  <Box justify="center"  alignContent="center">
+                    <CaretDown color="yellow" />
+                    <CaretDown color="yellow" />
+                    <CaretDown color="yellow" />
+                  </Box>
+                </Box>
+         </Box>
+
+                {/* let's get it started ~ Black Eyed Peas */}
+                <Box alignSelf="center">
+                  <iframe
+                    width="420px"
+                    height="360px"
+                    src="https://www.youtube.com/embed/IKqV7DB8Iwg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+
+                  {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </Box>
               </Box>
 
@@ -142,7 +170,7 @@ function NeuApp() {
                       </Paragraph>
 
                       <Paragraph alignSelf="start" size="large" textAlign="end">
-                        $START a revolution; with love, peace, and creativity.
+                        bridge cities; with love, peace, and creativity.
                         <Anchor
                           href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
                           target="_blank"
@@ -169,11 +197,20 @@ function NeuApp() {
                   <CaretDown color="yellow" />
                 </Box>
 
-{/* money by pink floyd */}
+                {/* let's get it started ~ Black Eyed Peas */}
                 <Box>
-         
-<iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe
+                    width="720px"
+                    height="480px"
+                    src="https://www.youtube.com/embed/IKqV7DB8Iwg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+
+                  {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </Box>
                 <FooterSection />
               </Box>

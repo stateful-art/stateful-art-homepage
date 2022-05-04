@@ -34,21 +34,21 @@ export const ArtDirectionJanVermeer = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-        <Box
+      <Box
           animation={{
-            type: "slideRight",
-            delay: 1200,
-            duration: 12000,
+            type: "slideUp",
+            delay: 3000,
+            duration: 3000,
           }}
         >
-          <HipHop />
+          <ElectronicMusic />
         </Box>
 
         <Box
           animation={{
-            type: "slideDown",
+            type: "pulse",
             delay: 1200,
-            duration: 12000,
+            duration: 10000,
           }}
         >
           <StreetArt />
@@ -88,14 +88,16 @@ export const ArtDirectionJanVermeer = (direction) => {
 
         <Rock />
 
+    
+
         <Box
           animation={{
-            type: "slideUp",
-            delay: 3000,
-            duration: 3000,
+            type: "slideRight",
+            delay: 1200,
+            duration: 12000,
           }}
         >
-          <ElectronicMusic />
+          <HipHop />
         </Box>
         <Box
           animation={{

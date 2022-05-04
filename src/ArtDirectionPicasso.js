@@ -34,23 +34,48 @@ export const ArtDirectionPicasso = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-        <Cubist />
-        <Punk />
-        <HipHop />
+        <Box
+          animation={{
+            type: "jiggle",
+            delay: 40,
+            duration: 2400,
+          }}
+        >
+          <Cubist />
+        </Box>
 
-        <StreetArt />
+        <Punk />
+
+        <Box     animation={{
+          type: "rotateRight",
+          delay: 40,
+          duration: 12000,
+        }}>
+
+        <HipHop />
+        </Box>
+
+        <Box
+          animation={{
+            type: "jiggle",
+            delay: 8,
+            duration: 2000,
+          }}
+        >
+          <StreetArt />
+        </Box>
       </Box>
 
-      <Box
-        direction="row"
-        alignSelf="start"
-        animation={{
-          type: "fadeIn",
-          delay: 20,
-          duration: 1000,
-        }}
-      >
-        <CallForAction />
+      <Box direction="row" alignSelf="start">
+        <Box
+          animation={{
+            type: "pulse",
+            delay: 40,
+            duration: 2000,
+          }}
+        >
+          <CallForAction />
+        </Box>
         <Reggae />
         <Rock />
         <Jazz />
