@@ -222,7 +222,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   Loading .. ArtDEX ~ exchange | residency | events
                 </Text>
                 <iframe
-                name="sphere-with-stripes"
+                title="sphere-with-stripes"
                   src=" https://generated.space/sketch/stripe-sphere/"
                   height={"900px"}
                   width={"80%"}
