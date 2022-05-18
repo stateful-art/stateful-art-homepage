@@ -5,9 +5,3 @@ export const Genres = () => {
     );
 }
 
-export const Genres = () => {
-
-    return(
-        <></>
-    );
-}

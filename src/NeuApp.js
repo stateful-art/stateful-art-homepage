@@ -42,11 +42,11 @@ function NeuApp() {
                 <ModesInTabsMobile />
 
                 <Paragraph
-                  alignSelf="start"
+                  alignSelf="center"
                   size="large"
                   textAlign="center"
                   margin={"32px"}
-                >
+                >with base and fusion types;  <br></br>
                   <Anchor
                     color="pink"
                     background="yellow"
@@ -65,44 +65,70 @@ function NeuApp() {
                   >
                     governance{" "}
                   </Anchor>
-                  and{" "}
+                 &
                   <Anchor
                     color="gray"
                     background="yellow"
                     href="https://decrypt.co/resources/tokenomics"
                     target="_blank"
                   >
-                    tokenomics.{" "}
-                  </Anchor>
-                </Paragraph>
+                   {" "} tokenomics.{" "}
+                  </Anchor> <br></br>
+                  yielding mutually inclusive and expanding graph of a creative civilisation<br></br>  in space-time.{" "}
+                </Paragraph> 
+                <CitiesUnionByGenresMobile />
+
+
+                <Paragraph alignSelf="center" size="large" textAlign="center">
+                        let's bridge cities; with love, peace, and creativity.
+                        <Anchor
+                          href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
+                          target="_blank"
+                        >
+                          {" "}
+                          everyday {"& "}
+                          everywhere,{" "}
+                        </Anchor>
+                        @ <Text size="large">21st century and forwards.</Text>
+                      </Paragraph>
 
                 <Box margin={"small"} pad={"medium"}>
-                  <DiscordButton props={{size: "small"}} />
+                  <DiscordButton props={{ size: "small" }} />
 
-         <Box alignSelf="center">
-         <Box justify="center" alignContent="center">
-                    <CaretUp color="red" />
-                  </Box>
+                  <Box alignSelf="center">
+                    <Box justify="center" alignContent="center">
+                      <CaretUp color="red" />
+                    </Box>
 
-                  <Box justify="center"  alignContent="center">
-                    <CaretDown color="yellow" />
-                    <CaretDown color="yellow" />
-                    <CaretDown color="yellow" />
+                    <Box justify="center" alignContent="center">
+                      <CaretDown color="yellow" />
+                      <CaretDown color="yellow" />
+                      <CaretDown color="yellow" />
+                    </Box>
                   </Box>
                 </Box>
-         </Box>
 
                 {/* let's get it started ~ Black Eyed Peas */}
+
+
                 <Box alignSelf="center">
-                  <iframe
+                <iframe
                     width="420px"
                     height="360px"
+                  src="https://www.youtube.com/embed/bp3qulwW88k"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                  {/* <iframe
+                  
                     src="https://www.youtube.com/embed/IKqV7DB8Iwg"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                  ></iframe>
+                  ></iframe> */}
 
                   {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
@@ -125,6 +151,8 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 
                 <ModesInTabs />
 
+                {/* <CitiesUnionByGenres/> */}
+
                 <Box justify="center" alignContent="center" size="large">
                   <Heading size="small" alignSelf="center">
                     <Box
@@ -136,40 +164,44 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                       marginTop="20%"
                     >
                       <Paragraph
-                        alignSelf="start"
-                        size="large"
-                        textAlign="start"
-                      >
-                        <Anchor
-                          color="pink"
-                          background="yellow"
-                          href="https://en.wikipedia.org/wiki/Expressionism"
-                          target="_blank"
-                        >
-                          {" "}
-                          an expressive{" "}
-                        </Anchor>
-                        & progressive art direction in decentralized{" "}
-                        <Anchor
-                          color="yellow"
-                          background="yellow"
-                          href="https://en.wikipedia.org/wiki/Decentralization"
-                          target="_blank"
-                        >
-                          governance{" "}
-                        </Anchor>
-                        and{" "}
-                        <Anchor
-                          color="gray"
-                          background="yellow"
-                          href="https://decrypt.co/resources/tokenomics"
-                          target="_blank"
-                        >
-                          tokenomics.{" "}
-                        </Anchor>
-                      </Paragraph>
+                  alignSelf="center"
+                  size="large"
+                  textAlign="center"
+                  margin={"32px"}
+                >with base and fusion types;  <br></br>
+                  <Anchor
+                    color="pink"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Expressionism"
+                    target="_blank"
+                  >
+                    {" "}
+                    an expressive{" "}
+                  </Anchor>
+                  & progressive art direction in decentralized{" "}
+                  <Anchor
+                    color="yellow"
+                    background="yellow"
+                    href="https://en.wikipedia.org/wiki/Decentralization"
+                    target="_blank"
+                  >
+                    governance{" "}
+                  </Anchor>
+                 &
+                  <Anchor
+                    color="gray"
+                    background="yellow"
+                    href="https://decrypt.co/resources/tokenomics"
+                    target="_blank"
+                  >
+                   {" "} tokenomics.{" "}
+                  </Anchor> <br></br><br></br>
+                  illustrating and building mutually inclusive and expanding graph<br></br>  in space-time.{" "}
+                </Paragraph> 
 
                       <Paragraph alignSelf="start" size="large" textAlign="end">
+                      <DiscordButton />
+                      <br></br>
                         bridge cities; with love, peace, and creativity.
                         <Anchor
                           href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
@@ -179,13 +211,21 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                           everyday {"& "}
                           everywhere,{" "}
                         </Anchor>
-                        for the <Text size="large">21st century.</Text>
+                        @ <Text size="large">21st century and forwards.</Text>
+
                       </Paragraph>
                     </Box>
                   </Heading>
                 </Box>
 
-                <DiscordButton />
+                <Text size="large" margin={"42px"}>
+                  Loading .. ArtDEX ~ exchange | residency | events
+                </Text>
+                <iframe
+                  src=" https://generated.space/sketch/stripe-sphere/"
+                  height={"900px"}
+                  width={"80%"}
+                />
 
                 <Box justify="center" alignContent="center">
                   <CaretUp color="red" />
@@ -197,9 +237,18 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   <CaretDown color="yellow" />
                 </Box>
 
-                {/* let's get it started ~ Black Eyed Peas */}
                 <Box>
-                  <iframe
+                <iframe
+                    width="720px"
+                    height="540px"
+                  src="https://www.youtube.com/embed/bp3qulwW88k"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                {/* let's get it started ~ Black Eyed Peas */}
+                  {/* <iframe
                     width="720px"
                     height="480px"
                     src="https://www.youtube.com/embed/IKqV7DB8Iwg"
@@ -207,7 +256,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                  ></iframe>
+                  ></iframe> */}
 
                   {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
@@ -233,12 +282,19 @@ const DiscordButton = (props) => (
       flex={true}
       background="#5865F2"
       round="large"
+      margin={"40px"}
       animation={{
         type: "jiggle",
         delay: 20,
         duration: 1000,
       }}
     >
+      <Image
+        src="https://i.pinimg.com/736x/34/ea/20/34ea20e0747020c021677987211a6353.jpg"
+        width="60x"
+        height="60px"
+      />
+
       <Text textAlign="center" size="large" marginTop="20">
         Join
         <br></br>Community
@@ -577,6 +633,34 @@ const IntroTextVertical = () => {
         </Paragraph>
       </Box>
     </Box>
+  );
+};
+
+const CitiesUnionByGenres = () => {
+  return (
+    <>
+      <Image
+        src="cities_bridged_by_genres.png"
+        width="600x"
+        height="400px"
+        margin={"40px"}
+      />
+      ;
+    </>
+  );
+};
+
+const CitiesUnionByGenresMobile = () => {
+  return (
+    <>
+      <Image alignSelf="center"
+        src="cities_bridged_by_genres.png"
+        width="360px"
+        height="280px"
+        margin={"40px"}
+      />
+      ;
+    </>
   );
 };
 

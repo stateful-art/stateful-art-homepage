@@ -46,7 +46,7 @@ export const ArtDirectionJanVermeerMobile = (direction) => {
           <StreetArt />
         </Box>
 
-        <ElectronicMusic />
+        <Classical />
 
         <Punk />
       </Box>
@@ -487,14 +487,14 @@ const ElectronicMusic = () => {
       <Card height="small" margin="small" width="small" background="light-1">
         <CardHeader alignSelf="center" pad="small">
          <Text size="small" weight="bolder">
-            $CLASSICAL
+            $$ELECTRO
           </Text>
         </CardHeader>
         <CardBody pad="small" background="black">
           <Anchor href="https://app.dework.xyz/electronic" color="white">
             <Box>
               <Image
-                src=".https://i.imgur.com/vPe3K3Q.png"
+                src="https://i.imgur.com/vPe3K3Q.png"
                 width="120px"
                 height="104px"
                 style={{
@@ -516,6 +516,60 @@ const ElectronicMusic = () => {
     </Tip>
   );
 };
+
+const Classical = () => {
+  return (
+    <Tip
+      plain
+      content={
+        <Box
+          pad="small"
+          gap="small"
+          width={{ max: "small" }}
+          round="small"
+          background="background-front"
+          responsive={false}
+        >
+          <Text weight="bold" font="large">
+            Hamburg
+          </Text>
+        </Box>
+      }
+      dropProps={{ align: { left: "right" } }}
+    >
+      <Card height="small" margin="small" width="small" background="light-1">
+        <CardHeader alignSelf="center" pad="small">
+         <Text size="small" weight="bolder">
+            $CLASSICAL
+          </Text>
+        </CardHeader>
+        <CardBody pad="small" background="black">
+          <Anchor href="https://app.dework.xyz/electronic" color="white">
+            <Box>
+              <Image
+                src="https://i.imgur.com/vPe3K3Q.png"
+                width="120px"
+                height="104px"
+                style={{
+                  marginLeft: "-14px",
+                  marginRight: "36px",
+                  marginTop: "0px",
+                }}
+              ></Image>
+            </Box>
+          </Anchor>
+        </CardBody>
+        <CardFooter pad={{ horizontal: "small" }} background="light-2">
+          <Text size="medium" weight="bold">
+            @ 1 city
+          </Text>
+          <Attraction />
+        </CardFooter>
+      </Card>
+    </Tip>
+  );
+};
+
 
 // const PoliticalArt = () => {
 //   return (

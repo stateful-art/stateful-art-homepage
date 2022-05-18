@@ -44,6 +44,12 @@ color: "red",
 color: "#1DA1F2",
                   href: "https://twitter.com/statefulArt",
                 },
+                {
+                  label: <Box pad="small">Github</Box>,
+color: "black",
+                  href: "https://github.com/stateful-art",
+                },
+                
               ]}
             />
           </Box>
@@ -81,12 +87,24 @@ color: "#1DA1F2",
                 // icon={<Add />}
               />
             </Box>
+            
 
             <Box background="#1DA1F2" pad="small" round="medium" flex="false">
               <Anchor
                 href="https://twitter.com/statefulArt"
                 target={"_blank"}
                 label="Twitter"
+                color="white"
+                pad="small"
+
+              />
+            </Box>
+
+            <Box background="black" pad="small" round="medium" flex="false">
+              <Anchor
+                href="https://github.com/stateful-art"
+                target={"_blank"}
+                label="Github"
                 color="white"
                 pad="small"
 

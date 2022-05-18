@@ -7,7 +7,7 @@ import { ArtDirectionPicasso } from "../../ArtDirectionPicasso";
 
 export const ModesInTabs = () => {
   return (
-    <Box justify="center" alignContent="center" size="xxlarge">
+    <Box justify="center" alignContent="center" size="xxlarge" margin={"50px"}>
       <Box alignSelf="center">
         <Tabs size="xlarge" gap="">
           <Tab title="jan Vermeer" size="large">
