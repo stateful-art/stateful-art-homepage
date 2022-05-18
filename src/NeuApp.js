@@ -222,6 +222,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   Loading .. ArtDEX ~ exchange | residency | events
                 </Text>
                 <iframe
+                name="sphere-with-stripes"
                   src=" https://generated.space/sketch/stripe-sphere/"
                   height={"900px"}
                   width={"80%"}
@@ -636,19 +637,19 @@ const IntroTextVertical = () => {
   );
 };
 
-const CitiesUnionByGenres = () => {
-  return (
-    <>
-      <Image
-        src="cities_bridged_by_genres.png"
-        width="600x"
-        height="400px"
-        margin={"40px"}
-      />
-      ;
-    </>
-  );
-};
+// const CitiesUnionByGenres = () => {
+//   return (
+//     <>
+//       <Image
+//         src="cities_bridged_by_genres.png"
+//         width="600x"
+//         height="400px"
+//         margin={"40px"}
+//       />
+//       ;
+//     </>
+//   );
+// };
 
 const CitiesUnionByGenresMobile = () => {
   return (
