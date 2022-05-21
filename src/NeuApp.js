@@ -1,4 +1,6 @@
 import {
+  Accordion,
+  AccordionPanel,
   Anchor,
   Box,
   Grommet,
@@ -226,7 +228,6 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   {" "}
                   Decentralized Artistic Organicities
                 </Text>
-        
 
                 <Box direction="row" gap={"medium"}>
                   <iframe
@@ -241,7 +242,6 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     height={"600px"}
                     width={"640px"}
                   />
-
                 </Box>
                 {/* <iframe
                   title="sphere-with-stripes"
@@ -250,16 +250,22 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     width={"80%"}
                   /> */}
 
-                <Box justify="center" alignContent="center" margin={"40px"}>
-              
-                  <Text size="xlarge" margin={"20px"}>
-                    {" "}
-                    What's next?
-                  </Text>
-                  <Text size="xlarge" margin={"20px"}>
-                    {" "}
-                    You decide!
-                  </Text>
+                <Box justify="center" alignContent="center" margin={"20px"} pad="medium">
+                
+                  <Box background={"purple"}>
+                    <Accordion size="large">
+                      <AccordionPanel label="World needs you ~ up for some change?">
+                        <Box pad="medium" background="orange">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLcI1ywEKgDJrt1TV0T0REcVAEXuPZjkkIXUX5iTFCMxIMzg/viewform?embedded=true" width="800" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </Box>
+                      </AccordionPanel>
+                      {/* <AccordionPanel label="Panel 2">
+                        <Box pad="medium" background="light-2">
+                          <Text>Two</Text>
+                        </Box>
+                      </AccordionPanel> */}
+                    </Accordion>
+                  </Box>
                 </Box>
                 <Box>
                   <iframe
