@@ -1,2 +1,0 @@
-// LocalZines for global impact
-//

@@ -15,7 +15,7 @@ export const ModesInTabs = () => {
             <Box pad="medium" direction="column">
               <Box direction="row" alignSelf="center">
                 <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/540px-1665_Girl_with_a_Pearl_Earring.jpg"
+                  src="540px-1665_Girl_with_a_Pearl_Earring.jpg"
                   // src="https://spokenvision.com/wp-content/uploads/2017/03/Mona-Lisa-770x876.jpg"
                   width="324"
                   height="384"
@@ -59,7 +59,7 @@ export const ModesInTabs = () => {
               <Box direction="row" alignSelf="center">
                 <Image
                   alt="Self-Portrait with Thorn Necklace and Hummingbird: Kahlo painted the self-portrait, which includes a black cat and a monkey, after her divorce from Diego Rivera and the end of her affair with photographer Nickolas Muray."
-                  src="https://paintingandframe.com/uploadpic/frida_kahlo/big/self_portrait_with_necklace_of_thorns_1940.jpg"
+                  src="self_portrait_with_necklace_of_thorns_1940.jpg"
                   width="292px"
                   height="360px"
                 ></Image>
@@ -98,7 +98,7 @@ export const ModesInTabs = () => {
 
               <Image
                 alt="Guernica: It is a large 1937 oil painting on canvas by Spanish artist Pablo Picasso. It is one of his best-known works, regarded by many art critics as the most moving and powerful anti-war painting in history"
-                src="https://cdn.britannica.com/79/91479-050-24F98E12/Guernica-canvas-Pablo-Picasso-Madrid-Museo-Nacional-1937.jpg"
+                src="Guernica-canvas-Pablo-Picasso-Madrid-Museo-Nacional-1937.jpg"
                 width="800px"
                 height="360px"
                

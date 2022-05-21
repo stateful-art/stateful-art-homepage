@@ -16,15 +16,9 @@ import React from "react";
 export const ArtDirectionJanVermeerMobile = (direction) => {
   return (
     <>
-      <Box
-        alignSelf="center"
-        marginTop="20px"
-        justify="center"
-        // alignContent="center"
-        direction="column"
+      <Box direction={{ direction }}
       >
     
-      </Box>
       <Box direction={{ direction }}>
         <Box
           animation={{
@@ -47,6 +41,7 @@ export const ArtDirectionJanVermeerMobile = (direction) => {
         </Box>
 
         <Classical />
+      </Box>
 
         <Punk />
       </Box>
@@ -54,11 +49,6 @@ export const ArtDirectionJanVermeerMobile = (direction) => {
       <Box
         direction="row"
         alignSelf="start"
-        animation={{
-          type: "fadeIn",
-          delay: 20,
-          duration: 1000,
-        }}
       >
         <Reggae />
         <Rock />
@@ -148,7 +138,7 @@ const CallForAction = () => {
             come'n visit discord channel!
           </Text>
           <Text size="small" alignSelf="center" textAlign="center">
-            start an artistic community in your city!
+            start an artistic community @your city!
           </Text>
         </Box>
       }
@@ -171,8 +161,8 @@ const CallForAction = () => {
         </CardHeader>
         <CardBody background="white">
           <Anchor href="https://discord.gg/EXN7Mta2wu" target="_blank">
-            <Paragraph textAlign="center">
-              start an artistic community in your city
+            <Paragraph textAlign="center" size="small">
+              start an artistic community @your city
             </Paragraph>
           </Anchor>
         </CardBody>

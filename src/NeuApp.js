@@ -4,6 +4,7 @@ import {
   Grommet,
   Heading,
   Image,
+  List,
   Paragraph,
   ResponsiveContext,
   Text,
@@ -46,7 +47,8 @@ function NeuApp() {
                   size="large"
                   textAlign="center"
                   margin={"32px"}
-                >with base and fusion types;  <br></br>
+                >
+                  with base and fusion types; <br></br>
                   <Anchor
                     color="pink"
                     background="yellow"
@@ -65,32 +67,34 @@ function NeuApp() {
                   >
                     governance{" "}
                   </Anchor>
-                 &
+                  &
                   <Anchor
                     color="gray"
                     background="yellow"
                     href="https://decrypt.co/resources/tokenomics"
                     target="_blank"
                   >
-                   {" "} tokenomics.{" "}
-                  </Anchor> <br></br>
-                  yielding mutually inclusive and expanding graph of a creative civilisation<br></br>  in space-time.{" "}
-                </Paragraph> 
+                    {" "}
+                    tokenomics.{" "}
+                  </Anchor>{" "}
+                  <br></br>
+                  yielding mutually inclusive and expanding graph of a creative
+                  civilisation<br></br> in space-time.{" "}
+                </Paragraph>
                 <CitiesUnionByGenresMobile />
 
-
                 <Paragraph alignSelf="center" size="large" textAlign="center">
-                        let's bridge cities; with love, peace, and creativity.
-                        <Anchor
-                          href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
-                          target="_blank"
-                        >
-                          {" "}
-                          everyday {"& "}
-                          everywhere,{" "}
-                        </Anchor>
-                        @ <Text size="large">21st century and forwards.</Text>
-                      </Paragraph>
+                  let's bridge cities; with love, peace, and creativity.
+                  <Anchor
+                    href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
+                    target="_blank"
+                  >
+                    {" "}
+                    everyday {"& "}
+                    everywhere,{" "}
+                  </Anchor>
+                  @ <Text size="large">21st century and forwards.</Text>
+                </Paragraph>
 
                 <Box margin={"small"} pad={"medium"}>
                   <DiscordButton props={{ size: "small" }} />
@@ -110,17 +114,16 @@ function NeuApp() {
 
                 {/* let's get it started ~ Black Eyed Peas */}
 
-
                 <Box alignSelf="center">
-                <iframe
+                  <iframe
                     width="420px"
                     height="360px"
-                  src="https://www.youtube.com/embed/bp3qulwW88k"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                    src="https://www.youtube.com/embed/bp3qulwW88k"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                   {/* <iframe
                   
                     src="https://www.youtube.com/embed/IKqV7DB8Iwg"
@@ -148,11 +151,8 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                 direction="column"
               >
                 <IntroTextHorizontal />
-
                 <ModesInTabs />
-
                 {/* <CitiesUnionByGenres/> */}
-
                 <Box justify="center" alignContent="center" size="large">
                   <Heading size="small" alignSelf="center">
                     <Box
@@ -164,44 +164,45 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                       marginTop="20%"
                     >
                       <Paragraph
-                  alignSelf="center"
-                  size="large"
-                  textAlign="center"
-                  margin={"32px"}
-                >with base and fusion types;  <br></br>
-                  <Anchor
-                    color="pink"
-                    background="yellow"
-                    href="https://en.wikipedia.org/wiki/Expressionism"
-                    target="_blank"
-                  >
-                    {" "}
-                    an expressive{" "}
-                  </Anchor>
-                  & progressive art direction in decentralized{" "}
-                  <Anchor
-                    color="yellow"
-                    background="yellow"
-                    href="https://en.wikipedia.org/wiki/Decentralization"
-                    target="_blank"
-                  >
-                    governance{" "}
-                  </Anchor>
-                 &
-                  <Anchor
-                    color="gray"
-                    background="yellow"
-                    href="https://decrypt.co/resources/tokenomics"
-                    target="_blank"
-                  >
-                   {" "} tokenomics.{" "}
-                  </Anchor> <br></br><br></br>
-                  illustrating and building mutually inclusive and expanding graph<br></br>  in space-time.{" "}
-                </Paragraph> 
+                        alignSelf="center"
+                        size="large"
+                        textAlign="center"
+                        margin={"32px"}
+                      >
+                        <Anchor
+                          color="pink"
+                          background="yellow"
+                          href="https://en.wikipedia.org/wiki/Expressionism"
+                          target="_blank"
+                        >
+                          an expressive{" "}
+                        </Anchor>
+                        & progressive art direction in decentralized{" "}
+                        <Anchor
+                          color="yellow"
+                          background="yellow"
+                          href="https://en.wikipedia.org/wiki/Decentralization"
+                          target="_blank"
+                        >
+                          governance{" "}
+                        </Anchor>
+                        &
+                        <Anchor
+                          color="gray"
+                          background="yellow"
+                          href="https://decrypt.co/resources/tokenomics"
+                          target="_blank"
+                        >
+                          {" "}
+                          tokenomics.{" "}
+                        </Anchor>{" "}
+                        <br></br>
+                        <br></br>
+                        we're illustrating and exploring the ever-expanding
+                        graph of a creative civilisation, in space-time.{" "}
+                      </Paragraph>
 
                       <Paragraph alignSelf="start" size="large" textAlign="end">
-                      <DiscordButton />
-                      <br></br>
                         bridge cities; with love, peace, and creativity.
                         <Anchor
                           href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
@@ -212,43 +213,72 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                           everywhere,{" "}
                         </Anchor>
                         @ <Text size="large">21st century and forwards.</Text>
-
+                        <DiscordButton />
                       </Paragraph>
                     </Box>
                   </Heading>
                 </Box>
-
-                <Text size="large" margin={"42px"}>
-                  Loading .. ArtDEX ~ exchange | residency | events
+               
+                <Text size="xlarge"  margin={"0px"}>
+                  {" "}
+                Let's have a deeper look what's going @n 
                 </Text>
-                <iframe
-                title="sphere-with-stripes"
-                  src=" https://generated.space/sketch/stripe-sphere/"
-                  height={"900px"}
-                  width={"80%"}
-                />
+                <Text size="xlarge"  margin={"40px"}>
+                  {" "}
+                
+                Decentralized Artistic Organicities
+                </Text>
 
+                <Box direction="row">
+                <iframe
+                  title="hiphop-dao"
+                  src=" https://app.dework.xyz/hiphop"
+                  height={"500px"}
+                  width={"100%"}
+                  />
+                 <iframe
+                  title="rock-dao"
+                  src=" https://app.dework.xyz/rock"
+                  height={"500px"}
+                  width={"100%"}
+                  />
+                   <iframe
+                  title="electronic-dao"
+                  src=" https://app.dework.xyz/electronic"
+                  height={"500px"}
+                  width={"100%"}
+                  />
+                  {/* <Box size="large">
+                    what can u do here?
+                    
+                  </Box> */}
+                </Box>
+                  {/* <iframe
+                  title="sphere-with-stripes"
+                    src=" https://generated.space/sketch/stripe-sphere/"
+                    height={"900px"}
+                    width={"80%"}
+                  /> */}
+               
                 <Box justify="center" alignContent="center">
                   <CaretUp color="red" />
                 </Box>
-
                 <Box justify="center" alignContent="center">
                   <CaretDown color="yellow" />
                   <CaretDown color="yellow" />
                   <CaretDown color="yellow" />
                 </Box>
-
                 <Box>
-                <iframe
+                  <iframe
                     width="720px"
                     height="540px"
-                  src="https://www.youtube.com/embed/bp3qulwW88k"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                {/* let's get it started ~ Black Eyed Peas */}
+                    src="https://www.youtube.com/embed/bp3qulwW88k"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  {/* let's get it started ~ Black Eyed Peas */}
                   {/* <iframe
                     width="720px"
                     height="480px"
@@ -654,7 +684,8 @@ const IntroTextVertical = () => {
 const CitiesUnionByGenresMobile = () => {
   return (
     <>
-      <Image alignSelf="center"
+      <Image
+        alignSelf="center"
         src="cities_bridged_by_genres.png"
         width="360px"
         height="280px"
