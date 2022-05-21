@@ -238,9 +238,9 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   />
                   <iframe
                     title="rock-dao"
-                    src=" https://app.dework.xyz/hiphop/hamburg-1"
+                    src=" https://app.dework.xyz/rock"
                     height={"600px"}
-                    width={"800px"}
+                    width={"640px"}
                   />
 
                   {/* <Box size="large">
