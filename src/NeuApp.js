@@ -4,7 +4,6 @@ import {
   Grommet,
   Heading,
   Image,
-  List,
   Paragraph,
   ResponsiveContext,
   Text,
