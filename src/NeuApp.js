@@ -220,14 +220,13 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 
                 <Text size="xlarge" margin={"0px"}>
                   {" "}
-                  Let's build commons and bridges via
+                  Introducing
                 </Text>
-                <Text size="xlarge" margin={"20px"}>
+                <Text size="xlarge" margin={"32px"}>
                   {" "}
                   Decentralized Artistic Organicities
                 </Text>
-
-              
+        
 
                 <Box direction="row" gap={"medium"}>
                   <iframe
@@ -243,10 +242,6 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     width={"640px"}
                   />
 
-                  {/* <Box size="large">
-                    what can u do here?
-                    
-                  </Box> */}
                 </Box>
                 {/* <iframe
                   title="sphere-with-stripes"
