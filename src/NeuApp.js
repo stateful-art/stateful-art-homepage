@@ -217,55 +217,54 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     </Box>
                   </Heading>
                 </Box>
-               
-                <Text size="xlarge"  margin={"0px"}>
+
+                <Text size="xlarge" margin={"0px"}>
                   {" "}
-                Let's have a deeper look what's going @n 
+                  Let's build commons and bridges via
                 </Text>
-                <Text size="xlarge"  margin={"40px"}>
+                <Text size="xlarge" margin={"20px"}>
                   {" "}
-                
-                Decentralized Artistic Organicities
+                  Decentralized Artistic Organicities
                 </Text>
 
-                <Box direction="row">
-                <iframe
-                  title="hiphop-dao"
-                  src=" https://app.dework.xyz/hiphop"
-                  height={"500px"}
-                  width={"100%"}
+              
+
+                <Box direction="row" gap={"medium"}>
+                  <iframe
+                    title="hiphop-dao"
+                    src=" https://app.dework.xyz/hiphop/"
+                    height={"600px"}
+                    width={"640px"}
                   />
-                 <iframe
-                  title="rock-dao"
-                  src=" https://app.dework.xyz/rock"
-                  height={"500px"}
-                  width={"100%"}
+                  <iframe
+                    title="rock-dao"
+                    src=" https://app.dework.xyz/hiphop/hamburg-1"
+                    height={"600px"}
+                    width={"800px"}
                   />
-                   <iframe
-                  title="electronic-dao"
-                  src=" https://app.dework.xyz/electronic"
-                  height={"500px"}
-                  width={"100%"}
-                  />
+
                   {/* <Box size="large">
                     what can u do here?
                     
                   </Box> */}
                 </Box>
-                  {/* <iframe
+                {/* <iframe
                   title="sphere-with-stripes"
                     src=" https://generated.space/sketch/stripe-sphere/"
                     height={"900px"}
                     width={"80%"}
                   /> */}
-               
-                <Box justify="center" alignContent="center">
-                  <CaretUp color="red" />
-                </Box>
-                <Box justify="center" alignContent="center">
-                  <CaretDown color="yellow" />
-                  <CaretDown color="yellow" />
-                  <CaretDown color="yellow" />
+
+                <Box justify="center" alignContent="center" margin={"40px"}>
+              
+                  <Text size="xlarge" margin={"20px"}>
+                    {" "}
+                    What's next?
+                  </Text>
+                  <Text size="xlarge" margin={"20px"}>
+                    {" "}
+                    You decide!
+                  </Text>
                 </Box>
                 <Box>
                   <iframe
