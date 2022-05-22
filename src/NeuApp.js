@@ -10,7 +10,7 @@ import {
   ResponsiveContext,
   Text,
 } from "grommet";
-import { CaretDown, CaretUp, Directions } from "grommet-icons";
+import { CaretDown, CaretUp } from "grommet-icons";
 import React from "react";
 import { ModesInTabs } from "./components/commons/NeuTabsForAll";
 import { ModesInTabsMobile } from "./components/commons/NeuTabsForMobile";
@@ -49,7 +49,6 @@ function NeuApp() {
                   textAlign="center"
                   margin={"32px"}
                 >
-                  with base and fusion types; <br></br>
                   <Anchor
                     color="pink"
                     background="yellow"
@@ -59,7 +58,7 @@ function NeuApp() {
                     {" "}
                     an expressive{" "}
                   </Anchor>
-                  & progressive art direction in decentralized{" "}
+                  & progressive <br></br> art direction in decentralized{" "}
                   <Anchor
                     color="yellow"
                     background="yellow"
@@ -79,9 +78,11 @@ function NeuApp() {
                     tokenomics.{" "}
                   </Anchor>{" "}
                   <br></br>
-                  yielding mutually inclusive and expanding graph of a creative
-                  civilisation<br></br> in space-time.{" "}
+                  <br></br>
+                  let's illustrate and explore together; the ever-expanding
+                  graph of a creative civilisation, in space-time.{" "}
                 </Paragraph>
+
                 <CitiesUnionByGenresMobile />
 
                 <Paragraph alignSelf="center" size="large" textAlign="center">
@@ -99,6 +100,7 @@ function NeuApp() {
 
                 <Box margin={"small"} pad={"medium"}>
                   <DiscordButton props={{ size: "small" }} />
+                
 
                   <Box alignSelf="center">
                     <Box justify="center" alignContent="center">
@@ -113,18 +115,17 @@ function NeuApp() {
                   </Box>
                 </Box>
 
-                {/* let's get it started ~ Black Eyed Peas */}
-
                 <Box alignSelf="center">
                   <iframe
                     width="420px"
                     height="360px"
-                    src="https://www.youtube.com/embed/bp3qulwW88k"
+                    src="https://www.youtube.com/embed/wLppBBcFJjA"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
+                 
                   {/* <iframe
                   
                     src="https://www.youtube.com/embed/IKqV7DB8Iwg"
@@ -250,13 +251,27 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     width={"80%"}
                   /> */}
 
-                <Box justify="center" alignContent="center" margin={"20px"} pad="medium">
-                
+                <Box
+                  justify="center"
+                  alignContent="center"
+                  margin={"20px"}
+                  pad="medium"
+                >
                   <Box background={"purple"}>
                     <Accordion size="large">
                       <AccordionPanel label="World needs you ~ up for some change?">
                         <Box pad="medium" background="orange">
-                        <iframe title="onboarding-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdLcI1ywEKgDJrt1TV0T0REcVAEXuPZjkkIXUX5iTFCMxIMzg/viewform?embedded=true" width="800" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                          <iframe
+                            title="onboarding-form"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdLcI1ywEKgDJrt1TV0T0REcVAEXuPZjkkIXUX5iTFCMxIMzg/viewform?embedded=true"
+                            width="800"
+                            height="820"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                          >
+                            Loading…
+                          </iframe>
                         </Box>
                       </AccordionPanel>
                       {/* <AccordionPanel label="Panel 2">
@@ -268,7 +283,18 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   </Box>
                 </Box>
                 <Box>
-                  <iframe
+
+                <iframe
+                     width="720px"
+                     height="540px"
+                    src="https://www.youtube.com/embed/wLppBBcFJjA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+
+                  {/* <iframe
                     width="720px"
                     height="540px"
                     src="https://www.youtube.com/embed/bp3qulwW88k"
@@ -276,7 +302,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                  ></iframe>
+                  ></iframe> */}
                   {/* let's get it started ~ Black Eyed Peas */}
                   {/* <iframe
                     width="720px"
@@ -389,15 +415,14 @@ const FooterSectionMobile = () => (
       </Box>
       <Box align="center" justify="center" margin={"16px"}>
         <Anchor
-          href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
+          href="https://www.youtube.com/watch?v=aXJQmTSptCc"
           target="_blank"
         >
-          <Paragraph size="large" color={"white"}>
+          <Paragraph size="xlarge" color={"white"}>
             {" "}
-            the revolution will be minted
+            Art of Peace
           </Paragraph>
         </Anchor>
-        <Directions color="red" />
 
         <Text size="medium" weight={"bolder"}>
           {" "}
@@ -490,14 +515,12 @@ const FooterSection = () => (
       </Box>
       <Box align="center" justify="center" margin="16px">
         <Anchor
-          href="https://www.youtube.com/watch?v=QnJFhuOWgXg"
+          href="https://www.youtube.com/watch?v=aXJQmTSptCc"
           target="_blank"
         >
-          <Paragraph size="large"> the revolution will be minted</Paragraph>
+          <Paragraph size="xxlarge"> Art of Peace</Paragraph>
         </Anchor>
         <Box align="center" justify="center" margin="16px">
-          <Directions color="red" />
-
           <Text size="medium" weight={"bolder"}>
             {" "}
             © all rights acknowledged{" "}
@@ -675,7 +698,6 @@ const IntroTextVertical = () => {
 //         height="400px"
 //         margin={"40px"}
 //       />
-//       ;
 //     </>
 //   );
 // };
@@ -690,7 +712,6 @@ const CitiesUnionByGenresMobile = () => {
         height="280px"
         margin={"40px"}
       />
-      ;
     </>
   );
 };
