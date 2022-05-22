@@ -79,14 +79,37 @@ function NeuApp() {
                   </Anchor>{" "}
                   <br></br>
                   <br></br>
-                  let's illustrate and explore together; the ever-expanding
+                  let's illustrate <br></br> and explore together; the ever-expanding
                   graph of a creative civilisation, in space-time.{" "}
                 </Paragraph>
 
+              <Box alignSelf="center">
+              <Text size="large" margin={"0px"} textAlign="center">
+                  {" "}
+                  Introducing
+                </Text>
+                <Text size="large" margin={"0px"} textAlign="center">
+                  {" "}
+                  Decentralized Artistic Organicities
+                </Text>
+          
+              </Box>
+
                 <CitiesUnionByGenresMobile />
 
+                <Text size="xlarge" textAlign="center" margin={"20px"}>Have a look at RockDAO</Text>
+                <Box alignSelf="center">
+                <iframe
+                    title="hiphop-dao"
+                    src=" https://app.dework.xyz/rock/"
+                    height={"640px"}
+                    width={"100%"}
+                  />
+                </Box>
+
+          
                 <Paragraph alignSelf="center" size="large" textAlign="center">
-                  let's bridge cities; with love, peace, and creativity.
+                  let's bridge cities; <br></br>with love, peace, and creativity. <br></br><br></br>
                   <Anchor
                     href="https://www.youtube.com/watch?v=LnmSSkNLYhs"
                     target="_blank"
@@ -94,7 +117,7 @@ function NeuApp() {
                     {" "}
                     everyday {"& "}
                     everywhere,{" "}
-                  </Anchor>
+                  </Anchor> <br></br>
                   @ <Text size="large">21st century and forwards.</Text>
                 </Paragraph>
 
@@ -138,6 +161,31 @@ function NeuApp() {
                   {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </Box>
+
+                <Box background={"purple"}>
+                    <Accordion size="large">
+                      <AccordionPanel label="World needs you ~ up for some change?">
+                        <Box pad="medium" background="orange">
+                          <iframe
+                            title="onboarding-form"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdLcI1ywEKgDJrt1TV0T0REcVAEXuPZjkkIXUX5iTFCMxIMzg/viewform?embedded=true"
+                            width="100%"
+                            height="820"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                          >
+                            Loading…
+                          </iframe>
+                        </Box>
+                      </AccordionPanel>
+                      {/* <AccordionPanel label="Panel 2">
+                        <Box pad="medium" background="light-2">
+                          <Text>Two</Text>
+                        </Box>
+                      </AccordionPanel> */}
+                    </Accordion>
+                  </Box>
               </Box>
 
               <FooterSectionMobile />
@@ -220,7 +268,9 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     </Box>
                   </Heading>
                 </Box>
-
+              <Box alignSelf="center">
+                
+              </Box>
                 <Text size="xlarge" margin={"0px"}>
                   {" "}
                   Introducing
@@ -288,7 +338,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                      width="720px"
                      height="540px"
                     src="https://www.youtube.com/embed/wLppBBcFJjA"
-                    title="YouTube video player"
+                    title="Wax Tailor ~ Our Dance"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
