@@ -98,12 +98,12 @@ function NeuApp() {
                 <CitiesUnionByGenresMobile />
 
                 <Text size="xlarge" textAlign="center" margin={"20px"}>
-                  Have a look at RockDAO
+                  have a look at Hiphop DAO
                 </Text>
                 <Box alignSelf="center">
                   <iframe
                     title="hiphop-dao"
-                    src=" https://app.dework.xyz/rock/"
+                    src=" https://app.dework.xyz/hiphop/"
                     height={"640px"}
                     width={"100%"}
                   />
@@ -153,7 +153,7 @@ function NeuApp() {
                   ></iframe> */}
 
                   <iframe
-                    width="420px"
+                    width=""
                     height="360px"
                     src="https://www.youtube.com/embed/wLppBBcFJjA"
                     title="YouTube video player"
@@ -289,9 +289,14 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   {" "}
                   Introducing
                 </Text>
-                <Text size="xlarge" margin={"32px"}>
+                <Text text size="xlarge" margin={"12px"}>
                   {" "}
                   Decentralized Artistic Organicities
+                </Text>
+
+                <Text size="xlarge" margin={"22px"} textAlign="center">
+                  {" "}
+                  something unique, <br></br> something real
                 </Text>
 
                 <Box direction="row" gap={"medium"}>
@@ -773,10 +778,11 @@ const CitiesUnionByGenresMobile = () => {
       <Image
         alignSelf="center"
         src="cities_bridged_by_genres.png"
-        width="360px"
+        width="80%"
         height="280px"
         margin={"40px"}
       />
+    <Text size="xlarge" textAlign="center" alignSelf="center" margin={"22px"}>something unique, <br></br> something real.</Text>
     </>
   );
 };
