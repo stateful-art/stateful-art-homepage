@@ -446,15 +446,16 @@ const FooterSectionMobile = () => (
         margin="medium"
         flex={true}
         background="#323001"
-      >
-        <Anchor
-          href="https://github.com/stateful-art"
+      > 
+ 
+      <Box>
+      <Anchor
+          href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
           target="_blank"
           color="white"
         >
-          <Text size="large">code</Text>
+          <Text size="large">short paper {" | "}</Text>
         </Anchor>
-        {"|"}
 
         <Anchor
           href="https://miro.com/app/board/o9J_l3gy0-U=/"
@@ -462,10 +463,12 @@ const FooterSectionMobile = () => (
           color="white"
         >
           {/* {"|  "} */}
-          <Text size="large">design canvas</Text>
+          <Text size="large">imagination {" | "}</Text>
         </Anchor>
+      </Box>
 
-        {"|"}
+      <Box>
+      
 
         <Anchor
           href="https://twitter.com/StatefulArt"
@@ -475,7 +478,20 @@ const FooterSectionMobile = () => (
           {" "}
           <Text size="large">twitter</Text>
         </Anchor>
+        <Anchor
+          href="https://github.com/stateful-art"
+          target="_blank"
+          color="white"
+        >
+          <Text size="large">github</Text> 
+        </Anchor>
+  
       </Box>
+      </Box>
+       
+
+        
+        
 
       <Box align="center" justify="center" margin="30px">
         <Text size="large" weight={"bolder"}>
@@ -536,6 +552,15 @@ const FooterSection = () => (
         //flex={true}
         background="#323001"
       >
+
+<Anchor
+          href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
+          target="_blank"
+          color="white"
+        >
+          <Text size="large">short paper {" | "}</Text>
+        </Anchor>
+        
         <Anchor
           href="https://github.com/stateful-art"
           target="_blank"
@@ -551,7 +576,7 @@ const FooterSection = () => (
           color="white"
         >
           {/* {"|  "} */}
-          <Text size="large">design canvas</Text>
+          <Text size="large">imagination</Text>
         </Anchor>
 
         {"|"}

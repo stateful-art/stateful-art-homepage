@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Anchor, Box, Header, Image, Menu, ResponsiveContext } from "grommet";
-import {  Chat, Menu as MenuIcon } from "grommet-icons";
+import { Chat, Menu as MenuIcon } from "grommet-icons";
 
 export const NavBar = () => (
   <Header background="red" pad="medium" height="xsmall">
-   <Image src="./logo.svg" style={{ maxWidth: "42%" }}></Image>
+    <Image src="./logo.svg" style={{ maxWidth: "42%" }}></Image>
     <ResponsiveContext.Consumer>
       {(size) =>
         size === "small" ? (
@@ -26,30 +26,35 @@ export const NavBar = () => (
                     </Box>
                   ),
                   href: "https://demover.se",
-                  color: "black"
+                  color: "black",
                 },
                 {
-                  label: <Box pad="small">Community</Box>,
+                  label: <Box pad="small">community</Box>,
                   color: "purple",
 
                   href: "https://discord.gg/EXN7Mta2wu",
                 },
+        
                 {
-                  label: <Box pad="small">StartDAO</Box>,
-color: "red",
+                  label: <Box pad="small">startDAO</Box>,
+                  color: "red",
                   href: "https://app.dework.xyz/statefulart",
                 },
                 {
-                  label: <Box pad="small">Twitter</Box>,
-color: "#1DA1F2",
+                  label: <Box pad="small">twitter</Box>,
+                  color: "#1DA1F2",
                   href: "https://twitter.com/statefulArt",
                 },
                 {
-                  label: <Box pad="small">Github</Box>,
-color: "black",
+                  label: <Box pad="small">github</Box>,
+                  color: "black",
                   href: "https://github.com/stateful-art",
                 },
-                
+                {
+                  label: <Box pad="small">short paper</Box>,
+                  color: "black",
+                  href: "https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing",
+                },
               ]}
             />
           </Box>
@@ -73,7 +78,7 @@ color: "black",
               <Anchor
                 href="https://discord.gg/EXN7Mta2wu"
                 target="_blank"
-                label="Community"
+                label="community"
                 color="white"
                 icon={<Chat />}
               />
@@ -82,32 +87,29 @@ color: "black",
               <Anchor
                 href="https://app.dework.xyz/statefulart"
                 target="_blank"
-                label="StartDAO"
+                label="startDAO"
                 color="white"
                 // icon={<Add />}
               />
             </Box>
-            
 
             <Box background="#1DA1F2" pad="small" round="medium" flex="false">
               <Anchor
                 href="https://twitter.com/statefulArt"
                 target={"_blank"}
-                label="Twitter"
+                label="twitter"
                 color="white"
                 pad="small"
-
               />
             </Box>
 
             <Box background="black" pad="small" round="medium" flex="false">
               <Anchor
-                href="https://github.com/stateful-art"
+                href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
                 target={"_blank"}
-                label="Github"
+                label="short paper"
                 color="white"
                 pad="small"
-
               />
             </Box>
           </Box>
