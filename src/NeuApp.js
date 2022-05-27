@@ -153,14 +153,16 @@ function NeuApp() {
                   ></iframe> */}
 
                   <iframe
-                    width=""
+                    width="100%"
                     height="360px"
-                    src="https://www.youtube.com/embed/wLppBBcFJjA"
+                    src="https://www.youtube.com/embed/fe1zUgsOtn4"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
+
+             
 
                   {/* <iframe
                   
@@ -366,7 +368,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   <iframe
                     width="720px"
                     height="540px"
-                    src="https://www.youtube.com/embed/wLppBBcFJjA"
+                    src="https://www.youtube.com/embed/fe1zUgsOtn4"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -446,52 +448,44 @@ const FooterSectionMobile = () => (
         margin="medium"
         flex={true}
         background="#323001"
-      > 
- 
-      <Box>
-      <Anchor
-          href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
-          target="_blank"
-          color="white"
-        >
-          <Text size="large">short paper {" | "}</Text>
-        </Anchor>
+      >
+        <Box>
+          <Anchor
+            href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
+            target="_blank"
+            color="white"
+          >
+            <Text size="large">short paper {" | "}</Text>
+          </Anchor>
 
-        <Anchor
-          href="https://miro.com/app/board/o9J_l3gy0-U=/"
-          target="_blank"
-          color="white"
-        >
-          {/* {"|  "} */}
-          <Text size="large">imagination {" | "}</Text>
-        </Anchor>
+          <Anchor
+            href="https://miro.com/app/board/o9J_l3gy0-U=/"
+            target="_blank"
+            color="white"
+          >
+            {/* {"|  "} */}
+            <Text size="large">imagination {" | "}</Text>
+          </Anchor>
+        </Box>
+
+        <Box>
+          <Anchor
+            href="https://twitter.com/StatefulArt"
+            target="_blank"
+            color="white"
+          >
+            {" "}
+            <Text size="large">twitter</Text>
+          </Anchor>
+          <Anchor
+            href="https://github.com/stateful-art"
+            target="_blank"
+            color="white"
+          >
+            <Text size="large">github</Text>
+          </Anchor>
+        </Box>
       </Box>
-
-      <Box>
-      
-
-        <Anchor
-          href="https://twitter.com/StatefulArt"
-          target="_blank"
-          color="white"
-        >
-          {" "}
-          <Text size="large">twitter</Text>
-        </Anchor>
-        <Anchor
-          href="https://github.com/stateful-art"
-          target="_blank"
-          color="white"
-        >
-          <Text size="large">github</Text> 
-        </Anchor>
-  
-      </Box>
-      </Box>
-       
-
-        
-        
 
       <Box align="center" justify="center" margin="30px">
         <Text size="large" weight={"bolder"}>
@@ -552,15 +546,14 @@ const FooterSection = () => (
         //flex={true}
         background="#323001"
       >
-
-<Anchor
+        <Anchor
           href="https://docs.google.com/document/d/1jlLlCjQPUGdKhGcryRwcSOh7U_v1uOQlS9_wTvdxmx0/edit?usp=sharing"
           target="_blank"
           color="white"
         >
           <Text size="large">short paper {" | "}</Text>
         </Anchor>
-        
+
         <Anchor
           href="https://github.com/stateful-art"
           target="_blank"
@@ -807,7 +800,9 @@ const CitiesUnionByGenresMobile = () => {
         height="280px"
         margin={"40px"}
       />
-    <Text size="xlarge" textAlign="center" alignSelf="center" margin={"22px"}>something unique, <br></br> something real.</Text>
+      <Text size="xlarge" textAlign="center" alignSelf="center" margin={"22px"}>
+        something unique, <br></br> something real.
+      </Text>
     </>
   );
 };
