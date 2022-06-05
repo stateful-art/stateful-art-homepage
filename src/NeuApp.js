@@ -100,14 +100,14 @@ function NeuApp() {
                 <Text size="xlarge" textAlign="center" margin={"20px"}>
                   have a look at Hiphop DAO
                 </Text>
-                <Box alignSelf="center">
+                {/* <Box alignSelf="center">
                   <iframe
                     title="hiphop-dao"
                     src=" https://app.dework.xyz/hiphop/"
                     height={"640px"}
                     width={"100%"}
                   />
-                </Box>
+                </Box> */}
 
                 <Paragraph alignSelf="center" size="large" textAlign="center">
                   let's bridge cities; <br></br>with love, peace, and
@@ -301,7 +301,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   something unique, <br></br> something real
                 </Text>
 
-                <Box direction="row" gap={"medium"}>
+                {/* <Box direction="row" gap={"medium"}>
                   <iframe
                     title="hiphop-dao"
                     src=" https://app.dework.xyz/hiphop/"
@@ -314,7 +314,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                     height={"600px"}
                     width={"640px"}
                   />
-                </Box>
+                </Box> */}
                 {/* <iframe
                   title="sphere-with-stripes"
                     src=" https://generated.space/sketch/stripe-sphere/"
