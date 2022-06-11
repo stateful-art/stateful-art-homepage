@@ -34,7 +34,7 @@ export const ArtDirectionJanVermeer = (direction) => {
         ></Box>
       </Box>
       <Box direction={{ direction }}>
-      <Box
+        <Box
           animation={{
             type: "slideUp",
             delay: 3000,
@@ -87,8 +87,6 @@ export const ArtDirectionJanVermeer = (direction) => {
         {/* <Cubist /> */}
 
         <Rock />
-
-    
 
         <Box
           animation={{
@@ -253,22 +251,31 @@ const Rock = () => {
             <Box>
               <Image
                 src="./rock.jpeg"
-                maxWidth="10%"
-                maxHeight="10%"
+                width={"100px"}
+                height="100%"
+                maxWidth=""
+                maxHeight=""
                 style={{
-                  marginTop: "0px",
-                  marginBottom: "100px",
+                  marginLeft: "20%",
                 }}
               ></Image>
             </Box>
           </Anchor>
         </CardBody>
-        <CardFooter pad={{ horizontal: "small" }} background="light-2">
+        <CardFooter
+          pad={{ horizontal: "small", vertical: "small" }}
+          background="light-2"
+        >
           <Text size="large" weight="bold">
-            @ 4 cities
+            10 <Attraction />
           </Text>
 
-          <Attraction />
+          <Anchor
+            href="https://artistic-organicity-chats.vercel.app"
+            target={"_blank"}
+          >
+            #chat
+          </Anchor>
         </CardFooter>
       </Card>
     </Tip>
@@ -352,9 +359,7 @@ const Reggae = () => {
             duration: 1000,
           }}
         >
-          <Text size="medium">
-            Bissau
-          </Text>
+          <Text size="medium">Bissau</Text>
         </Box>
       }
       dropProps={{ align: { left: "right" } }}
