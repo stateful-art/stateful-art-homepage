@@ -496,7 +496,7 @@ const FooterSectionMobile = () => (
       </Box>
       <Box align="center" justify="center" margin={"16px"}>
         <Anchor
-          href="https://www.youtube.com/watch?v=aXJQmTSptCc"
+          href="https://www.youtube.com/watch?v=bp3qulwW88k"
           target="_blank"
         >
           <Paragraph size="xlarge" color={"white"}>
@@ -607,7 +607,7 @@ const FooterSection = () => (
           href="https://www.youtube.com/watch?v=bp3qulwW88k"
           target="_blank"
         >
-          <Paragraph size="xxlarge"> Art of Peace</Paragraph>
+          <Paragraph size="xxlarge"> Art of Peacse</Paragraph>
         </Anchor>
         <Box align="center" justify="center" margin="16px">
           <Text size="medium" weight={"bolder"}>
