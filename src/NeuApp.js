@@ -85,21 +85,28 @@ function NeuApp() {
                 </Paragraph>
 
                 <Box alignSelf="center">
-                  <Text size="large" margin={"0px"} textAlign="center">
-                    {" "}
-                    Introducing
+                  <Text textAlign="center" size="xlarge" margin={"12px"}>
+                    introducing
                   </Text>
-                  <Text size="large" margin={"0px"} textAlign="center">
+                  <Text textAlign="center" size="xlarge" margin={"12px"}>
                     {" "}
-                    Decentralized Artistic Organicities
+                    <Anchor href="https://github.com/stateful-art/artistic-organicity-chats">
+                      Decentralized Artistic Organicities
+                    </Anchor>
+                  </Text>
+                  <Text textAlign="center" size="xlarge" margin={"12px"}>
+                    {"&"}
+                  </Text>
+                  <Text textAlign="center" size="xlarge" margin={"12px"}>
+                    {" "}
+                    <Anchor href="https://start-dex.vercel.app/">
+                      startDEX
+                    </Anchor>
                   </Text>
                 </Box>
 
                 <CitiesUnionByGenresMobile />
 
-                <Text size="xlarge" textAlign="center" margin={"20px"}>
-                  have a look at Hiphop DAO
-                </Text>
                 {/* <Box alignSelf="center">
                   <iframe
                     title="hiphop-dao"
@@ -142,39 +149,15 @@ function NeuApp() {
                 </Box>
 
                 <Box alignSelf="center">
-                  {/* <iframe
-                  width="420px"
-                  height="360px"
-                    src="https://www.youtube.com/embed/uGoiiOcT6Qk"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe> */}
-
                   <iframe
                     width="100%"
-                    height="360px"
-                    src="https://www.youtube.com/embed/fe1zUgsOtn4"
+                    height="320px"
+                    src="https://www.youtube.com/embed/WYRrIBqKsJ4"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
-
-             
-
-                  {/* <iframe
-                  
-                    src="https://www.youtube.com/embed/IKqV7DB8Iwg"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe> */}
-
-                  {/* <iframe width="100%" height="272" src="https://www.youtube.com/embed/WpYeekQkAdc" title="Where is the Love - song by Black Eyed Peas" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </Box>
 
                 <Box background={"purple"}>
@@ -293,7 +276,14 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                 </Text>
                 <Text text size="xlarge" margin={"12px"}>
                   {" "}
-                  Decentralized Artistic Organicities
+                  <Anchor href="https://github.com/stateful-art/artistic-organicity-chats">
+                    Decentralized Artistic Organicities
+                  </Anchor>
+                </Text>
+                {"&"}
+                <Text text size="xlarge" margin={"12px"}>
+                  {" "}
+                  <Anchor href="https://start-dex.vercel.app/">startDEX</Anchor>
                 </Text>
 
                 <Text size="xlarge" margin={"22px"} textAlign="center">
@@ -330,8 +320,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                 >
                   <Box background={"purple"}>
                     <Accordion size="large">
-                      <AccordionPanel label="World needs you ~ up for some change?">
-                        as
+                      <AccordionPanel label="wanna join start? well, what's your art like?">
                         <Box pad="medium" background="orange">
                           <iframe
                             title="onboarding-form"
@@ -369,13 +358,12 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
                   <iframe
                     width="720px"
                     height="540px"
-                    src="https://www.youtube.com/embed/fe1zUgsOtn4"
+                    src="https://www.youtube.com/embed/WYRrIBqKsJ4"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
-
                   {/* let's get it started ~ Black Eyed Peas */}
                   {/* <iframe
                     width="720px"
