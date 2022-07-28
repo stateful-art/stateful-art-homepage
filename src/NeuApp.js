@@ -163,7 +163,7 @@ function NeuApp() {
                 <Box background={"purple"}>
                   <Accordion size="large">
                     <AccordionPanel
-                      label="World needs you ~ up for some change?"
+                      label="wanna join start? well, what's your art like?"
                       textAlign="center"
                     >
                       <Box pad="medium" background="orange">
